@@ -43,6 +43,9 @@ const URLS = {
   overpass: (env("OVERPASS_URL") || "https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter").split(",").map(s => s.trim()),
 };
 const UA = "CompanyFinder/2.0 (team prospecting tool)";
+// Salesforce fingerprints (see data/crm_keys.txt). Only hashes are stored, never account names.
+const CRM_KEYS = (() => { try { return new Set(fs.readFileSync(path.join(__dirname, "data", "crm_keys.txt"), "utf8").split("\n").filter(Boolean)); } catch { return new Set(); } })();
+const crmKey = (name, st) => require("node:crypto").createHash("sha256").update(normName(name) + "|" + st).digest("hex").slice(0, 16);
 const PUBLIC = path.join(__dirname, "public");
 const RADIUS_M = 40000;
 
@@ -383,7 +386,7 @@ async function search({ type, city, st, target, requireWebsite }) {
   }
   let rows = out;
   if (requireWebsite) { const before = rows.length; rows = rows.filter(r => r.website); excluded += before - rows.length; }
-  rows.forEach(r => { r.tier = tierFor(r.reviews); r.confirmedBy = r.sources.length; });
+  rows.forEach(r => { r.tier = tierFor(r.reviews); r.confirmedBy = r.sources.length; r.inCrm = CRM_KEYS.size > 0 && CRM_KEYS.has(crmKey(r.name, st)); });
   // rank: review volume, then how many sources agree, then has phone
   rows.sort((a, b) => (b.reviews - a.reviews) || (b.confirmedBy - a.confirmedBy) || ((b.phone ? 1 : 0) - (a.phone ? 1 : 0)) || a.name.localeCompare(b.name));
   rows = rows.slice(0, target);
@@ -471,7 +474,7 @@ const server = http.createServer(async (req, res) => {
   try {
     if (url.pathname === "/api/status") {
       const configured = { Overture: !!loadLocal("TX"), Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Foursquare: !!KEYS.foursquare, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
-      return send(res, 200, { ok: true, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, caps: CAPS,
+      return send(res, 200, { ok: true, crmAccounts: CRM_KEYS.size, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, caps: CAPS,
         googleKeyLooksValid: /^AIza[0-9A-Za-z_-]{35}$/.test(KEYS.google), needsCode: !!ACCESS_CODE, codeOk: authed(req) });
     }
     if (url.pathname === "/api/selftest") {

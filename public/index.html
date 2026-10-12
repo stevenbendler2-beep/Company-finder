@@ -90,6 +90,8 @@ th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vert
 th{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:var(--tint);cursor:pointer;user-select:none;white-space:nowrap}
 th[aria-sort="ascending"]::after{content:" ▲"} th[aria-sort="descending"]::after{content:" ▼"}
 td.name{font-weight:600;min-width:170px}
+.crm{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:999px;font-size:11px;font-weight:600;background:#fde68a;color:#78350f;vertical-align:middle}
+tr.in-crm td{opacity:.6}
 td.site a{word-break:break-all}
 td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .src{display:block;font-weight:400;font-size:.74rem;color:var(--muted)}
@@ -164,7 +166,7 @@ footer{color:var(--muted);font-size:.8rem;padding:24px 0 40px;display:flex;flex-
   </div>
 
   <footer>
-    <span>Sources: Google, HERE, TomTom and OpenStreetMap business listings. <b>Size rating</b> is an estimate from Google review volume, not reported revenue: Strong = 100+ reviews (most likely $1M+), Likely = 30–99, Verify = under 30 or no review data.</span>
+    <span>Sources: Google, HERE, TomTom, Foursquare, Geoapify, OpenStreetMap and Overture Maps business listings (Overture data © Overture Maps Foundation). Results marked "Already in Salesforce" match an existing account by name and state. <b>Size rating</b> is an estimate from Google review volume, not reported revenue: Strong = 100+ reviews (most likely $1M+), Likely = 30–99, Verify = under 30 or no review data.</span>
     <button class="btn btn-ghost btn-sm" id="sysBtn" type="button" hidden>Run system check</button>
   </footer>
 </main>
@@ -278,7 +280,7 @@ function render(){
     <div class="toolbar">${["All","Strong","Likely","Verify"].map(t=>`<button class="chip t-${t}" type="button" data-t="${t}" aria-pressed="${tierFilter===t}">${t} ${t==="All"?rows.length:n[t]}</button>`).join("")}
       <input id="filterBox" type="search" placeholder="Filter results…" value="${esc(textFilter)}" aria-label="Filter results"></div>
     <div class="tablewrap"><table><thead><tr><th class="idx" data-k="rank" ${sortKey==="rank"?`aria-sort="${sortDir>0?"ascending":"descending"}"`:""}>#</th>${cols.map(([k,l])=>`<th data-k="${k}" ${k===sortKey?`aria-sort="${sortDir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>
-    ${list.map(r=>`<tr><td class="num idx">${r.rank}</td><td class="name">${esc(r.name)}<span class="src">${esc(r.category||"")}</span><span class="srcs">${(r.sources||[]).map(s=>`<span>${esc(s)}</span>`).join("")}</span></td>
+    ${list.map(r=>`<tr class="${r.inCrm?"in-crm":""}"><td class="num idx">${r.rank}</td><td class="name">${esc(r.name)}${r.inCrm?'<span class="crm">Already in Salesforce</span>':""}<span class="src">${esc(r.category||"")}</span><span class="srcs">${(r.sources||[]).map(s=>`<span>${esc(s)}</span>`).join("")}</span></td>
       <td class="site" data-l="Website">${r.website?`<a href="${esc(r.website)}" target="_blank" rel="noopener">${esc(r.website.replace(/^https?:\/\/(www\.)?/,""))}</a>`:"—"}</td>
       <td data-l="Phone">${r.phone?`<a href="tel:${esc(r.phone.replace(/[^\d+]/g,""))}">${esc(r.phone)}</a>`:"—"}</td>
       <td data-l="Address">${esc(r.address||"—")}</td><td class="num" data-l="Reviews">${r.reviews||"—"}</td><td class="num" data-l="Rating">${r.rating?(+r.rating).toFixed(1):"—"}</td>
@@ -288,7 +290,7 @@ function render(){
   const fb=$("filterBox");fb.oninput=()=>{textFilter=fb.value;const pos=fb.selectionStart;render();const f=$("filterBox");f.focus();try{f.setSelectionRange(pos,pos)}catch{}};
   $("dlc").onclick=()=>download("csv");$("dlx").onclick=()=>download("xlsx");
 }
-function tableData(){return visible().map(r=>({"#":r.rank,Company:r.name,Website:r.website,Phone:r.phone,Address:r.address,"Google reviews":r.reviews||"",Rating:r.rating||"","Size rating":r.tier,Category:r.category,"Found in":(r.sources||[]).join(", ")}))}
+function tableData(){return visible().map(r=>({"#":r.rank,Company:r.name,Website:r.website,Phone:r.phone,Address:r.address,"Google reviews":r.reviews||"",Rating:r.rating||"","Size rating":r.tier,Category:r.category,"Found in":(r.sources||[]).join(", "),"Already in Salesforce":r.inCrm?"Yes":""}))}
 function fname(ext){const q=meta.query;return `${q.type}-${q.city}-${q.state}`.toLowerCase().replace(/[^a-z0-9]+/g,"-")+"."+ext}
 function save(blob,name){const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},800)}
 function download(kind){
