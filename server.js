@@ -82,7 +82,12 @@ async function fetchJSON(url, opts = {}, ms = 25000) {
     const r = await fetch(url, { ...opts, signal: ctl.signal });
     const txt = await r.text();
     let data; try { data = JSON.parse(txt); } catch { data = null; }
-    if (!r.ok) { const e = new Error((data && data.error && data.error.message) || `HTTP ${r.status}`); e.status = r.status; throw e; }
+    if (!r.ok) {
+      const ge = data && data.error;
+      const reason = ge && Array.isArray(ge.details) ? ge.details.map(d => d.reason).filter(Boolean).join(", ") : "";
+      const e = new Error(((ge && ge.message) || `HTTP ${r.status}`) + (reason ? ` [${reason}]` : ""));
+      e.status = r.status; if (ge) console.error("upstream error", r.status, JSON.stringify(ge).slice(0, 800)); throw e;
+    }
     return data;
   } finally { clearTimeout(t); }
 }
