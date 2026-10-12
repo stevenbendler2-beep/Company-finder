@@ -1,14 +1,17 @@
 # Company Finder
 
-Type a business type, city and state, and get up to 100 local companies with websites, phones, Google review counts and a size rating. Results can be downloaded as Excel or CSV.
+Type a business type, city and state → up to 100 local companies with websites, phones, Google review counts and a size rating. Download as Excel or CSV. Team code required.
 
-**Sources:** Google Places API (New) Text Search, capped to stay inside Google's free monthly allowance, plus OpenStreetMap (free).
+## Free data sources (each turns on when its key is set in Render → Environment)
+| Source | Setting | Free allowance | Notes |
+|---|---|---|---|
+| Google Places API (New) | `GOOGLE_PLACES_KEY` | 1,000 requests/month (`DAILY_GOOGLE_CAP`, default 33/day) | Reviews + ratings → size rating. Card on file; set the per-day quota in Google Cloud too. |
+| HERE Discover | `HERE_API_KEY` | 5,000/month (`DAILY_HERE_CAP`, default 160/day) | 100 results per request, phones + websites. |
+| TomTom POI Search | `TOMTOM_API_KEY` | 2,500/month, no card (`DAILY_TOMTOM_CAP`, default 80/day) | 100 results per request, phones + websites. |
+| OpenStreetMap (Overpass) | — | free | Best effort; public servers are often busy. |
 
-## Settings (Render → Environment)
-| Variable | What it does |
-|---|---|
-| `GOOGLE_PLACES_KEY` | Google Maps Platform API key (Places API (New) enabled) |
-| `ACCESS_CODE` | Shared team code people enter once on the page |
-| `DAILY_GOOGLE_CAP` | Max Google requests per day (default 33 ≈ 1,000/month free allowance) |
+City lookup: Open-Meteo geocoding (free, no key), Nominatim fallback.
 
-Repeat searches within 7 days come from cache and cost nothing. Size rating = Google review volume (Strong 100+, Likely 30–99, Verify <30); it is an estimate, not reported revenue.
+**System check:** the "Run system check" button (or `/api/selftest?code=…`) tests every source with a tiny free request and explains any problem in plain English.
+
+Repeat searches within 7 days come from cache and use no lookups. Size rating = Google review volume (Strong 100+, Likely 30–99, Verify <30) — an estimate, not reported revenue.
