@@ -3,6 +3,7 @@
 //   Google Places API (New)  GOOGLE_PLACES_KEY  1,000 free/month (hard daily cap)  — reviews/ratings drive the size rating
 //   HERE Discover            HERE_API_KEY       5,000 free/month                    — up to 100 results per request
 //   TomTom POI Search        TOMTOM_API_KEY     2,500 free/month, no card           — up to 100 results per request
+//   Foursquare Places        FOURSQUARE_API_KEY 200/month free credit, no card     — business websites, phones, addresses
 //   Geoapify Places          GEOAPIFY_API_KEY   3,000 free/day, no card             — reliable OpenStreetMap data (websites/phones)
 //   OpenStreetMap (Overpass) no key             free, best effort
 // City lookup: Open-Meteo geocoding (free, no key), Nominatim fallback.
@@ -19,6 +20,7 @@ const KEYS = {
   here: env("HERE_API_KEY", "HERE_KEY"),
   tomtom: env("TOMTOM_API_KEY", "TOMTOM_KEY"),
   geoapify: env("GEOAPIFY_API_KEY", "GEOAPIFY_KEY"),
+  foursquare: env("FOURSQUARE_API_KEY", "FOURSQUARE_KEY"),
 };
 const ACCESS_CODE = env("ACCESS_CODE");
 const CAPS = { // max requests per day per source (kept under each free monthly allowance)
@@ -26,6 +28,7 @@ const CAPS = { // max requests per day per source (kept under each free monthly 
   here: parseInt(env("DAILY_HERE_CAP") || "160", 10),
   tomtom: parseInt(env("DAILY_TOMTOM_CAP") || "80", 10),
   geoapify: parseInt(env("DAILY_GEOAPIFY_CAP") || "2500", 10),
+  foursquare: parseInt(env("DAILY_FOURSQUARE_CAP") || "100", 10),
 };
 const TZ = env("CAP_TIMEZONE") || "America/Chicago";
 const URLS = {
@@ -33,6 +36,7 @@ const URLS = {
   here: env("HERE_URL") || "https://discover.search.hereapi.com/v1/discover",
   tomtom: env("TOMTOM_URL") || "https://api.tomtom.com/search/2/poiSearch",
   geoapify: env("GEOAPIFY_URL") || "https://api.geoapify.com/v2/places",
+  foursquare: env("FOURSQUARE_URL") || "https://places-api.foursquare.com/places/search",
   geo: env("GEO_URL") || "https://geocoding-api.open-meteo.com/v1/search",
   nominatim: env("NOMINATIM_URL") || "https://nominatim.openstreetmap.org/search",
   overpass: (env("OVERPASS_URL") || "https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter").split(",").map(s => s.trim()),
@@ -42,8 +46,8 @@ const PUBLIC = path.join(__dirname, "public");
 const RADIUS_M = 40000;
 
 // ---------- daily caps (in memory; reset at midnight in TZ — set the matching limit in each provider's console too) ----------
-const usage = { day: "", google: 0, here: 0, tomtom: 0, geoapify: 0 };
-function rollDay() { const d = new Date().toLocaleDateString("en-CA", { timeZone: TZ }); if (usage.day !== d) Object.assign(usage, { day: d, google: 0, here: 0, tomtom: 0, geoapify: 0 }); }
+const usage = { day: "", google: 0, here: 0, tomtom: 0, geoapify: 0, foursquare: 0 };
+function rollDay() { const d = new Date().toLocaleDateString("en-CA", { timeZone: TZ }); if (usage.day !== d) Object.assign(usage, { day: d, google: 0, here: 0, tomtom: 0, geoapify: 0, foursquare: 0 }); }
 function left(src) { rollDay(); return Math.max(0, CAPS[src] - usage[src]); }
 function spend(src) { rollDay(); usage[src]++; }
 
@@ -114,6 +118,10 @@ function explain(src, e) {
     if (/API_KEY_INVALID|API key not valid/.test(m)) return "the key is invalid. Copy it again from Google Cloud → Credentials";
     if (e.status === 429 || /RATE_LIMIT|quota/i.test(m)) return "Google's daily limit is used up — it resets tomorrow";
     if (e.status === 403) return "Google refused the key (permission). Check the key's API restriction is Places API (New) and the API is enabled in the same project; new keys can take ~5 minutes";
+  }
+  if (src === "foursquare") {
+    if (e && (e.status === 401 || e.status === 403)) return "Foursquare refused the key. Copy a Service API Key from the Foursquare developer console (Settings → Service API Keys)";
+    if (e && e.status === 429) return "Foursquare's monthly free credit is used up for now";
   }
   if (e && (e.status === 401 || e.status === 403)) return "the key was refused — check it in Render's Environment settings";
   if (e && e.status === 429) return "daily/monthly free limit reached";
@@ -243,6 +251,33 @@ async function srcGeoapify({ type, st, center }) {
   return { ok: true, rows, requests: used, note: `${rows.length} found` };
 }
 
+async function srcFoursquare({ type, city, st, target, center }) {
+  if (!KEYS.foursquare) return { ok: null, rows: [], requests: 0, note: "not set up" };
+  if (!center) return { ok: false, rows: [], requests: 0, note: "needs the city location" };
+  const queries = [type, `${type} company`];
+  const seen = new Map(); let used = 0, err = null;
+  for (const query of queries) {
+    if (left("foursquare") <= 0) break;
+    spend("foursquare"); used++;
+    try {
+      const p = new URLSearchParams({ query, ll: `${center.lat},${center.lon}`, radius: String(RADIUS_M), limit: "50",
+        fields: "fsq_place_id,name,location,tel,website,rating,stats,closed_bucket,date_closed" });
+      const d = await fetchJSON(`${URLS.foursquare}?${p}`, { headers: { Accept: "application/json", Authorization: `Bearer ${KEYS.foursquare}`, "X-Places-Api-Version": "2025-06-17" } });
+      for (const r of (d && d.results) || []) if (r.fsq_place_id) seen.set(r.fsq_place_id, r);
+    } catch (e) { err = e; break; }
+  }
+  const rows = [...seen.values()].filter(r => !r.date_closed && r.closed_bucket !== "VeryLikelyClosed").filter(r => {
+    const loc = r.location || {}; return !loc.region || loc.region.toUpperCase() === st || loc.region === STATES[st];
+  }).map(r => {
+    const loc = r.location || {};
+    return { name: r.name || "", website: cleanUrl(r.website), phone: fmtPhone(r.tel),
+      address: loc.formatted_address || [loc.address, loc.locality, loc.region].filter(Boolean).join(", "),
+      rating: r.rating ? +(r.rating / 2).toFixed(1) : null, reviews: (r.stats && r.stats.total_ratings) || 0, category: "", status: "OPERATIONAL", source: "Foursquare" };
+  });
+  if (err && !rows.length) return { ok: false, rows, requests: used, note: explain("foursquare", err) };
+  return { ok: true, rows, requests: used, note: `${rows.length} found` };
+}
+
 async function srcOSM({ type, center }) {
   if (!center) return { ok: false, rows: [], requests: 0, note: "needs the city location" };
   const tags = new Set(); const t = type.toLowerCase();
@@ -274,15 +309,15 @@ async function search({ type, city, st, target, requireWebsite }) {
 
   const center = await geocode(city, st);
   const args = { type, city, st, target, center };
-  const [g, h, tt, ga] = await Promise.all([srcGoogle(args), srcHere(args), srcTomTom(args), srcGeoapify(args)]);
+  const [g, h, tt, ga, fs] = await Promise.all([srcGoogle(args), srcHere(args), srcTomTom(args), srcGeoapify(args), srcFoursquare(args)]);
   // raw OpenStreetMap only when Geoapify (which serves the same data, more reliably) isn't available
   const o = ga.ok ? { ok: null, rows: [], requests: 0, note: "covered by Geoapify" } : await srcOSM(args);
-  const sources = { Google: g, HERE: h, TomTom: tt, Geoapify: ga, OpenStreetMap: o };
+  const sources = { Google: g, HERE: h, TomTom: tt, Foursquare: fs, Geoapify: ga, OpenStreetMap: o };
 
   // merge: Google first (it has reviews), then others fill gaps; dedupe by website domain, phone, then name
   const out = []; const idx = new Map(); let excluded = 0;
   const stTest = new RegExp(`,\\s*${st}\\b|\\b${STATES[st].replace(/ /g, "\\s")}\\b`, "i");
-  for (const r of [...g.rows, ...h.rows, ...tt.rows, ...ga.rows, ...o.rows]) {
+  for (const r of [...g.rows, ...fs.rows, ...h.rows, ...tt.rows, ...ga.rows, ...o.rows]) {
     if (!r.name || (r.status && r.status !== "OPERATIONAL")) { excluded++; continue; }
     if (r.address && /, [A-Z]{2} \d{5}|, [A-Z]{2}$/.test(r.address) && !stTest.test(r.address)) { excluded++; continue; }
     if (looksLeadGen(r.name, r.website, city)) { excluded++; continue; }
@@ -306,7 +341,7 @@ async function search({ type, city, st, target, requireWebsite }) {
   rows = rows.slice(0, target);
 
   const status = Object.fromEntries(Object.entries(sources).map(([k, v]) => [k, { ok: v.ok, note: v.note, requests: v.requests }]));
-  const result = { rows, sources: status, located: !!center, excluded, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, generatedAt: new Date().toISOString() };
+  const result = { rows, sources: status, located: !!center, excluded, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify"), foursquare: left("foursquare") }, generatedAt: new Date().toISOString() };
   if (rows.length && Object.values(sources).some(s => s.ok)) cache.set(key, { at: Date.now(), result });
   return result;
 }
@@ -335,6 +370,13 @@ async function selftest() {
       if (!KEYS.tomtom) return { ok: null, note: "not set up (add TOMTOM_API_KEY — free, 2,500/month)" };
       try { await fetchJSON(`${URLS.tomtom}/roofing.json?${new URLSearchParams({ key: KEYS.tomtom, lat: "32.78", lon: "-96.8", limit: "1" })}`, {}, 12000); return { ok: true, note: `working · ${left("tomtom")} of ${CAPS.tomtom} left today` }; }
       catch (e) { return { ok: false, note: explain("tomtom", e) }; }
+    }),
+    run("Foursquare", async () => {
+      if (!KEYS.foursquare) return { ok: null, note: "not set up (add FOURSQUARE_API_KEY)" };
+      try {
+        await fetchJSON(`${URLS.foursquare}?${new URLSearchParams({ query: "roofing", ll: "32.78,-96.8", limit: "1", fields: "fsq_place_id,name" })}`, { headers: { Accept: "application/json", Authorization: `Bearer ${KEYS.foursquare}`, "X-Places-Api-Version": "2025-06-17" } }, 12000);
+        return { ok: true, note: `working · ${left("foursquare")} of ${CAPS.foursquare} left today` };
+      } catch (e) { return { ok: false, note: explain("foursquare", e) }; }
     }),
     run("Geoapify", async () => {
       if (!KEYS.geoapify) return { ok: null, note: "not set up (add GEOAPIFY_API_KEY — free, 3,000/day, no card)" };
@@ -380,7 +422,7 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
     if (url.pathname === "/api/status") {
-      const configured = { Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
+      const configured = { Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Foursquare: !!KEYS.foursquare, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
       return send(res, 200, { ok: true, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, caps: CAPS,
         googleKeyLooksValid: /^AIza[0-9A-Za-z_-]{35}$/.test(KEYS.google), needsCode: !!ACCESS_CODE, codeOk: authed(req) });
     }
@@ -406,5 +448,5 @@ const server = http.createServer(async (req, res) => {
     send(res, 405, "Method not allowed");
   } catch (e) { console.error(e); send(res, 500, { error: "Something went wrong on the server. Please try again." }); }
 });
-if (require.main === module) server.listen(PORT, () => console.log(`Company Finder on :${PORT} · Google ${KEYS.google ? "on" : "off"} · HERE ${KEYS.here ? "on" : "off"} · TomTom ${KEYS.tomtom ? "on" : "off"} · Geoapify ${KEYS.geoapify ? "on" : "off"}`));
+if (require.main === module) server.listen(PORT, () => console.log(`Company Finder on :${PORT} · Google ${KEYS.google ? "on" : "off"} · HERE ${KEYS.here ? "on" : "off"} · TomTom ${KEYS.tomtom ? "on" : "off"} · Foursquare ${KEYS.foursquare ? "on" : "off"} · Geoapify ${KEYS.geoapify ? "on" : "off"}`));
 module.exports = { server };
