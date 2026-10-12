@@ -8,7 +8,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const PORT = process.env.PORT || 3000;
-const GOOGLE_KEY = process.env.GOOGLE_PLACES_KEY || "";
+const GOOGLE_KEY = (process.env.GOOGLE_PLACES_KEY || process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_KEY || "").trim();
 const ACCESS_CODE = (process.env.ACCESS_CODE || "").trim();
 const DAILY_GOOGLE_CAP = parseInt(process.env.DAILY_GOOGLE_CAP || "33", 10); // ~1,000/month = Google's free Enterprise allowance
 const TZ = process.env.CAP_TIMEZONE || "America/Chicago";
@@ -88,11 +88,24 @@ async function fetchJSON(url, opts = {}, ms = 25000) {
 }
 
 // ---------- sources ----------
+const GEO_URL = process.env.GEO_URL || "https://geocoding-api.open-meteo.com/v1/search";
 async function geocode(city, st) {
-  const q = new URLSearchParams({ city, state: STATES[st] || st, country: "United States", format: "json", limit: "1" });
-  const d = await fetchJSON(`${NOMINATIM_URL}?${q}`, { headers: { "User-Agent": UA, "Accept-Language": "en" } }, 12000);
-  if (!Array.isArray(d) || !d.length) return null;
-  return { lat: parseFloat(d[0].lat), lon: parseFloat(d[0].lon) };
+  const stateName = (STATES[st] || st).toLowerCase();
+  // 1) Open-Meteo geocoding (free, no key, works from cloud servers)
+  try {
+    const q = new URLSearchParams({ name: city, count: "20", country_code: "US", format: "json", language: "en" });
+    const d = await fetchJSON(`${GEO_URL}?${q}`, {}, 10000);
+    const hits = ((d && d.results) || []).filter(r => (r.admin1 || "").toLowerCase() === stateName);
+    hits.sort((a, b) => (b.population || 0) - (a.population || 0));
+    if (hits.length) return { lat: hits[0].latitude, lon: hits[0].longitude };
+  } catch (e) { console.error("open-meteo geocode:", e.message); }
+  // 2) Nominatim fallback (often rate-limits shared cloud IPs)
+  try {
+    const q = new URLSearchParams({ city, state: STATES[st] || st, country: "United States", format: "json", limit: "1" });
+    const d = await fetchJSON(`${NOMINATIM_URL}?${q}`, { headers: { "User-Agent": UA, "Accept-Language": "en" } }, 10000);
+    if (Array.isArray(d) && d.length) return { lat: parseFloat(d[0].lat), lon: parseFloat(d[0].lon) };
+  } catch (e) { console.error("nominatim geocode:", e.message); }
+  return null;
 }
 
 async function googleSearch({ type, city, st, target, center, log }) {
@@ -183,7 +196,8 @@ async function search({ type, city, st, target, requireWebsite }) {
 
   const log = [];
   let center = null;
-  try { center = await geocode(city, st); } catch { log.push("Couldn't look up the city's location; searching by name only."); }
+  try { center = await geocode(city, st); } catch {}
+  if (!center) log.push("Couldn't look up the city's location; Google searched by name only.");
   const [g, osm] = await Promise.all([googleSearch({ type, city, st, target, center, log }), osmSearch({ type, center, log })]);
 
   // merge + dedupe (by website domain, then by name)
