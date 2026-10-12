@@ -3,6 +3,7 @@
 //   Google Places API (New)  GOOGLE_PLACES_KEY  1,000 free/month (hard daily cap)  — reviews/ratings drive the size rating
 //   HERE Discover            HERE_API_KEY       5,000 free/month                    — up to 100 results per request
 //   TomTom POI Search        TOMTOM_API_KEY     2,500 free/month, no card           — up to 100 results per request
+//   Geoapify Places          GEOAPIFY_API_KEY   3,000 free/day, no card             — reliable OpenStreetMap data (websites/phones)
 //   OpenStreetMap (Overpass) no key             free, best effort
 // City lookup: Open-Meteo geocoding (free, no key), Nominatim fallback.
 // No dependencies: Node 18+ (built-in fetch).
@@ -17,18 +18,21 @@ const KEYS = {
   google: env("GOOGLE_PLACES_KEY", "GOOGLE_API_KEY", "GOOGLE_PLACES_API_KEY", "GOOGLE_KEY"),
   here: env("HERE_API_KEY", "HERE_KEY"),
   tomtom: env("TOMTOM_API_KEY", "TOMTOM_KEY"),
+  geoapify: env("GEOAPIFY_API_KEY", "GEOAPIFY_KEY"),
 };
 const ACCESS_CODE = env("ACCESS_CODE");
 const CAPS = { // max requests per day per source (kept under each free monthly allowance)
   google: parseInt(env("DAILY_GOOGLE_CAP") || "33", 10),
   here: parseInt(env("DAILY_HERE_CAP") || "160", 10),
   tomtom: parseInt(env("DAILY_TOMTOM_CAP") || "80", 10),
+  geoapify: parseInt(env("DAILY_GEOAPIFY_CAP") || "2500", 10),
 };
 const TZ = env("CAP_TIMEZONE") || "America/Chicago";
 const URLS = {
   google: env("GOOGLE_URL") || "https://places.googleapis.com/v1/places:searchText",
   here: env("HERE_URL") || "https://discover.search.hereapi.com/v1/discover",
   tomtom: env("TOMTOM_URL") || "https://api.tomtom.com/search/2/poiSearch",
+  geoapify: env("GEOAPIFY_URL") || "https://api.geoapify.com/v2/places",
   geo: env("GEO_URL") || "https://geocoding-api.open-meteo.com/v1/search",
   nominatim: env("NOMINATIM_URL") || "https://nominatim.openstreetmap.org/search",
   overpass: (env("OVERPASS_URL") || "https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter").split(",").map(s => s.trim()),
@@ -38,8 +42,8 @@ const PUBLIC = path.join(__dirname, "public");
 const RADIUS_M = 40000;
 
 // ---------- daily caps (in memory; reset at midnight in TZ — set the matching limit in each provider's console too) ----------
-const usage = { day: "", google: 0, here: 0, tomtom: 0 };
-function rollDay() { const d = new Date().toLocaleDateString("en-CA", { timeZone: TZ }); if (usage.day !== d) Object.assign(usage, { day: d, google: 0, here: 0, tomtom: 0 }); }
+const usage = { day: "", google: 0, here: 0, tomtom: 0, geoapify: 0 };
+function rollDay() { const d = new Date().toLocaleDateString("en-CA", { timeZone: TZ }); if (usage.day !== d) Object.assign(usage, { day: d, google: 0, here: 0, tomtom: 0, geoapify: 0 }); }
 function left(src) { rollDay(); return Math.max(0, CAPS[src] - usage[src]); }
 function spend(src) { rollDay(); usage[src]++; }
 
@@ -203,6 +207,42 @@ async function srcTomTom({ type, st, center }) {
   } catch (e) { return { ok: false, rows: [], requests: 1, note: explain("tomtom", e) }; }
 }
 
+const GEOAPIFY_CATS = {
+  security: "office.security", insur: "office.insurance", law: "office.lawyer", attorney: "office.lawyer", account: "office.accountant",
+  "real estate": "office.estate_agent", electric: "service.electrician", carpent: "service.carpenter", clean: "service.cleaning",
+  locksmith: "service.locksmith", architect: "office.architect", consult: "office.consulting", "it ": "office.it", tax: "office.tax_advisor",
+  dentist: "healthcare.dentist", dental: "healthcare.dentist", "auto repair": "service.vehicle.repair", mechanic: "service.vehicle.repair",
+};
+async function srcGeoapify({ type, st, center }) {
+  if (!KEYS.geoapify) return { ok: null, rows: [], requests: 0, note: "not set up" };
+  if (!center) return { ok: false, rows: [], requests: 0, note: "needs the city location" };
+  const t = type.toLowerCase() + " ";
+  const cats = new Set(); for (const k of Object.keys(GEOAPIFY_CATS)) if (t.includes(k)) cats.add(GEOAPIFY_CATS[k]);
+  const stem = (t.replace(/[^a-z ]/g, "").split(/\s+/).filter(w => w.length > 3)[0] || t.trim()).replace(/(ing|ers|er|s)$/, "");
+  const calls = [];
+  if (cats.size) calls.push({ categories: [...cats].join(",") });
+  if (stem.length >= 3) calls.push({ categories: "office,service,commercial,building", name: stem });
+  const filter = `circle:${center.lon},${center.lat},${RADIUS_M}`;
+  const seen = new Map(); let used = 0, err = null;
+  for (const c of calls) {
+    if (left("geoapify") <= 0) break;
+    spend("geoapify"); used++;
+    try {
+      const p = new URLSearchParams({ ...c, filter, bias: `proximity:${center.lon},${center.lat}`, limit: "200", lang: "en", apiKey: KEYS.geoapify });
+      const d = await fetchJSON(`${URLS.geoapify}?${p}`);
+      for (const f of (d && d.features) || []) { const pr = f.properties || {}; if (pr.name) seen.set(pr.place_id || pr.name, pr); }
+    } catch (e) { err = e; break; }
+  }
+  const rows = [...seen.values()].filter(pr => !pr.state_code || pr.state_code.toUpperCase() === st || (pr.state || "") === STATES[st]).map(pr => {
+    const raw = (pr.datasource && pr.datasource.raw) || {}; const ct = pr.contact || {};
+    return { name: pr.name, website: cleanUrl(pr.website || raw.website || raw["contact:website"] || raw.url), phone: fmtPhone(ct.phone || raw.phone || raw["contact:phone"]),
+      address: (pr.formatted || "").replace(/, United States of America$/, ""), rating: null, reviews: 0,
+      category: raw.craft || raw.office || raw.shop || (pr.categories || [])[0] || "", status: "OPERATIONAL", source: "Geoapify" };
+  });
+  if (err && !rows.length) return { ok: false, rows, requests: used, note: explain("geoapify", err) };
+  return { ok: true, rows, requests: used, note: `${rows.length} found` };
+}
+
 async function srcOSM({ type, center }) {
   if (!center) return { ok: false, rows: [], requests: 0, note: "needs the city location" };
   const tags = new Set(); const t = type.toLowerCase();
@@ -234,13 +274,15 @@ async function search({ type, city, st, target, requireWebsite }) {
 
   const center = await geocode(city, st);
   const args = { type, city, st, target, center };
-  const [g, h, tt, o] = await Promise.all([srcGoogle(args), srcHere(args), srcTomTom(args), srcOSM(args)]);
-  const sources = { Google: g, HERE: h, TomTom: tt, OpenStreetMap: o };
+  const [g, h, tt, ga] = await Promise.all([srcGoogle(args), srcHere(args), srcTomTom(args), srcGeoapify(args)]);
+  // raw OpenStreetMap only when Geoapify (which serves the same data, more reliably) isn't available
+  const o = ga.ok ? { ok: null, rows: [], requests: 0, note: "covered by Geoapify" } : await srcOSM(args);
+  const sources = { Google: g, HERE: h, TomTom: tt, Geoapify: ga, OpenStreetMap: o };
 
   // merge: Google first (it has reviews), then others fill gaps; dedupe by website domain, phone, then name
   const out = []; const idx = new Map(); let excluded = 0;
   const stTest = new RegExp(`,\\s*${st}\\b|\\b${STATES[st].replace(/ /g, "\\s")}\\b`, "i");
-  for (const r of [...g.rows, ...h.rows, ...tt.rows, ...o.rows]) {
+  for (const r of [...g.rows, ...h.rows, ...tt.rows, ...ga.rows, ...o.rows]) {
     if (!r.name || (r.status && r.status !== "OPERATIONAL")) { excluded++; continue; }
     if (r.address && /, [A-Z]{2} \d{5}|, [A-Z]{2}$/.test(r.address) && !stTest.test(r.address)) { excluded++; continue; }
     if (looksLeadGen(r.name, r.website, city)) { excluded++; continue; }
@@ -264,7 +306,7 @@ async function search({ type, city, st, target, requireWebsite }) {
   rows = rows.slice(0, target);
 
   const status = Object.fromEntries(Object.entries(sources).map(([k, v]) => [k, { ok: v.ok, note: v.note, requests: v.requests }]));
-  const result = { rows, sources: status, located: !!center, excluded, left: { google: left("google"), here: left("here"), tomtom: left("tomtom") }, generatedAt: new Date().toISOString() };
+  const result = { rows, sources: status, located: !!center, excluded, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, generatedAt: new Date().toISOString() };
   if (rows.length && Object.values(sources).some(s => s.ok)) cache.set(key, { at: Date.now(), result });
   return result;
 }
@@ -293,6 +335,11 @@ async function selftest() {
       if (!KEYS.tomtom) return { ok: null, note: "not set up (add TOMTOM_API_KEY — free, 2,500/month)" };
       try { await fetchJSON(`${URLS.tomtom}/roofing.json?${new URLSearchParams({ key: KEYS.tomtom, lat: "32.78", lon: "-96.8", limit: "1" })}`, {}, 12000); return { ok: true, note: `working · ${left("tomtom")} of ${CAPS.tomtom} left today` }; }
       catch (e) { return { ok: false, note: explain("tomtom", e) }; }
+    }),
+    run("Geoapify", async () => {
+      if (!KEYS.geoapify) return { ok: null, note: "not set up (add GEOAPIFY_API_KEY — free, 3,000/day, no card)" };
+      try { await fetchJSON(`${URLS.geoapify}?${new URLSearchParams({ categories: "office", filter: "circle:-96.8,32.78,5000", limit: "1", apiKey: KEYS.geoapify })}`, {}, 12000); return { ok: true, note: `working · ${left("geoapify")} of ${CAPS.geoapify} left today` }; }
+      catch (e) { return { ok: false, note: explain("geoapify", e) }; }
     }),
     run("OpenStreetMap", async () => {
       const r = await srcOSM({ type: "roofing", center: center || { lat: 32.78, lon: -96.8 } });
@@ -333,8 +380,8 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
     if (url.pathname === "/api/status") {
-      const configured = { Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, OpenStreetMap: true };
-      return send(res, 200, { ok: true, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom") }, caps: CAPS,
+      const configured = { Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
+      return send(res, 200, { ok: true, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, caps: CAPS,
         googleKeyLooksValid: /^AIza[0-9A-Za-z_-]{35}$/.test(KEYS.google), needsCode: !!ACCESS_CODE, codeOk: authed(req) });
     }
     if (url.pathname === "/api/selftest") {
@@ -359,5 +406,5 @@ const server = http.createServer(async (req, res) => {
     send(res, 405, "Method not allowed");
   } catch (e) { console.error(e); send(res, 500, { error: "Something went wrong on the server. Please try again." }); }
 });
-if (require.main === module) server.listen(PORT, () => console.log(`Company Finder on :${PORT} · Google ${KEYS.google ? "on" : "off"} · HERE ${KEYS.here ? "on" : "off"} · TomTom ${KEYS.tomtom ? "on" : "off"}`));
+if (require.main === module) server.listen(PORT, () => console.log(`Company Finder on :${PORT} · Google ${KEYS.google ? "on" : "off"} · HERE ${KEYS.here ? "on" : "off"} · TomTom ${KEYS.tomtom ? "on" : "off"} · Geoapify ${KEYS.geoapify ? "on" : "off"}`));
 module.exports = { server };
