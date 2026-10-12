@@ -5,6 +5,7 @@
 //   TomTom POI Search        TOMTOM_API_KEY     2,500 free/month, no card           — up to 100 results per request
 //   Foursquare Places        FOURSQUARE_API_KEY 200/month free credit, no card     — business websites, phones, addresses
 //   Geoapify Places          GEOAPIFY_API_KEY   3,000 free/day, no card             — reliable OpenStreetMap data (websites/phones)
+//   Overture Maps (local)    data/trades_<ST>.csv  free, open data (CDLA Permissive 2.0) — exported monthly by export_overture.py; city-level
 //   OpenStreetMap (Overpass) no key             free, best effort
 // City lookup: Open-Meteo geocoding (free, no key), Nominatim fallback.
 // No dependencies: Node 18+ (built-in fetch).
@@ -143,6 +144,52 @@ async function geocode(city, st) {
     if (Array.isArray(d) && d.length) return { lat: +d[0].lat, lon: +d[0].lon, via: "Nominatim" };
   } catch {}
   return null;
+}
+
+// ---------- local Overture data (built from data/trades_<ST>.csv) ----------
+const localCache = new Map();
+function parseCsv(text) {
+  const rows = []; let row = [], field = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; } else field += c; }
+    else if (c === '"') q = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  const head = rows.shift() || [];
+  return rows.map(r => Object.fromEntries(head.map((h, i) => [h, r[i] || ""])));
+}
+function loadLocal(st) {
+  if (localCache.has(st)) return localCache.get(st);
+  const file = path.join(__dirname, "data", `trades_${st}.csv`);
+  let rows = null;
+  try { rows = parseCsv(fs.readFileSync(file, "utf8")); } catch {}
+  localCache.set(st, rows);
+  return rows;
+}
+const TRADE_ALIASES = { plumb: ["plumb"], roof: ["roof"], electric: ["electric"], hvac: ["hvac", "heating", "air_condition"], heating: ["hvac", "heating"],
+  "air condition": ["hvac", "air_condition"], paint: ["paint"], carpent: ["carpent"], landscap: ["landscap", "lawn"], lawn: ["lawn", "landscap"],
+  pest: ["pest"], fence: ["fence"], pool: ["pool"], solar: ["solar"], clean: ["clean"], locksmith: ["locksmith", "key_and"], window: ["window", "glass"],
+  glass: ["glass", "window"], concrete: ["concrete", "masonry"], masonry: ["masonry", "concrete"], tree: ["tree"], gutter: ["gutter"], floor: ["floor"],
+  garage: ["garage_door"], irrigation: ["irrigation"], septic: ["septic"], insulation: ["insulation"], remodel: ["remodel"], contractor: ["contractor", "construction", "building"],
+  construction: ["construction", "building", "contractor"], handyman: ["handyman"], builder: ["building", "contractor"] };
+function srcLocal({ type, city, st }) {
+  const rows = loadLocal(st);
+  if (!rows) return { ok: null, rows: [], requests: 0, note: "not set up (no local business file for " + st + ")" };
+  const t = type.toLowerCase();
+  const terms = new Set();
+  for (const k of Object.keys(TRADE_ALIASES)) if (t.includes(k)) TRADE_ALIASES[k].forEach(x => terms.add(x));
+  const stem = (t.replace(/[^a-z ]/g, "").split(/\s+/).filter(w => w.length > 3)[0] || t).replace(/(ing|ers|er|s)$/, "");
+  if (stem.length >= 3) terms.add(stem);
+  if (!terms.size) return { ok: true, rows: [], requests: 0, note: "no matching trade category" };
+  const c = (city || "").toLowerCase();
+  const out = rows.filter(r => r.state === st && (r.city || "").toLowerCase() === c && [...terms].some(x => (r.category || "").toLowerCase().includes(x)))
+    .map(r => ({ name: r.name, website: cleanUrl(r.website), phone: fmtPhone(r.phone), address: r.address || "", rating: null, reviews: 0,
+      category: r.category || "", status: "OPERATIONAL", source: "Overture" }));
+  return { ok: true, rows: out, requests: 0, note: `${out.length} found in ${city} (city-level data)` };
 }
 
 // ---------- sources: each returns { rows, requests, note, ok } ----------
@@ -310,14 +357,15 @@ async function search({ type, city, st, target, requireWebsite }) {
   const center = await geocode(city, st);
   const args = { type, city, st, target, center };
   const [g, h, tt, ga, fs] = await Promise.all([srcGoogle(args), srcHere(args), srcTomTom(args), srcGeoapify(args), srcFoursquare(args)]);
+  const ov = srcLocal(args);
   // raw OpenStreetMap only when Geoapify (which serves the same data, more reliably) isn't available
   const o = ga.ok ? { ok: null, rows: [], requests: 0, note: "covered by Geoapify" } : await srcOSM(args);
-  const sources = { Google: g, HERE: h, TomTom: tt, Foursquare: fs, Geoapify: ga, OpenStreetMap: o };
+  const sources = { Overture: ov, Google: g, HERE: h, TomTom: tt, Foursquare: fs, Geoapify: ga, OpenStreetMap: o };
 
   // merge: Google first (it has reviews), then others fill gaps; dedupe by website domain, phone, then name
   const out = []; const idx = new Map(); let excluded = 0;
   const stTest = new RegExp(`,\\s*${st}\\b|\\b${STATES[st].replace(/ /g, "\\s")}\\b`, "i");
-  for (const r of [...g.rows, ...fs.rows, ...h.rows, ...tt.rows, ...ga.rows, ...o.rows]) {
+  for (const r of [...ov.rows, ...g.rows, ...fs.rows, ...h.rows, ...tt.rows, ...ga.rows, ...o.rows]) {
     if (!r.name || (r.status && r.status !== "OPERATIONAL")) { excluded++; continue; }
     if (r.address && /, [A-Z]{2} \d{5}|, [A-Z]{2}$/.test(r.address) && !stTest.test(r.address)) { excluded++; continue; }
     if (looksLeadGen(r.name, r.website, city)) { excluded++; continue; }
@@ -422,7 +470,7 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
     if (url.pathname === "/api/status") {
-      const configured = { Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Foursquare: !!KEYS.foursquare, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
+      const configured = { Overture: !!loadLocal("TX"), Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Foursquare: !!KEYS.foursquare, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
       return send(res, 200, { ok: true, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, caps: CAPS,
         googleKeyLooksValid: /^AIza[0-9A-Za-z_-]{35}$/.test(KEYS.google), needsCode: !!ACCESS_CODE, codeOk: authed(req) });
     }
