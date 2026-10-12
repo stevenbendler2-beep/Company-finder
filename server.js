@@ -14,7 +14,7 @@ const DAILY_GOOGLE_CAP = parseInt(process.env.DAILY_GOOGLE_CAP || "33", 10); // 
 const TZ = process.env.CAP_TIMEZONE || "America/Chicago";
 const GOOGLE_URL = process.env.GOOGLE_URL || "https://places.googleapis.com/v1/places:searchText";
 const NOMINATIM_URL = process.env.NOMINATIM_URL || "https://nominatim.openstreetmap.org/search";
-const OVERPASS_URL = process.env.OVERPASS_URL || "https://overpass-api.de/api/interpreter";
+const OVERPASS_URLS = (process.env.OVERPASS_URL || "https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter,https://overpass.private.coffee/api/interpreter").split(",");
 const UA = "CompanyFinder/1.0 (team prospecting tool)";
 const PUBLIC = path.join(__dirname, "public");
 
@@ -170,10 +170,14 @@ async function osmSearch({ type, center, log }) {
   for (const t of tags) parts.push(`nwr[${t}]${around};`);
   if (stem.length >= 3) parts.push(`nwr["name"~"${stem.replace(/"/g, "")}",i]["website"]${around};`, `nwr["name"~"${stem.replace(/"/g, "")}",i]["contact:website"]${around};`);
   const q = `[out:json][timeout:25];(${parts.join("")});out center tags 300;`;
-  let d;
-  try {
-    d = await fetchJSON(OVERPASS_URL, { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": UA }, body: "data=" + encodeURIComponent(q) }, 30000);
-  } catch (e) { log.push("OpenStreetMap: unavailable right now."); return []; }
+  let d = null;
+  for (const u of OVERPASS_URLS) {
+    try {
+      d = await fetchJSON(u.trim(), { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": UA }, body: "data=" + encodeURIComponent(q) }, 25000);
+      if (d && d.elements) break;
+    } catch (e) { console.error("overpass", u, e.message); d = null; }
+  }
+  if (!d) { log.push("OpenStreetMap: unavailable right now."); return []; }
   const rows = ((d && d.elements) || []).filter(e => e.tags && e.tags.name).map(e => {
     const t = e.tags;
     const addr = [t["addr:housenumber"], t["addr:street"]].filter(Boolean).join(" ");
@@ -263,7 +267,9 @@ let busy = 0;
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   if (url.pathname === "/api/status") {
-    return send(res, 200, { capLeft: capLeft(), dailyCap: DAILY_GOOGLE_CAP, googleConfigured: !!GOOGLE_KEY, needsCode: !!ACCESS_CODE, codeOk: authed(req) });
+    // Diagnostics: names only (never values) of settings that look like the Google key
+    const googleSettingNames = Object.keys(process.env).filter(k => /goog|places|api.?key/i.test(k));
+    return send(res, 200, { capLeft: capLeft(), dailyCap: DAILY_GOOGLE_CAP, googleConfigured: !!GOOGLE_KEY, googleKeyLooksValid: /^AIza[0-9A-Za-z_-]{35}$/.test(GOOGLE_KEY), googleSettingNames, accessCodeSet: !!ACCESS_CODE, needsCode: !!ACCESS_CODE, codeOk: authed(req) });
   }
   if (url.pathname === "/api/search" && req.method === "POST") {
     if (!authed(req)) return send(res, 401, { error: "Wrong or missing team access code." });
