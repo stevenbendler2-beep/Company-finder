@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Company Finder</title>
+<meta name="description" content="Find local companies by type and city, with websites, phones and a size rating.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800&display=swap">
+<style>
+:root{
+  --bg:#f5f7fb; --surface:#fff; --ink:#0f1b2d; --muted:#5b6b80; --line:#dfe5ee; --tint:#eef3fb;
+  --brand:#1f4e79; --brand-2:#2b6cb0; --accent:#f2a900;
+  --strong:#1e8a57; --strong-bg:#e3f5ec; --likely:#a86b00; --likely-bg:#fff3d6; --verify:#5b6b80; --verify-bg:#eef1f5;
+  --err:#c0392b; --radius:14px; --shadow:0 6px 24px rgba(15,27,45,.07);
+  --display:"Inter Tight",system-ui,sans-serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c1320; --surface:#131d2e; --ink:#e6edf7; --muted:#9aabc2; --line:#24324a; --tint:#17243a;
+  --brand:#6aa7e8; --brand-2:#7cb6f0; --strong:#5fd29b; --strong-bg:#163428; --likely:#f2c35a; --likely-bg:#3a2e12; --verify:#9aabc2; --verify-bg:#1c2738;
+  --shadow:0 6px 24px rgba(0,0,0,.3); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1320; --surface:#131d2e; --ink:#e6edf7; --muted:#9aabc2; --line:#24324a; --tint:#17243a;
+  --brand:#6aa7e8; --brand-2:#7cb6f0; --strong:#5fd29b; --strong-bg:#163428; --likely:#f2c35a; --likely-bg:#3a2e12; --verify:#9aabc2; --verify-bg:#1c2738;
+  --shadow:0 6px 24px rgba(0,0,0,.3); color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+a{color:var(--brand-2)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+header{background:var(--brand);color:#fff}
+:root[data-theme="dark"] header{background:#0f2a45}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header{background:#0f2a45}}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;font:800 1.15rem var(--display);letter-spacing:-.01em}
+.logo svg{width:30px;height:30px}
+.quota{font-size:.85rem;background:rgba(255,255,255,.14);padding:5px 11px;border-radius:999px;white-space:nowrap}
+.hero{padding:28px 0 8px}
+.hero h1{font:800 clamp(1.6rem,4vw,2.3rem)/1.1 var(--display);margin:0;letter-spacing:-.02em}
+.hero p{margin:8px 0 0;color:var(--muted);max-width:62ch}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+form.search{margin:18px 0;padding:18px;display:grid;grid-template-columns:2fr 1.6fr 1.1fr .9fr auto;gap:12px;align-items:end}
+@media (max-width:900px){form.search{grid-template-columns:1fr 1fr}form.search .go{grid-column:1/-1}}
+@media (max-width:520px){form.search{grid-template-columns:1fr}}
+.field{display:grid;gap:5px;min-width:0}
+.field label{font-weight:600;font-size:.82rem;color:var(--muted)}
+input,select{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;width:100%;min-width:0}
+input:focus,select:focus{outline:none;border-color:var(--brand-2);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand-2) 20%,transparent)}
+.btn{font:600 .95rem var(--body);border:0;border-radius:10px;padding:12px 18px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}
+.btn-primary{background:var(--accent);color:#2a1d00}
+.btn-primary:hover{filter:brightness(1.05)}
+.btn-ghost{background:var(--surface);color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--brand-2)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.opts{display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:.88rem;color:var(--muted);margin:-6px 0 14px}
+.opts label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.opts input{width:auto}
+.codebar{display:flex;flex-wrap:wrap;gap:10px;align-items:end;padding:14px 18px;margin-top:18px}
+.codebar .field{flex:1 1 220px}
+.msg{padding:12px 16px;border-radius:10px;margin:12px 0;font-weight:500}
+.msg.err{background:color-mix(in srgb,var(--err) 12%,transparent);color:var(--err)}
+.msg.info{background:var(--tint);color:var(--ink)}
+.spin{width:16px;height:16px;border:2.5px solid rgba(0,0,0,.2);border-top-color:#2a1d00;border-radius:50%;animation:r .8s linear infinite}
+@keyframes r{to{transform:rotate(360deg)}}
+.loading{display:flex;gap:12px;align-items:center;padding:22px;color:var(--muted)}
+.loading .spin{border-color:var(--line);border-top-color:var(--brand-2)}
+.summary{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}
+.summary h2{font:700 1.05rem var(--display);margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;font-size:.82rem}
+.chip{padding:3px 10px;border-radius:999px;font-weight:600}
+.t-Strong{background:var(--strong-bg);color:var(--strong)}
+.t-Likely{background:var(--likely-bg);color:var(--likely)}
+.t-Verify{background:var(--verify-bg);color:var(--verify)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:var(--tint);position:sticky;top:0;cursor:pointer;user-select:none;white-space:nowrap}
+th[aria-sort="ascending"]::after{content:" ▲"} th[aria-sort="descending"]::after{content:" ▼"}
+td.name{font-weight:600;min-width:180px}
+td.site a{word-break:break-all}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td .src{display:block;font-weight:400;font-size:.75rem;color:var(--muted)}
+tbody tr:hover{background:color-mix(in srgb,var(--tint) 60%,transparent)}
+.notes{padding:14px 18px;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line)}
+.notes ul{margin:6px 0 0;padding-left:18px}
+.empty{padding:40px 18px;text-align:center;color:var(--muted)}
+footer{color:var(--muted);font-size:.8rem;padding:26px 0 40px}
+@media (max-width:640px){
+  table thead{display:none}
+  table,tbody,tr,td{display:block;width:100%}
+  tr{padding:10px 14px;border-bottom:1px solid var(--line)}
+  td{border:0;padding:3px 0}
+  td.num{text-align:left}
+  td[data-l]::before{content:attr(data-l) ": ";color:var(--muted);font-size:.8rem}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#f2a900"/><circle cx="14" cy="14" r="7" fill="none" stroke="#1f4e79" stroke-width="3"/><path d="M19.5 19.5L25 25" stroke="#1f4e79" stroke-width="3.4" stroke-linecap="round"/></svg>Company Finder</div>
+    <span class="quota" id="quota">Checking…</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Find local companies in seconds</h1>
+    <p>Type a business type and a city. You'll get up to 100 companies with websites, phone numbers and a size rating, ready to download.</p>
+  </section>
+
+  <div class="card codebar" id="codebar" hidden>
+    <div class="field">
+      <label for="code">Team access code</label>
+      <input id="code" type="password" autocomplete="off" placeholder="Ask Stephen for the code">
+    </div>
+    <button class="btn btn-ghost" id="saveCode" type="button">Save code</button>
+  </div>
+
+  <form class="card search" id="form">
+    <div class="field"><label for="type">Business type</label><input id="type" placeholder="Roofing, HVAC, plumbing…" required></div>
+    <div class="field"><label for="city">City</label><input id="city" placeholder="San Diego" required autocomplete="address-level2"></div>
+    <div class="field"><label for="state">State</label><select id="state" required></select></div>
+    <div class="field"><label for="count">How many</label><select id="count"><option>50</option><option selected>100</option><option>25</option></select></div>
+    <button class="btn btn-primary go" id="go" type="submit">Find companies</button>
+  </form>
+  <div class="opts">
+    <label><input type="checkbox" id="needSite" checked> Only companies with a website</label>
+    <span>Searches repeated within 7 days are instant and free.</span>
+  </div>
+
+  <div id="msg"></div>
+  <section class="card" id="results" hidden></section>
+
+  <footer>
+    Sources: Google business listings and OpenStreetMap. <strong>Size rating</strong> is an estimate from public review volume, not reported revenue.
+    Strong = 100+ Google reviews (most likely $1M+), Likely = 30–99, Verify = under 30 or no review data.
+  </footer>
+</main>
+
+<script>
+(function(){
+const STATES={AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",DC:"District of Columbia",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
+const $=id=>document.getElementById(id);
+const st=$("state");
+st.innerHTML='<option value="">Choose…</option>'+Object.entries(STATES).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+
+const store={get(k){try{return localStorage.getItem(k)}catch{return null}},set(k,v){try{localStorage.setItem(k,v)}catch{}}};
+const code=()=>($("code").value||store.get("cf_code")||"").trim();
+$("code").value=store.get("cf_code")||"";
+["type","city"].forEach(id=>{const v=store.get("cf_"+id);if(v)$(id).value=v});
+if(store.get("cf_state"))st.value=store.get("cf_state");
+
+let rows=[],sortKey="reviews",sortDir=-1,meta=null;
+
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function showMsg(text,kind="err"){$("msg").innerHTML=text?`<div class="msg ${kind}">${text}</div>`:""}
+
+async function status(){
+  try{
+    const r=await fetch("/api/status",{headers:{"x-access-code":code()}});const s=await r.json();
+    $("quota").textContent=s.googleConfigured?`${s.capLeft} of ${s.dailyCap} Google lookups left today`:"Google not connected yet";
+    $("codebar").hidden=!(s.needsCode&&!s.codeOk);
+  }catch{$("quota").textContent="Offline"}
+}
+$("saveCode").onclick=()=>{store.set("cf_code",$("code").value.trim());status();showMsg("")};
+
+$("form").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const body={type:$("type").value.trim(),city:$("city").value.trim(),state:st.value,count:+$("count").value,requireWebsite:$("needSite").checked};
+  if(!body.type||!body.city||!body.state){showMsg("Enter a business type, a city and a state.");return}
+  store.set("cf_type",body.type);store.set("cf_city",body.city);store.set("cf_state",body.state);
+  const go=$("go");go.disabled=true;go.innerHTML='<span class="spin"></span> Searching…';
+  showMsg("");const res=$("results");res.hidden=false;
+  res.innerHTML='<div class="loading"><span class="spin"></span>Pulling listings from Google and OpenStreetMap. This usually takes 10–30 seconds…</div>';
+  try{
+    const r=await fetch("/api/search",{method:"POST",headers:{"Content-Type":"application/json","x-access-code":code()},body:JSON.stringify(body)});
+    const d=await r.json().catch(()=>({error:"The server didn't answer properly. Try again."}));
+    if(!r.ok){res.hidden=true;showMsg(esc(d.error||"Search failed."));if(r.status===401)$("codebar").hidden=false;return}
+    rows=d.rows||[];meta={...d,query:body};sortKey="reviews";sortDir=-1;render();
+  }catch{res.hidden=true;showMsg("Couldn't reach the server. If the site was asleep it can take up to a minute to wake up. Try again.")}
+  finally{go.disabled=false;go.textContent="Find companies";status()}
+});
+
+function sorted(){
+  return [...rows].sort((a,b)=>{let x=a[sortKey],y=b[sortKey];
+    if(typeof x==="number"||typeof y==="number"){x=x||0;y=y||0;return (x-y)*sortDir}
+    return String(x||"").localeCompare(String(y||""))*sortDir});
+}
+function render(){
+  const q=meta.query,res=$("results");
+  const n={Strong:0,Likely:0,Verify:0};rows.forEach(r=>n[r.tier]++);
+  if(!rows.length){res.innerHTML=`<div class="empty">No companies found for “${esc(q.type)}” in ${esc(q.city)}, ${q.state}. Try a broader type (e.g. “roofing” instead of “tile roof repair”) or a nearby larger city.</div>`+notes();return}
+  const cols=[["name","Company"],["website","Website"],["phone","Phone"],["address","Address"],["reviews","Reviews"],["rating","Rating"],["tier","Size rating"]];
+  res.innerHTML=`<div class="summary"><div><h2>${rows.length} ${esc(q.type)} companies · ${esc(q.city)}, ${q.state}</h2>
+    <div class="chips" style="margin-top:6px"><span class="chip t-Strong">${n.Strong} Strong</span><span class="chip t-Likely">${n.Likely} Likely</span><span class="chip t-Verify">${n.Verify} Verify</span>${meta.cached?'<span class="chip t-Verify">Saved result · no lookups used</span>':""}</div></div>
+    <div class="actions"><button class="btn btn-ghost" id="dlx" type="button">Download Excel</button><button class="btn btn-ghost" id="dlc" type="button">Download CSV</button></div></div>
+    <div class="tablewrap"><table><thead><tr><th style="cursor:default">#</th>${cols.map(([k,l])=>`<th data-k="${k}" ${k===sortKey?`aria-sort="${sortDir>0?"ascending":"descending"}"`:""}>${l}</th>`).join("")}</tr></thead><tbody>
+    ${sorted().map((r,i)=>`<tr><td class="num">${i+1}</td><td class="name">${esc(r.name)}<span class="src">${esc(r.category||"")}${r.category?" · ":""}${esc(r.source)}</span></td>
+      <td class="site" data-l="Website">${r.website?`<a href="${esc(r.website)}" target="_blank" rel="noopener">${esc(r.website.replace(/^https?:\/\/(www\.)?/,""))}</a>`:"—"}</td>
+      <td data-l="Phone">${r.phone?`<a href="tel:${esc(r.phone.replace(/[^\d+]/g,""))}">${esc(r.phone)}</a>`:"—"}</td>
+      <td data-l="Address">${esc(r.address||"—")}</td><td class="num" data-l="Reviews">${r.reviews||"—"}</td><td class="num" data-l="Rating">${r.rating?r.rating.toFixed(1):"—"}</td>
+      <td><span class="chip t-${r.tier}">${r.tier}</span></td></tr>`).join("")}</tbody></table></div>`+notes();
+  res.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;sortDir=(sortKey===k)?-sortDir:(k==="reviews"||k==="rating"?-1:1);sortKey=k;render()});
+  $("dlc").onclick=()=>download("csv");$("dlx").onclick=()=>download("xlsx");
+}
+function notes(){
+  return `<div class="notes"><strong>About this search</strong><ul>${(meta.log||[]).map(l=>`<li>${esc(l)}</li>`).join("")}
+  <li>${meta.excluded||0} listings left out (closed, outside ${meta.query.state}, no website, or lead-generation pages posing as local companies).</li>
+  <li>Size rating is an estimate from Google review volume, not reported revenue. Check “Verify” companies before outreach.</li></ul></div>`;
+}
+function tableData(){
+  return sorted().map((r,i)=>({"#":i+1,Company:r.name,Website:r.website,Phone:r.phone,Address:r.address,"Google reviews":r.reviews||"",Rating:r.rating||"","Size rating":r.tier,Category:r.category,Source:r.source}));
+}
+function fname(ext){const q=meta.query;return `${q.type}-${q.city}-${q.state}`.toLowerCase().replace(/[^a-z0-9]+/g,"-")+"."+ext}
+function save(blob,name){const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+function download(kind){
+  const data=tableData();
+  if(kind==="csv"||!window.XLSX){
+    const h=Object.keys(data[0]);const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
+    const csv=[h.map(q).join(","),...data.map(r=>h.map(k=>q(r[k])).join(","))].join("\r\n");
+    save(new Blob(["﻿"+csv],{type:"text/csv"}),fname("csv"));return;
+  }
+  const ws=XLSX.utils.json_to_sheet(data);
+  ws["!cols"]=[{wch:4},{wch:36},{wch:38},{wch:16},{wch:44},{wch:10},{wch:7},{wch:11},{wch:20},{wch:22}];
+  data.forEach((r,i)=>{if(r.Website){const c=ws[XLSX.utils.encode_cell({r:i+1,c:2})];if(c)c.l={Target:r.Website}}});
+  const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,"Companies");
+  const q=meta.query;
+  const nt=XLSX.utils.aoa_to_sheet([["Search",`${q.type} · ${q.city}, ${q.state}`],["Pulled",new Date(meta.generatedAt).toLocaleString()],["Sources","Google business listings, OpenStreetMap"],["Size rating","Estimate from Google review volume, not reported revenue. Strong = 100+ reviews, Likely = 30-99, Verify = under 30 / no data."],...(meta.log||[]).map(l=>["Note",l])]);
+  nt["!cols"]=[{wch:12},{wch:110}];XLSX.utils.book_append_sheet(wb,nt,"Notes");
+  XLSX.writeFile(wb,fname("xlsx"));
+}
+status();
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: company-finder
+    runtime: node
+    plan: free
+    buildCommand: "echo no build"
+    startCommand: "node server.js"
+    envVars:
+      - key: GOOGLE_PLACES_KEY
+        sync: false
+      - key: ACCESS_CODE
+        sync: false
+      - key: DAILY_GOOGLE_CAP
+        value: "33"
