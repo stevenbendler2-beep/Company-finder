@@ -286,7 +286,7 @@ async function srcGeoapify({ type, st, center }) {
     if (left("geoapify") <= 0) break;
     spend("geoapify"); used++;
     try {
-      const p = new URLSearchParams({ ...c, filter, bias: `proximity:${center.lon},${center.lat}`, limit: "200", lang: "en", apiKey: KEYS.geoapify });
+      const p = new URLSearchParams({ ...c, filter, bias: `proximity:${center.lon},${center.lat}`, limit: "50", lang: "en", apiKey: KEYS.geoapify });
       const d = await fetchJSON(`${URLS.geoapify}?${p}`);
       for (const f of (d && d.features) || []) { const pr = f.properties || {}; if (pr.name) seen.set(pr.place_id || pr.name, pr); }
     } catch (e) { err = e; break; }
