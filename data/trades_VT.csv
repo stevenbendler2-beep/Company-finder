@@ -1,0 +1,732 @@
+name,phone,website,address,city,state,category,confidence,overture_id,site_status,site_final_url
+Tucker Machine Company Inc,+18024799841,http://www.tuckermachine.com,267 S Main St,Barre,VT,outdoor_store,0.92,b1e91782-6bd3-48b1-9dd3-9062eef0ce3f,OK,http://www.tuckermachine.com
+One Hour Martinizing,18024428085,martinizing.com,256 Benmont Ave,Bennington,VT,dry_cleaning,0.95,3635113d-815d-4964-872a-2ecbaaf242e3,OK,https://martinizing.com
+"Aspen Contracting, Inc.",8777847663,http://www.roofsbyaspen.com/,100 N Main St Ste 2,Barre,VT,roofing,0.984,35986eab-90ad-478d-a8f4-ca8b39b2495a,OK,https://www.roofsbyaspen.com/
+Cota & Cota,+18024630000,http://www.cotaoil.com,4 Green St,Bellows Falls,VT,hvac_service,0.92,3d1d05f2-2bb0-452d-879a-451af6d53091,OK,http://www.cotaoil.com
+Pike Industries,(802) 440-9638,http://pikeindustries.com,1276 Burgess Rd,Bennington,VT,electrician,0.92,80c814fe-7ea0-46b1-b16e-7b5b71623a10,OK,https://pikeindustries.com/
+Doolan Fence,+18024363220,http://doolanfence.com/,2742 US-5,Barnet,VT,fence_and_gate_sales_service,0.92,714edf13-77f4-47cc-ad4e-a8accb227ccf,OK,https://doolanfence.com/
+Norway & Sons,+18024792030,http://www.norway-sons.com/,393 N Main St,Barre,VT,electrician,0.92,c4e8413e-5d69-4dee-923f-d8a697eddadf,OK,https://www.norway-sons.com/
+Neil H Daniels Inc,8026746323,https://www.neilhdaniels.com/,4409 US Highway 5,Ascutney,VT,construction_management,0.966,025cfd26-6783-43c4-8611-495921106519,OK,https://www.neilhdaniels.com/
+"Hayden Plumbing & Heating, Inc.",18024422130,http://www.haydenph.biz,268 Benmont Ave,Bennington,VT,plumbing,0.92,b5bbde83-4908-4028-8e5d-dd49056fd35f,OK,https://www.haydenph.biz/
+Beaudoin Paving LLC,8024426589,http://beaudoinpaving.com/,68 Beaudoin Ln,Bennington,VT,paving_contractor,0.92,58d70df2-a576-4f37-99af-c30c58f8665b,OK,http://beaudoinpaving.com/
+D4s / Dwyers 4 Seasons Lawn & Snow Services,8023790126,https://www.dwyers4seasons.com/,114 Hicks Ave,Bennington,VT,landscape_architect,0.862,e4914039-d433-4352-b0e7-8a50b5d0f729,OK,https://www.dwyers4seasons.com/
+Dave Koss Home Improvements,+18027776220,http://www.davekossvt.com/,3694 VT Route 109,Belvidere Center,VT,contractor,0.92,49a66099-7716-40ad-9d0f-395b13e4a032,OK,https://www.davekossvt.com/
+First In Fitness,+18022236161,https://www.firstinfitness.com,652 Granger Rd,Barre,VT,swimming_pool,0.92,4f615ec5-0f42-4def-ad10-9d560d43eee0,OK,https://www.firstinfitness.com
+L & D Safety Marking Corporation,+18022236154,https://ldsafetymarking.com/,304 E Montpelier Rd,Barre,VT,contractor,0.92,ab208d10-cbf3-4b80-87eb-3caa7f728d1e,OK,https://ldsafetymarking.com/
+Arlington Roofing,+18027340804,http://www.arlingtonroofingvt.com,1555 E Arlington Rd,Arlington,VT,roofing,0.92,f5b651ee-58ea-4b89-80b8-b62d5c922558,OK,http://www.arlingtonroofingvt.com
+CED Twin State Electric Supply,8022232488,https://ced-twinstatebarre.portalced.com/,413 Industrial Lane,Barre,VT,electrical_supply_store,0.966,863ef210-4efd-4143-9f6d-7fa06fe017b4,OK,https://cedbarre.portalced.com/
+Barrows Roofing & Set Specialists,8022545503,http://www.barrowsroofing.com/,12 Williams St,BRATTLEBORO,VT,roofing,0.92,bb936a1a-6481-4cab-b362-08dba5e6e7c2,OK,http://www.barrowsroofing.com/
+J.P. Sicard,+18025259506,http://www.jpsicard.com/,234 Glover Rd,Barton,VT,contractor,0.92,71a0198e-d06f-4b82-9668-6b5d0c329925,OK,https://www.jpsicard.com/
+More Wildlife,+18022491585,http://www.morewildlife.net/contact.html,18 Cedar St,Barre,VT,outdoor_store,0.92,fa8e0fcd-fe37-4fa1-89cf-885f58baf92d,OK,https://www.morewildlife.net/contact
+KeyMe Locksmiths,+18023577498,https://www.key.me/kiosks/vermont/bennington/bennington/locksmith-key-copy-bennington-walmart-05201-vermont,210 Northside Dr,Bennington,VT,key_and_locksmith,0.92,84a7fa67-1a21-4161-8228-b80279ff7e30,OK,https://key.me:443/kiosks/vermont/bennington/bennington/locksmith-key-copy-bennington-walmart-05201-vermont
+Radiant Floor Company,+18025251132,http://www.radiantcompany.com/prices/getting-started-quote/,714 Breezy Hill Rd,Barton,VT,hvac_service,0.92,c2be0e0f-b4eb-41ae-88e6-e7c241b2a0f9,OK,https://www.radiantcompany.com/prices/getting-started-quote/
+Mjs Landscape,18024634212,https://mjslawnscape.com,6 Lovell Dr,Bellows Falls,VT,landscape_architect,0.999,f6ae4a2f-c624-42d4-b7de-8d7e89a1d3e1,OK,https://www.mjslawnscape.com/
+Bevins' Door LLC,8024791335,http://www.bevinsdoor.com/?utm_source=GoogleMyBusiness&utm_medium=GoogleMyBusiness&utm_campaign=LIMMO,35 Bugbee Ave,Barre,VT,garage_door_service,0.92,798dd215-c809-4e63-9c5e-b9111d8f5339,OK,https://www.bevinsdoor.com/?utm_source=GoogleMyBusiness&utm_medium=GoogleMyBusiness&utm_campaign=LIMMO
+Greater Heights Tree And Land Management Inc.,18028235673,https://greaterheightstree.com,1246 Burgess Rd,Bennington,VT,tree_service,0.92,a223a766-1eab-4c3a-87f9-c3f88075e6d9,OK,https://www.greaterheightstree.com/
+Patriot Sheds of New England,+18024594499,https://patriotshedsofnewengland.com/,33 Harwood Hill Rd,Bennington,VT,building_or_construction_service,0.92,4b087e22-b5d5-4e45-b13c-5aecd6464bbd,OK,https://patriotshedsofnewengland.com/
+Palmer Construction,+18027963395,http://www.palmerconstructioninc.com/,7360 US-2,Alburgh,VT,building_or_construction_service,0.92,718c5d5b-f1c5-4df5-b0c4-bbffa2259641,OK,https://www.palmerconstructioninc.com/
+BETITS ELECTRICAL SERVICE LLC,8024422227,http://generatorsvt.com/,271 Cardinal Ln,Bennington,VT,electrician,0.966,e47e72f7-171b-4050-9a7f-f88ededb639e,OK,https://generatorsvt.com:443/
+B and T Builders,+18024177572,https://btbuildersvt.wixsite.com/mysite,934 Union St,Brandon,VT,contractor,0.92,bcc95ad0-ec02-4c48-92f0-75e9cde045bc,OK,https://btbuildersvt.wixsite.com/mysite
+"K. Bellavance Landworks & Hauling, LLC",8022798488,http://www.bellavancelandworks.com/,69 Pitman Rd,Barre,VT,landscaping,0.92,60396e6b-30ef-4033-a0fc-eb65d8cd150c,OK,https://bellavancelandworks.com/
+Cota & Cota,8022540000,http://www.cotaoil.com/,584 Putney Rd,Brattleboro,VT,hvac_service,0.92,f299c331-e9e6-4486-a3e7-f0a064338ceb,OK,http://www.cotaoil.com/
+Vermont Roofing Co Inc,18024422899,https://vermontroofing.com,1325 Harwood Hill Rd,Bennington,VT,roofing,0.95,910770c0-876b-4397-866a-e19c3368b977,OK,https://vermontroofing.com
+Portland Glass of Barre,+18024329162,http://www.portlandglass.com/barre,1041 US-302,Berlin,VT,auto_glass_service,0.998,a30420d4-402d-4104-ac1f-75c4ebbdeef3,OK,https://www.portlandglass.com/barre/
+Crosby Sales & Service,18022473303,http://www.crosbylawnmowerservice.com,8 Center St,Brandon,VT,lawn_mower_repair_service,0.95,0353223e-0197-466f-82ef-717824835282,OK,https://www.crosbylawnmowerservice.com/
+"Merrill Mechanical, Inc.",+18022340254,http://www.merrillmechanical.com/,477 Dunham Rd,Bethel,VT,plumbing,0.92,d9e981aa-fea4-4793-b534-eb1194fea2c2,OK,https://www.merrillmechanical.com/
+Uncle Bob's Septic Service,8022322222,https://www.unclebobseptic.com/,63 Shields Dr,Bennington,VT,septic_service,0.92,813fe67d-9844-4c68-8a2f-0560d0437ddd,OK,https://www.unclebobseptic.com/
+Builder Specialties Inc,+18022235583,http://www.builderspecialties.com/,1213 US Route 302-Berlin,Berlin,VT,contractor,0.92,7793bf8c-3747-4b89-bc08-52bf9cb5c882,OK,https://builderspecialties.com/
+Adam's Lock & Security,18024425026,http://adamslockvt.com,443 Main St,Bennington,VT,key_and_locksmith,0.92,c405bc74-dea2-4c58-aab5-4353cb55a795,OK,https://adamslockvt.com/
+Carroll Concrete Co,+18022290191,http://www.carrollconcrete.com,379 Granger Rd,Berlin,VT,contractor,0.92,00be0206-d681-4a02-be00-93280760a74f,OK,https://www.carrollconcrete.com/
+Walmart House Cleaning Services,18336000406,https://www.walmart.com,282 Berlin Mall Rd,Berlin,VT,cleaning_service,0.95,a2e8a373-aff4-4a2a-9f53-38e683f78aa2,OK,https://www.walmart.com
+Nantucket Post Cap,8887587678,https://www.nantucketpostcap.com/,172 Peavine Blvd,Bethel,VT,carpenter,0.966,792fd209-bb63-455b-8a78-5a4581867894,OK,https://nantucketpostcap.com/
+JilMac,+18022548628,http://JilMac.com/,310 Putney Rd #6023,Brattleboro,VT,glass_manufacturer,0.92,bd582d90-e577-46a2-9e4c-11d931692c44,OK,http://JilMac.com/
+Windvisuals,+18022330853,http://www.windvisuals.com/,125 Jenny Ln,Alburgh,VT,building_or_construction_service,0.92,8592749c-2d50-4ffb-abf6-d36194a144d9,OK,https://windvisuals.com/
+Mirabito Energy Products,+18024425333,https://www.mirabito.com/home-comfort-hvac/,1036 Main St,Bennington,VT,hvac_service,0.92,94fb7616-f6cf-423a-8bf3-4a5053330574,OK,https://www.mirabito.com/
+Lawrence & Lober Electric,18024603479,https://llelectricservices.com,15 Barker St  # 1550,Bellows Falls,VT,electrician,0.92,b32cdb7a-0de4-4d20-99c4-1054b4f360cc,OK,https://www.llelectricservices.com/
+Portland Glass of Brattleboro,8024329161,https://www.portlandglass.com/brattleboro/,100 Canal St,Brattleboro,VT,auto_glass_service,0.92,059b3bd4-06e6-4032-b40b-d9cb8f5dbd6f,OK,https://www.portlandglass.com/brattleboro/
+Arc Mechanical Contractors Inc.,18022229255,http://www.arcmech.com,229 Depot St,Bradford,VT,hvac_service,0.92,ef99a56b-4724-459f-a979-c3203dd09041,OK,https://www.arcmech.com/
+F.W. Webb Company,+18022574316,http://www.fwwebb.com/,231 John Seitz Dr,Brattleboro,VT,plumbing,0.92,b4355cdb-19bb-414f-880c-945a34257f61,OK,https://www.fwwebb.com:443/
+Falvey Pools & Spas,8022546971,https://www.falveypools.com,234 Elliot St,Brattleboro,VT,hot_tub_and_pool_store,0.92,0b536268-57ff-4b37-8778-f76df8e43424,OK,https://www.falveypools.com
+Vermont Timber Frames,+18024453007,http://www.vermonttimberframes.com/,458 Morse Rd,Bennington,VT,building_or_construction_service,0.979,208726d7-6528-4761-938f-8c3c0fe94f67,OK,https://vermonttimberframes.com/
+Quality Plumbing and Heating,+18024425333,http://www.QualityKelly.com/,1036 Main St,Bennington,VT,plumbing,0.92,a050ba20-89a9-4b66-8400-34bc341da536,OK,https://www.mirabito.com/
+The Stone Trust,+18029528600,http://www.thestonetrust.org/,130 Austine Dr,Brattleboro,VT,masonry_concrete,0.931,aa873ccf-b081-4145-9c0f-387ba18b0ac8,OK,http://www.thestonetrust.org/
+Lowell Landscape & Fence,8023459402,http://lowelllandscapeandfence.com/,3611 Birch Hill Rd,Brandon,VT,landscaping,0.92,08b00ac1-0f1c-432c-8c4e-a1e7576de9f7,OK,https://www.lowelllandscapeandfence.com/
+802 Basement Waterproofing,8029227183,http://www.802waterproofing.com/,54 Birchwood Dr,Berlin,VT,waterproofing,0.92,00e62f2d-041d-4cc3-95eb-bfc352693282,OK,https://www.802waterproofing.com/
+Day Breaks Glass Studio,+18023923541,http://daybreaksglassvt.com/,285 Main St,Bethel,VT,glass_and_mirror_sales_service,0.97,f28dc91a-12f5-46a8-b3e7-08515e5abf0d,OK,https://www.daybreaksglassvt.com/
+All About Trees,8025793084,http://www.all-about-trees.com/,55 Scott Rd,Brattleboro,VT,christmas_tree_store,0.92,12ef9f9a-36d7-4e79-ab63-4132eb2fe818,OK,https://www.all-about-trees.com/
+Bontrager Custom Builders,+18026722132,http://bontragercustombuilders.com/,1134 Bridgewater Center Rd,Bridgewater Corners,VT,contractor,0.92,d2efad24-4b3c-4c62-bcdc-c786925426c5,OK,http://bontragercustombuilders.com/
+Bennington Cooling & Heating,18024423519,https://benncool.com,303 Depot St,Bennington,VT,hvac_service,0.92,ad8b75a2-b745-4c88-98b3-357789dff17d,OK,https://benncool.com
+Champlain Valley Plumbing And Heating,18024532325,https://cvph.net,125 Monkton Rd,Bristol,VT,plumbing,0.92,7f2cd0eb-ff3e-4ddd-995c-5a1b42f58ab5,OK,https://cvph.net
+Gateway Painting Company,8029898849,https://paintingvt.com/,143 North St,Bristol,VT,painting,0.92,6b2a0bfa-3671-4583-a78a-ac046ace623b,OK,https://paintingvt.com/
+Randi Solin Glass,18022510989,https://www.randisolinglass.com,485 W River Rd,Brattleboro,VT,glass_blowing_venue,0.992,b114eec8-7c45-41f5-873e-e363db2cebb4,OK,https://www.randisolinglass.com
+Gualpa Roofing,+15088447307,http://Www.gualparoofing.com/,1038 W River Rd,Brattleboro,VT,roofing,0.92,24b78508-7370-4d1f-9406-c91428814d5c,OK,https://gualparoofing.com/
+Pest Patrol,8026898128,https://pestpatrolvermont.com/,5 Autumn Hill Dr,Brattleboro,VT,pest_control_service,0.92,95ec321c-fcb2-40cc-8f81-8005e7f24440,OK,https://pestpatrolvermont.com/
+Window Quilt,+18022464500,http://www.windowquilt.com/,22 Browne Ct,Brattleboro,VT,windows_installation,0.92,a17583a4-205a-4bde-af44-a3a187d385a4,OK,http://www.windowquilt.com/
+GoliathTech Of Vermont,+18029228959,http://www.goliathtechvt.com/,88b North St,Bristol,VT,contractor,0.92,103d011e-c5d2-472c-9143-973d96e5581e,OK,http://www.goliathtechvt.com/
+Allearth Renewables,18028729600,https://www.allearthrenewables.com,118 Firehouse Dr,Bristol,VT,contractor,0.92,3defd635-1b31-4706-bba6-7f0b230969aa,OK,https://www.allearthrenewables.com
+Acorn Painting,8552603040,http://www.acornpainting.com/,27 Main St,Bristol,VT,painting,0.92,7e456d96-24ff-42c0-8fab-f3f08854dd5f,OK,https://www.acornpainting.com/
+Vermont Pressure Washing,8025584336,http://www.vtpressurewashing.com/,47 Carver St,Brandon,VT,pressure_washing,0.85,16e69673-1d2b-42f8-b2e5-33a83a344d8a,OK,https://vtpressurewashing.com/
+Mastaler Cleaning,18022545544,https://mastalercleaning.com,464 Putney Rd,Brattleboro,VT,cleaning_service,0.92,59458428-a73d-493d-a463-180272ecb64d,OK,https://www.mastalercleaning.com/
+Sprayguard LLC,8028753233,http://www.sprayguardwaterproofing.com/,319 Gates Ln,Andover,VT,waterproofing,0.92,ca8ef215-c950-4732-a8e8-cc9bbf520394,OK,https://www.sprayguardwaterproofing.com/
+Mathes Hulme Builders LLC,+18023806772,http://www.matheshulmebuilders.com/#!contact/c3kh,446 Marlboro Rd,Brattleboro,VT,contractor,0.92,dbc20af1-45f2-40b9-941a-3075fde6e682,OK,https://www.matheshulmebuilders.com/
+Dompier Electric Inc,18022544581,https://brattleborochamber.org,230 Elliot St,Brattleboro,VT,electrician,0.95,25aa6fb2-4fc5-40e5-803a-0d71b2c98eec,OK,https://www.brattleborochamber.org/
+A L Tyler & Sons Inc,18022549309,https://altyler.com,175 Canal St,Brattleboro,VT,electrician,0.95,7b3680fb-2fca-40c8-8c13-99c10b22cbb8,OK,https://altyler.com
+Moulton's Hearing Aids,8024428002,https://www.moultonshearing.com/locations/bennington-bennington-vt-05201/?utm_source=bing&utm_medium=organic&utm_campaign=bmp,463 Main St,Bennington,VT,sunglasses_store,0.92,718fe076-ab17-4211-b528-927da339c3ec,OK,https://www.moultonshearing.com/locations/north-adams-north-adams-ma-01247/
+"Coming Clean, Inc.",18022510203,https://comingcleaninc.org,28 Vernon St  Ste 434,Brattleboro,VT,cleaning_service,0.92,5d4a1c06-b463-42cc-900d-6d4ffd8b255d,OK,https://comingcleaninc.org
+Smith & Mcclain,18024533001,https://www.smithmcclain.com,5 Main St  Ste A,Bristol,VT,building_or_construction_service,0.95,8d316c9c-333b-4e60-ab70-bb8d95a14e13,OK,https://www.smithmcclain.com
+Ran-mar Corporation,18022239571,http://village-homes.com,1083 US Route 2,Berlin,VT,building_or_construction_service,0.992,2236c984-8209-4531-b1c9-2840f70a52c3,OK,https://village-homes.com/
+AO Glass,+18025400125,https://aoglass.com/,416 Pine St,Burlington,VT,glass_and_mirror_sales_service,0.967,40d6daee-6913-4670-ac60-05cf4fdf4a91,OK,https://aoglass.com/
+Omega Optical,+18022517300,http://www.omegafilters.com/,21 Omega Dr,Brattleboro,VT,glass_manufacturer,0.92,7f59885f-ab79-47b9-8ee9-42b739174bdd,OK,https://omega-optical.com/filters-dichroics/
+Clark-wright Septic Service,18024533108,https://www.clarkwrightseptic.com,1577 Burpee Rd,Bristol,VT,septic_service,0.92,44b789cf-24b0-400f-8027-757a4a3fb7f1,OK,https://www.clarkwrightseptic.com
+Irving Oil,+18883101924,https://www.irvingoil.com/en-US/home-energy/home-energy-solutions?utm_source=Facebook&utm_medium=lpm&utm_campaign=irving,24 Smith St,Barre,VT,contractor,0.92,148bf46c-7c55-4c7a-8e02-861969bc62a5,OK,https://www.irvingoil.com/en-US/home-energy/home-energy-solutions?utm_source=Facebook&utm_medium=lpm&utm_campaign=irving
+Abbiati Monument,+18022544855,http://www.abbiatimonuments.com/,39 S Main St,Brattleboro,VT,masonry_concrete,0.92,3bbff22d-e851-4be5-953f-ec423b82ed9f,OK,https://abbiatimonuments.com/
+A&D Color Painting Company,8029903881,https://www.adcolorvt.com/,"Vt 05401, 3 Hildred Dr",Burlington,VT,painting,0.92,eb921cf4-3adf-49ae-a2fc-cc2d0d339073,OK,https://www.adcolorvt.com/
+Climb High,8028650900,http://www.climbhigh.com/,191 Bank St,Burlington,VT,outdoor_store,0.92,8935cec8-67e0-4dad-aa22-607ee04925fc,OK,http://www.climbhigh.com/
+Raycroft/Meyer Landscape Architects,+18024535762,http://www.raycroft-meyer.com,23 Main St,Bristol,VT,landscaping,0.92,04064745-45e2-4f85-8020-c99d8762c894,OK,https://www.raycroft-meyer.com/
+Lawton Floor Design,18022549303,https://lawtonfloordesign.com,972 Putney Rd  Unit 3,Brattleboro,VT,flooring_store,0.999,cd6cf525-6952-49f0-9cd3-fc7053403290,OK,https://lawtonfloordesign.com
+Livingston Farm,8023820992,https://livingstonfarm.co/,40 S Rte 116,Bristol,VT,outdoor_furniture_store,0.85,a9430894-1d66-4445-8b9e-c15f680d3ae5,OK,https://livingstonfarm.com/
+Livingston Farm,8023820992,https://www.livingstonfarm.co/,40 S Rte 116,Bristol,VT,outdoor_furniture_store,0.85,4313de11-1359-421f-a7be-06cc61a5c242,OK,https://livingstonfarm.com/
+Lime Maids,8028270971,http://www.limemaids.com/,70 S Winooski Ave Ste 161,Burlington,VT,home_cleaning,0.92,76eb5a3a-5a71-4521-a4bd-f5a85b58bdba,OK,http://www.limemaids.com/
+B & B Hot Water Tanks Inc,8028633368,http://www.bandbhotwatertanks.com/,120 Gosse Ct,Burlington,VT,plumbing,0.92,d12755ab-246e-488c-be6d-c1a864b2dab5,OK,https://www.bandbhotwatertanks.com/
+J Evans Construction & Vinyl Graphics,18022541154,https://www.evans-construction.com,529 S Main St,Brattleboro,VT,building_or_construction_service,0.92,f32dd31f-0fe7-4694-9f7d-c479b99002e9,OK,https://evans-construction.com/
+Old World Garden Design,+18025036023,http://oldworldgardendesign.net/,1073 Pine St,Burlington,VT,landscaping,0.92,bd68a7b3-d65e-4e97-9eb6-66916e7d3dd7,OK,http://oldworldgardendesign.net/
+Burlington Electric Department,+18028657300,http://www.burlingtonelectric.com/,585 Pine St #4864,Burlington,VT,electric_utility_provider,0.92,224ba581-a0b5-4de8-8ade-118081faa6a4,OK,https://www.burlingtonelectric.com/
+Keeping It Clean Cleaners LLC,+18023437920,http://Keepingitcleancleaners.com/,219 Elmwood Ave,Burlington,VT,home_cleaning,0.92,01ec6a00-9f4c-4b04-8a9f-8a657e8023f5,OK,http://Keepingitcleancleaners.com/
+Acme Glass,+18022664740,http://www.acmeglassvt.com/,26 Pearl St,Burlington,VT,glass_and_mirror_sales_service,0.99,c68eed21-f4c0-4551-8fda-f88ad28f88b7,OK,https://acmeglassvt.com/
+The Maids In Burlington,18026522402,www.maids.com,7 Ambrose Pl,Burlington,VT,cleaning_service,0.92,a083a229-7050-41db-ac8a-4f3fdc1a2063,OK,https://www.maids.com
+Drolette Construction Co,+18028626908,http://www.droletteconstruction.com,1085 Pine St,Burlington,VT,building_or_construction_service,0.92,bef9af69-c05a-48d0-93a3-b01c7d222653,OK,https://droletteconstruction.com/
+E F Wall & Associates Inc.,18024791013,https://efwall.com,131 S Main St,Barre,VT,contractor,0.92,ebc9c05d-ba0d-4ddd-9a8e-76af2f7506a8,OK,https://efwall.com
+Amaga Cleaning Service,+18023755793,https://amagaservice.com/,139 Elmwood Ave,Burlington,VT,home_cleaning,0.92,c4e32e32-7cd8-4c1f-9666-bc87c24da7a5,OK,https://amagaservice.com/
+T.j. Boyle Associates,18026583555,https://www.tjboyle.com,301 College St,Burlington,VT,landscape_architect,0.92,5f6bc3c5-165f-4310-9825-464d1da7adec,OK,https://www.tjboyle.com
+Easy Open Locksmith,8025031153,http://www.easyopenlocksmith.com/,237 North Ave Apt 21,Burlington,VT,key_and_locksmith,0.92,f3428c3b-e3b4-4f2c-a08f-df69d90836f4,OK,https://www.easyopenlocksmith.com/
+Working Dog Septic Service,(802) 849-9334,https://www.workingdogseptic.com,504 Fletcher Rd,Cambridge,VT,plumbing,0.92,a35e40cd-0519-413e-b038-86259424b2a8,OK,https://www.workingdogseptic.com
+Wildlife Removal Burlington,+18024284725,http://burlingtonvtwildliferemoval.com/,40 Colchester Ave,Burlington,VT,pest_control_service,0.92,ffabe7e9-b58b-4d10-8e1f-274f07b2c1fc,OK,http://burlingtonvtwildliferemoval.com/
+Greg Smithers Landscaping & Painting,+18023732643,http://GregSmithersLandscapingPainting.com/,40 Hutchins Hill Dr,Cambridge,VT,landscaping,0.92,eda35d4b-1229-489c-8e38-77af0df057f6,OK,http://GregSmithersLandscapingPainting.com/
+Burlington Paint Pros,8022312334,http://paintingburlington.com/,76 Saint Paul St,Burlington,VT,painting,0.92,3abe5c9c-6d83-48a6-961d-21dff4fd53b8,OK,https://www.paintingburlington.com/
+Gadue's Dry Cleaning Inc,8028636706,http://www.gadues.com/,1127 North Ave #25,Burlington,VT,dry_cleaning,0.92,41eb735b-2002-4fac-b6e5-683960a7e561,OK,https://www.gadues.com/
+Wailing Wolf Woodworks,+18024561049,http://www.wailingwolfwoodworks.com/,61 Sadie Foss Rd,Calais,VT,carpenter,0.92,6c1c4f0d-3706-4b02-9c06-e31ffee96231,OK,http://www.wailingwolfwoodworks.com/
+Kohn Woodworking,+18028585244,https://www.houzz.com/pro/jonathan-kohn,62 Fern St,Burlington,VT,carpenter,0.92,cd70c57d-fd94-4048-8a32-50f3038c3da7,OK,https://www.houzz.com/professionals/woodworkers-and-carpenters/kohn-woodworking-llc-pfvwus-pf~277951651
+Fenn & Company,(802) 425-3760,http://www.fennandcompany.com,3421 Lake Rd,Charlotte,VT,contractor,0.92,1d112b02-8174-4b45-830d-0894f5d7d353,OK,http://www.fennandcompany.com
+Queen City Plaster Inc,+18022145613,http://coolfreegiveaways.com,25 Crombie St,Burlington,VT,contractor,0.92,02f79b1c-3a82-4d04-b2ff-1a9b5dc0a3c5,OK,https://pinitiative.systeme.io/ea0f7ec0
+Fisher Electric Llc,18024658551,https://www.fisherelectricllc.com,2417 Franklin St,Brandon,VT,electrician,0.92,ba970e71-17aa-4f72-a6a4-91c4c7ace689,OK,https://fisherelectricllc.com/
+Morton Buildings,+18024688700,https://mortonbuildings.com/location/castleton-vt,36 Vermont Rte 4a E,Castleton,VT,contractor,0.995,b81e6cd2-0a51-4c06-95d9-509e032c7965,OK,https://mortonbuildings.com/location/castleton-vt
+Woodcrest Carpentry,+18029896395,http://woodcrestcarpentry.com,34 Woodcrest Ln,Burlington,VT,carpenter,0.92,e52384fb-d050-404c-aa1a-fe0a292523b4,OK,https://woodcrestcarpentry.com/
+JZ Carpentry LLC,8025988070,http://www.jzcarpentryvt.com/,32 Converse Ct,Burlington,VT,roofing,0.92,577f4bac-652d-40f8-8665-a65cf2f37fa4,OK,https://jzcarpentryvt.com/
+Tree Trimming,+18022159337,http://www.treetrimmingburlingtonvt.com/,210 College St,Burlington,VT,landscaping,0.92,e8637455-def0-4a4c-962a-267ca3bd614c,OK,https://www.treetrimmingburlingtonvt.com/
+Dabelstein Woodworks,+18025986769,http://www.flickr.com/photos/48687441@N05/,195 Flynn Ave,Burlington,VT,carpenter,0.92,2d40ec88-3de6-4bbf-854c-9b84023727ae,OK,https://www.flickr.com/photos/48687441@N05/
+Chesterfield Stone,(802) 875-3094,http://www.chesterfieldstone.com,137 Chandler Rd,Chester,VT,contractor,0.92,ec0dca00-a32a-4d1e-9f39-48ba9af1b38e,OK,http://www.chesterfieldstone.com
+Roxtail Woodworks LLC,+18027235888,http://www.roxtailwoodworks.com/,3071 E Brighton Rd,Brighton,VT,carpenter,0.92,d4f66cde-1e10-4b56-8b9f-1f58c32de58e,OK,https://www.roxtailwoodworks.com/
+North American Roofs LLC,+18026835753,https://northamericanconstructionllc.com/,2622 Vermont Rte 4a E,Castleton,VT,roofing,0.92,5002bf87-0378-4b5a-9186-7b7e5295a959,OK,https://northamericanconstructionllc.com/
+Bergeron Electric,(802) 263-9354,https://bergeronelectric.com,148 Old Piper Rd,Chester,VT,electrician,0.92,55640b55-2eef-4011-938c-5769ffb33691,OK,https://bergeronelectric.com
+Safelite AutoGlass,+18024614539,https://safl.it/2t2G7vm?y_source=1_MTc4NjgzNS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,1246 US-302 Unit 2,Berlin,VT,auto_glass_service,0.92,24ba9c9f-bc24-47ef-bdc4-fad828c2028a,OK,https://www.safelite.com/stores/Barre?utm_source=yext&utm_medium=list&utm_campaign=facebook_local&gad_source=7&dclid=CKm7hs7utZcDFZrShwkdHlMjnw
+Bevins' Door,8028723181,http://www.bevinsdoor.com/,3330 Roosevelt Hwy,Colchester,VT,garage_door_service,0.92,537e776a-d266-46b3-b607-6959b99f4e3c,OK,https://www.bevinsdoor.com/
+Outdoor Gear Exchange,+18885474327,http://www.gearx.com,37 Church St,Burlington,VT,outdoor_store,0.99,28dd3be2-6ae9-42fc-b96a-8ee73741b536,OK,https://www.gearx.com/
+Mobil Maid,+18028753099,http://www.mobilmaid.com/,71 Canal St,Chester,VT,home_cleaning,0.92,f5db6622-a0bb-4d36-be88-739bad9252d2,OK,http://www.mobilmaid.com/
+Bevins' Door LLC,8028723181,http://www.bevinsdoor.com/?utm_source=Bing&utm_medium=lpm&utm_campaign=garaga,3330 Roosevelt Hwy,Colchester,VT,garage_door_service,0.85,200ea0a6-453b-41fe-ad6b-b3402062ffe2,OK,https://www.bevinsdoor.com/?utm_source=Bing&utm_medium=lpm&utm_campaign=garaga
+Wagner Hodgson Landscape Architecture,18028640010,https://wagnerhodgson.com,7 Marble Ave,Burlington,VT,landscape_architect,0.92,a9592116-d4d3-4511-a238-4fedb25aebda,OK,https://wagnerhodgson.com
+Johnstone Supply,8025660503,https://www.johnstonesupply.com/store560,557 Riverside Ave,Burlington,VT,hvac_supplier,0.92,00875c3b-c2b9-4d0a-ac0a-ba8a66842221,OK,https://www.johnstonesupply.com/store560
+Lafayette Painting Inc.,8028635397,http://www.lafayettepainting.net/,392 North Ave,Burlington,VT,painting,0.92,dbca26c7-33df-42a6-8339-fa58b7562ba7,OK,https://www.lafayettepaintinginc.com/
+Verdon Seamless Gutters,8028936732,http://www.verdongutters.com/,83 Murray Ave,Chittenden County,VT,roofing,0.932,7207dcd9-8f6c-44a4-ba80-7d30e30357a6,OK,https://www.verdongutters.com/
+1st Choice Roofing,8029228992,http://www.1stchoiceroofingvt.com/contact,42 Laura Ln,Colchester,VT,roofing,0.85,0b3c5d2f-cbff-4f37-a769-d538692f91ff,OK,http://www.1stchoiceroofingvt.com/contact
+Black Beauty Driveway Sealing,+18028607113,http://www.facebook.com/BlackBeautyDriveway,60 Mercier Dr,Colchester,VT,contractor,0.92,6f425375-d72a-4670-87e9-eee92e8596de,OK,https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FBlackBeautyDriveway
+Terrigenous Landscape Architecture,8028751311,http://www.terrigenous.com/,624 Depot St,Chester,VT,landscape_architect,0.92,acb6fcdc-79df-4e02-97bd-a0074cd54369,OK,https://www.terrigenous.com/
+Sugar Rock Landscapes,+18028753733,http://www.sugarrock.com/,449 North St,Chester,VT,landscaping,0.92,6a606559-dd1d-4234-ab84-61878c049609,OK,http://www.sugarrock.com/index.html
+CG Family Construction | Roofing Division,+18023554525,https://cgfamilyroofing.com/,83 Faith St,Burlington,VT,roofing,0.92,63f36a80-2123-4240-bb05-3b4f3f492a7e,OK,https://cgfamilyroofing.com/
+Ecowood Floors Inc.,18023161396,http://www.ecowoodfloorsinc.com,120 Main St,Burlington,VT,contractor,0.92,fba6b541-2674-4f66-9718-3a6c9d921bbc,OK,https://www.ecowoodfloorsinc.com/
+Budget Blinds of Colchester,8026519366,https://www.budgetblinds.com/Colchester/,85 Prim Rd Ste 204,Colchester,VT,window_treatment_store,0.92,b6e51596-8d0e-406f-bbd5-f48301f7ce1b,OK,https://www.budgetblinds.com/colchester/
+Eric's Excavating Inc.,18028639027,https://www.ericsexcavatinginc.com,65 Elm Ct,Colchester,VT,contractor,0.92,3aa81e2f-87a2-4fc5-af6b-ac83b6500de6,OK,https://www.ericsexcavatinginc.com
+Elm Hill Farm Fencing,+18028784111,http://www.elmhillfarmvt.com/contact.html,4156 Roosevelt Hwy,Colchester,VT,fence_and_gate_sales_service,0.92,a590483d-bcd1-4c3e-9d30-0d6e4bf4f369,OK,http://www.elmhillfarmvt.com/contact.html
+Champlain Roofing,18024179113,https://champlainroofing.com,3619 Roosevelt Hwy  Ste 104,Colchester,VT,roofing,0.92,136055a4-a344-4474-ab49-4c6f3555c88a,OK,https://champlainroofing.com
+Ski Door Inc,18027727396,http://www.skidoorinc.com,45 Old Route 4A,Center Rutland,VT,garage_door_service,0.92,9c3eb4e3-b084-441e-9126-f9c2080426bc,OK,https://www.skidoorinc.com/
+Vermont Plank Flooring,18023424558,https://vermontplankflooring.com,112 Hardwood Way,Brattleboro,VT,flooring_store,0.92,189337fe-fdf5-4cfb-9ec0-9216a0229e72,OK,https://vermontplankflooring.com
+Evergreen Roofing,8028652264,https://evergreenroofingvt.com/,61 S Oak Cir,Colchester,VT,roofing,0.92,3e951ce2-45f3-4b51-b3a5-98f59c5978af,OK,https://evergreenroofingvt.com/
+"Evergreen Roofing, Llc",18028652264,https://www.evergreenroofing.com,206 Hegeman Ave,Colchester,VT,roofing,0.92,998b6163-ec7b-4a1c-9dff-50d7c755c558,OK,https://www.evergreenroofing.com
+Future Floors Inc,18028788003,https://futurefloorsinc.com,366 Troy Ave  Ste 1,Colchester,VT,flooring_contractor,0.95,96aabe1a-b44a-45f6-89dd-21955bc466d5,OK,https://www.futurefloorsinc.com/
+Future Floors Inc,8028788003,https://www.futurefloorsinc.com/,"366 Troy Ave, Suite 1",Colchester,VT,flooring_contractor,0.92,c5e1d8e2-4fc4-453d-87ad-c6d7c80ed67b,OK,https://www.futurefloorsinc.com/
+Green Mountain Power,+18888354672,http://www.greenmountainpower.com/,163 Acorn Ln,Colchester,VT,electric_utility_provider,0.99,89e5ed61-c2e1-4316-83e5-978a2c72e9bd,OK,https://greenmountainpower.com/
+Lot Lines,+18023553672,http://www.lotlinesvt.com/,191 Bayview Rd,Colchester,VT,paving_contractor,0.92,6ca154b2-a6ec-4b57-b9e3-f711becd83a1,OK,https://www.lotlinesvt.com/
+Lund Landscaping Services,+18028791353,http://www.LundLandscapeVT.Com/,794 W Lakeshore Dr,Colchester,VT,landscaping,0.92,b89f2a89-249e-40c6-b5e1-cf9b6a3742fd,OK,https://www.lundlandscapevt.com/
+Gadue's Dry Cleaning,+18028793144,http://www.gadues.com/,63 Creek Farm Rd,Colchester,VT,dry_cleaning,0.92,4977bc78-e16b-4464-9f7d-fb86fb0dbfc0,OK,https://www.gadues.com/
+"Aquarius Landscape Sprinklers, INC.",8028720065,https://www.aquariussprinklersvt.com/,3619 Roosevelt Hwy,Colchester,VT,irrigation_service,0.92,3bc11daf-eea4-4f92-b990-50a12ef4e8b1,OK,https://www.aquariussprinklersvt.com/
+The Dry Cleaner By Val,+18028599533,http://orleansdrycleaners.com,266 Main St,Burlington,VT,dry_cleaning,0.92,ebd1a394-df10-4424-bb41-ec91ea77b5e4,OK,https://orleansdrycleaners.com/
+Distinctive Landscaping Inc.,18024252877,http://www.distinctiveland.com,2111 Greenbush Rd,Charlotte,VT,landscape_architect,0.92,ac0c56e4-af2d-4f59-a153-d171a9205552,OK,https://www.distinctiveland.com/
+JaniTech,8028635900,https://www.janitechservices.com/,158 Brentwood Dr,Colchester,VT,office_cleaning,0.92,4a599d71-86a8-48f1-b08b-cca9e1e57ccc,OK,https://www.janitechservices.com/
+Maple Leaf Landscaping,+18023240350,http://www.mapleleaflandscapingvt.com/,109 Raymond Rd,Colchester,VT,landscaping,0.92,668f5cd1-5db2-4073-85e7-a80e820af212,OK,https://www.mapleleaflandscapingvt.com/
+Graeter Woodworking,+18028818040,http://graeterwoodworking.com/,226 Heritage Ln,Colchester,VT,carpenter,0.92,5ecf7a69-b86a-4d84-a2c1-2e879df30053,OK,https://graeterwoodworking.com/
+Green Mountain Painters,8029921717,https://www.vtpainters.com/,183 Hegeman Ave,Colchester,VT,painting,0.92,749006f8-4eab-4f5f-ba5f-134f56b5bf78,OK,https://www.vtpainters.com/
+Pool World,+18028607665,http://www.poolworld.com/,16 Austin Dr,Burlington,VT,pool_cleaning,0.92,d4ec00ff-7f03-4c2f-880c-860c4a14e968,OK,https://www.poolworld.com/
+Masterson Excavation,+18024534341,http://www.mastersonexcavation.com/,88 North St,Bristol,VT,contractor,0.92,a6709c5d-ea37-4372-b0aa-5c4e3615322b,OK,https://mastersonexcavation.com/
+Karen Deets Stained Glass,+18022658668,http://www.karendeets.com/,728 Moscow Rd,Castleton,VT,glass_and_mirror_sales_service,0.915,e98d0829-fe61-4813-992d-a74a7b5d1225,OK,https://www.karendeets.com/
+Silloway Septic Service,+18027285308,https://sillowayseptic.com/,82 E Randolph Rd,Chelsea,VT,septic_service,0.92,3959cd6d-fdcb-4b73-9cb6-54ba021cc941,OK,https://sillowayseptic.com/
+"Red Rock Mechanical, LLC",8028939992,https://www.redrockmechanical.net/,339 Red Rock Rd,Colchester,VT,hvac_service,0.92,702d699c-479e-4cd5-b2db-e98fc4dc3a97,OK,https://www.redrockmechanical.net/
+Limbwalker Tree Service,(802) 273-2197,http://www.limbwalking.com,642 Monument Hill Rd,Castleton,VT,tree_service,0.92,959e3aab-65e0-4fab-8925-7acbea42071c,OK,https://www.limbwalking.com/
+Portland Glass of Newport,+18027689781,https://www.portlandglass.com/newport/?cid=LSTL_PLG000261,32 Community Dr,Derby,VT,auto_glass_service,0.92,c7bc9903-b562-45ed-9b1a-3e2f49f6d0e7,OK,https://www.portlandglass.com/newport/?cid=LSTL_PLG000261
+Dion Locksmith,18026587404,http://www.dionlocksmith.com,92 North St,Burlington,VT,key_and_locksmith,0.95,4bf8ca26-7af5-4651-ad42-4bc93874dfbb,OK,https://dionlocksmith.com/
+Terra-logic Landscape Architecture,+18028932446,http://www.terralogicvt.com/,1141 Clay Point Rd,Colchester,VT,landscaping,0.92,cdee947e-82b2-4067-8ed3-0e0a407f959f,OK,https://www.terralogicvt.com/
+Frank W. Whitcomb Construction,+18026551270,https://www.stonelist.us/company-frank-w-whitcomb-construction-in-colchester-vt-3272,115 Whitcomb St,Colchester,VT,building_or_construction_service,0.92,e2763a57-0cc7-40b9-a9a7-ed673855dac8,OK,https://www.stonelist.us/company-frank-w-whitcomb-construction-in-colchester-vt-3272
+Roy's New View,8023910116,http://www.roysnewview.com/,265 Red Oak Dr,Colchester,VT,window_supplier,0.976,a1960949-bb5a-4516-ab10-2d254a9e9fe4,OK,https://www.roysnewview.com/
+Colchester Paintball Inc.,+18028782905,http://www.vtpaintball.com,1800 E Rd,Colchester,VT,paintball,0.933,7f8f3999-fa5e-48fb-9c18-6a2e2f0dae66,OK,https://vtpaintball.com/
+"Roy's Windows, Siding & Patio Rooms",8028792068,http://www.royssiding-patiorooms.com/,3619 Roosevelt State Route,Colchester,VT,door_sales_service,0.92,fb93a39a-76e2-46a7-8450-399e690eb1d4,OK,https://www.royssiding-patiorooms.com/
+Watters Construction Company,+18022153681,http://www.wattersconstructioncompany.com/,191 Partridge Ln,Charlotte,VT,contractor,0.92,6acb5edc-d8cc-4cbc-aa50-3de254c55c4a,OK,https://www.wattersconstructioncompany.com/
+Vermont Commercial Roofing,+18028584100,http://vermontcommercialroofing.com,258 E Lakeshore Dr,Colchester,VT,roofing,0.92,74ea560e-1025-4dbc-8615-476d40046478,OK,http://vermontcommercialroofing.com
+Red House Building,+18026550009,http://www.redhousebuilding.com/,383 Hercules Dr,Colchester,VT,building_or_construction_service,0.845,722a27af-12bb-4958-886a-d9336741be94,OK,https://redhousebuilding.com/
+Three Mountain Roofing,+18027342559,http://www.threemountainroofing.com/,276 S Vermont 108,Cambridge,VT,roofing,0.92,cae66ebb-bdb2-49fa-9ae6-963408b5c127,OK,https://threemountainroofing.com/
+Renaud Tree Care,+18022570567,http://www.renaudtreecare.com,853 US Route 5,Dummerston,VT,landscaping,0.92,f263e68c-94e6-4246-a781-eb39165bc02a,OK,http://www.renaudtreecare.com
+Ash Electric LLC,8025356182,http://ashelectricllc.com/,941 Woodward Rd,Concord,VT,electrician,0.85,7f242a11-fb8e-4b05-974c-5a2410788ce4,OK,http://ashelectricllc.com/
+Palmieri Roofing,+18027489628,http://www.palmieriroofinginc.com,1170 Parker Rd,Danville,VT,roofing,0.92,0dfa9900-db70-41d2-84e9-d9ea6bd9621c,OK,https://www.palmieriroofinginc.com/
+CFW Electric,8026842157,http://www.cfwelectric.com/,578 Rte 2 W,Danville,VT,electrician,0.92,221ca7ae-807d-4919-b281-1ef3f1b2b9e5,OK,https://www.cfwelectric.com/
+Blue Sky Roofing & Custom Exteriors,8028621500,https://www.blueskyroofingvt.com/,2407 Blakely Rd,Colchester,VT,roofing,0.92,fe1ac7b8-ae5b-4e27-bd29-cccab0049dac,OK,https://blueskyroofingvt.com/
+"Pgw Auto Glass, Llc",18026540421,https://www.buypgwautoglass.com,156 Acorn Ln  Ste 107,Colchester,VT,auto_glass_service,0.92,23d30e14-63d1-4b51-b54f-9438e0122bb6,OK,https://www.pgwautoglass.com/
+Final Electric,(802) 263-5394,https://www.baysideroofingpros.com,210 Baltimore Rd,Chester,VT,electrician,0.92,b39be199-fbc0-4f7e-a98b-2b795b963944,OK,https://baysideroofingpros.com/
+Momaney Painters,(802) 257-7600,https://momaneypainters.com,1324 Rice Farm Rd,Dummerston,VT,painting,0.92,7581ef14-c0bc-4664-9907-fb5bac9a5773,OK,https://momaneypainters.com
+Worth's Seamless Rain Gutters,8027661964,http://www.worthgutters.com/,3165 Us Route 5,Derby,VT,gutter_service,0.959,b5dc3e2a-46fa-4bde-8759-aa7d09d1de05,OK,https://www.worthgutters.com/
+Momaney Painters,+18022577600,http://momaneypainters.com/,630 Stickney Brook Rd,Dummerston,VT,contractor,0.92,dafea0f3-498b-4bc8-adbc-7d615d0c8e71,OK,https://momaneypainters.com/
+Barrett Electric,+18025355815,http://www.homesteadvt.weebly.com,2938 McDowell Rd,Danville,VT,electrician,0.92,1d877815-cc54-47a3-831f-ee73d33099c1,OK,https://homesteadvt.weebly.com/
+Chuck's Heating & A/C,+18026551489,http://www.chucksheating.com/,416 Roosevelt Hwy,Colchester,VT,hvac_service,0.92,c960052a-b1c4-4368-bfc4-fc4251ccc219,OK,https://www.chucksheating.com/
+Woodsman's Tree Service,+18022380719,http://woodsmanstreeservice.com/,1236 Cookeville Rd,Corinth,VT,tree_service,0.92,9d61f92d-5f6b-4737-b6af-bb43914fb49e,OK,https://www.woodsmanstreeservice.com/
+Blue Sky Roofing,(802) 862-1500,http://www.blueskyroofingvt.com,133 Blakely Rd Ste 211,Colchester,VT,roofing,0.92,9908b7e1-daa8-4548-8299-9643e18b7dc6,OK,https://blueskyroofingvt.com/
+Jackman's of Bristol,+18024532381,http://jackmansinc.com/,64 Jackman Dr,Bristol,VT,hvac_service,0.92,51ecc77e-b1a6-4088-bd31-e84c8169d10d,OK,https://jackmansinc.com/
+R&C Renovate LLC,+18022470007,https://rcrenovate.net/,980 Champlain St,Brandon,VT,contractor,0.92,848ab73d-f1cb-4e39-a4e9-4e3e57f497be,OK,https://rcrenovate.net/
+Gold star services llc,+18024732914,https://www.linkedin.com/in/alan-tiedeman-842300255,194 Main St,Concord,VT,home_cleaning,0.92,0114b0c0-0b41-4e55-b315-e2e584920119,OK,https://www.linkedin.com/in/alan-tiedeman-842300255
+RG Gosselin Inc,+18027668815,http://www.rggosselininc.com/,193 Gosselin Dr,Derby,VT,building_or_construction_service,0.92,9d54eaca-c064-4c62-8094-a03b4c423ff6,OK,http://www.rggosselininc.com/
+Alfano's Home Remodeling,8023487300,https://www.alfanoshomeremodeling.com/,147 Dover Hill Rd,East Dover,VT,flooring_store,0.92,545a1a9b-84b1-4409-a020-5e01b62533ac,OK,https://www.alfanoshomeremodeling.com/
+Vermont Renovation and Remodeling,+18022422466,https://vermontrenovationandremodeling.com/,2789 Middle Rd,Colchester,VT,contractor,0.92,d0411976-9703-4935-9e18-b049b5200367,OK,https://vermontrenovationandremodeling.com/
+Casey Building & Contracting Services,+18027331179,http://Caseybuilding.com/,1215 Route 30,Dorset,VT,contractor,0.92,2fa78e6c-bb72-4f60-ba6b-05f8fc0ae375,OK,https://www.caseybuilding.com/
+High-tech Plumbing & Heating,18023623992,https://www.hightechplumbingandheating.com,45 Blue Spruce Ln,East Dorset,VT,hvac_service,0.92,ffc2ec92-6638-464b-9b59-d8d08cf0d2b3,OK,https://www.hightechplumbingandheating.com
+Preferred Painting,+18023072355,http://preferredpaintingvt.com/,1065 US-302,East Barre,VT,contractor,0.92,c2e01832-5ffa-4846-8390-211297ab3a21,OK,https://preferredpaintingvt.com/
+Dustin Miller Construction,+18023233699,http://www.dustinmillerconstruction.com/,63 Mountain View Ln,Eden,VT,building_or_construction_service,0.92,64289cc8-c7e3-4988-99e2-b05c35168ea3,OK,https://www.dustinmillerconstruction.com/
+Lajeunesse Construction,+18024791078,http://Lajcon.com/,930 E Barre Rd,East Barre,VT,contractor,0.92,81220f89-5ab3-48ea-a6b8-8857967def44,OK,https://www.lajcon.com/
+James Plumbing & Heating Oil Co,+18024633122,https://www.jamesfuels.com/,91 Paper Mill Rd,Bellows Falls,VT,plumbing,0.92,a4137e6b-0350-468a-9006-f5e2bcf51197,OK,https://jamesfuels.com/
+Hutch Brothers Concrete Inc,8024793499,http://www.hutchbrothersconcrete.com/,176 Mill St,East Barre,VT,masonry_concrete,0.92,01c5daf9-a187-4d1f-b6ce-d1c7eb4d0c9a,OK,https://www.hutchbrothersconcrete.com/
+McCreedy's Plumbing & Heating Inc.,8022790661,https://mccreedysplumbingandheating.com/,6 Old Farm Rd,East Montpelier,VT,plumbing,0.92,46b818bd-2fca-4717-9fdd-335e90465be0,OK,https://mccreedysplumbingandheating.com/
+Desrochers Crane Service,+18002874732,http://www.desrochersinc.com/,3761 US-5,Derby Center,VT,building_or_construction_service,0.92,f2e314ae-ca06-486e-9b1e-f0583236b70e,OK,https://desrochersinc.com/
+Folk Floors,(802) 785-4248,https://www.folkfloors.com/ordering,171 Burnham Rd,East Thetford,VT,flooring_contractor,0.92,7da2f86a-4f10-4d29-a512-99ad002b6330,OK,https://www.folkfloors.com/ordering
+Winterwood Timber Frames,+18022297770,http://winterwoodtimberframes.com/,4663 US-2,East Montpelier,VT,carpenter,0.92,50a96a09-9923-407c-9fb4-86e8c2713849,OK,https://winterwoodtimberframes.com/
+"Green State Builders, Llc",18024970314,https://www.greenstatebuildersvt.com,6D Laurette Dr,Essex,VT,building_or_construction_service,0.92,5c2542bb-dd64-4870-a19f-52c2f254fca4,OK,https://www.greenstatebuildersvt.com
+Roger Evans Builder,(802) 257-0262,https://thedreamquilt.com,61 Spalding Hill Rd,East Dummerston,VT,contractor,0.92,c3f1d5b0-d8af-44c0-9d4d-8f72bf4d61ed,OK,https://www.modellingagenciesnearme.co.uk/best-modelling-agencies-uk-overview-and-top-10-insights
+Farnum Insulators,+18023875005,https://farnuminsulators.com/,29 Brickyard Ln East,Dummerston,VT,contractor,0.92,c9097bff-9d5d-4cb3-956d-6dd5e6118993,OK,https://www.farnuminsulators.com/
+GSK Climate Control,8023625444,http://gskclimatecontrol.com/,"154 Hills Court, Hills Industrial Park",East Dorset,VT,hvac_service,0.983,a78e5cf1-b81f-46a6-8166-8dbb9a0eb922,OK,http://gskclimatecontrol.com/
+Strolling Of Heffers,(802) 258-9177,http://www.strollingoftheheifers.org,105 Partridge Rd,East Dummerston,VT,contractor,0.92,cb1e5d6b-77f6-4bc1-a8c2-168e4e0ab25f,OK,http://www.strollingoftheheifers.org
+Devino Electric and Mechanical,8022310600,https://devinoelecmech.com/,1670 Longley Bridge Rd,Enosburg Falls,VT,electrician,0.92,88e43ca5-3260-4b01-a18d-0060492a0e5b,OK,https://devinoelecmech.com/
+Michauds Septic Service,+18024726682,http://michaudssepticservice.com,109 Michaud Farm Rd,East Hardwick,VT,septic_service,0.92,ed763c70-ef0c-45b0-9838-9c5f98214cde,OK,https://www.michaudssepticservice.com/
+Sylvester Excavating,(802) 326-4454,https://www.franklinfoods.com,1449 W Hill Rd,Enosburg Falls,VT,contractor,0.92,b8388062-144e-4663-85c4-22e3aa90287e,OK,https://www.franklinfoods.com
+"Homestead Design, Inc.",+18028783303,homestead-design.com,8 Carmichael St Ste 101,Essex JCT,VT,building_or_construction_service,0.95,3c7f160b-2430-4708-aa07-6b092c628310,OK,https://homestead-design.com
+Minute Key,8025574357,https://www.minutekey.com/key-services/vermont/essex-junction/locksmith-key-copy-duplication-10-susie-wilson-rd/25669/?utm_source=Synup&utm_medium=Bing&utm_campaign=LWX02693,10 Susie Wilson Rd,Essex Junction,VT,key_and_locksmith,0.85,f42003da-e3d0-4c62-8781-e0d9ce65167e,OK,https://www.minutekey.com/key-services/vermont/essex-junction/locksmith-key-copy-duplication-10-susie-wilson-rd/25669/?utm_source=Synup&utm_medium=Bing&utm_campaign=LWX02693
+"Hegeman Electric, Inc.",18028797397,https://www.hegemanelectric.com,16 Gauthier Dr,Essex Junction,VT,electrician,0.92,23e24034-cd30-4400-ae51-63f0d2705a52,OK,https://www.hegemanelectric.com
+Haskins Gas Services,+18028675741,http://haskinsgas.com/,1791 VT-30,Dorset,VT,hvac_service,0.92,8fe10fa2-8c23-439f-bb53-faaa67ff3408,OK,http://haskinsgas.com/
+Sand Hill Park Swimming Pool,+18028782973,http://www.ejrp.org/,208 Sand Hill Rd,Essex,VT,swimming_pool,0.947,9d735c41-77c6-415f-975d-0e05c0852aba,OK,https://www.ejrp.org/
+Devino Electric & Mechanical,8022310600,http://www.devinoelecmech.com/,1670 Longley Bridge Rd,Enosburg Falls,VT,electrician,0.92,14abd4e3-adb6-4c50-9ce5-2de5216fc12e,OK,https://devinoelecmech.com/
+Sherwin-williams Paint Store,18028785462,https://www.sherwin-williams.com,83B Pearl St,Essex Junction,VT,paint_store,1.0,9e65bbf8-c4ca-4ce4-a0e8-e10b3b41246f,OK,https://www.sherwin-williams.com
+Protect Painters,8668852334,http://www.protectpainters.com/,4 Carmichael St Unit 111,Essex Junction,VT,painting,0.92,6bb1a303-4901-424d-9864-0acb95e46e32,OK,https://www.fivestarpainting.com/protect-painters/
+"All Phase Property Maintenance, LLC",8028992919,http://allphasevt.com/,87 Sleepy Hollow Rd,Essex Junction,VT,lawn_service,0.92,1f4267f3-c967-4a1c-bf87-5804fb663c4d,OK,https://www.allphasevt.com/
+Gadue's Dry Cleaning Inc,8028720193,http://www.gadues.com/,30 Susie Wilson Rd,Essex Junction,VT,dry_cleaning,0.92,5cdfe870-f835-4613-bef5-ff04aa60e2e1,OK,https://www.gadues.com/
+Michael Lawrence Associates LLC,8028782778,http://mclasla.com/,8 Linden Ln,Essex Jct,VT,landscape_architect,0.92,1700a8af-553f-4b09-b32e-f505b107e63a,OK,http://www.mclasla.com/
+Cool Pools,8023160441,http://coolpoolsvt.com/,33 Park St,Essex Junction,VT,pool_and_hot_tub_service,0.92,b40ff2dc-fc37-453f-b29b-28e20b1354b1,OK,https://coolpoolsvt.com/
+Cedar Ridge Sprinkler,+18028784825,http://cedarridgebhs.com,97 Center Rd,Essex Junction,VT,contractor,0.92,7afd5141-c977-433f-afd7-fc8529f80943,OK,https://cedarridgebhs.com/
+KeyMe Locksmiths,+18026248012,https://www.key.me/kiosks/vermont/derby/derby/locksmith-key-copy-derby-walmart-05829-vermont,115 Seymour Dr,Derby,VT,key_and_locksmith,0.92,643eb0be-e8c3-4f0f-bae4-7071c1a76374,OK,https://key.me:443/kiosks/vermont/derby/derby/locksmith-key-copy-derby-walmart-05829-vermont
+Sherwin Electric Company Inc.,8028784041,http://www.sherwin-electric.com/,7 Morse Dr,Essex Junction,VT,electrician,0.998,b3a9aaf7-67db-45cb-bc11-3be3f4a5a8e5,OK,https://sherwin-electric.com/
+Green Cleaning,+18025520080,http://www.greencleaningvt.com/,167 Main St Ste 11,Enosburg Falls,VT,home_cleaning,0.92,fac259f6-ee6a-4f28-8160-63f5872ad3ab,OK,https://www.greencleaningvt.com/
+Sbardella Slate Inc,18022659955,https://www.sbardellaslate.com,105 Colvin Rd,Fair Haven,VT,roofing,0.92,48d3dea7-42c5-447e-813f-866620cba3f2,OK,https://www.sbardellaslate.com
+Main Street Floor Covering,18028729596,https://mainstreetfloorcoveringvermont.com,95 Pearl St,Essex Junction,VT,flooring_store,0.92,1fe48f7a-e456-4883-8608-8a9401d30781,OK,https://www.mainstreetfloorcoveringvermont.com/
+Millers Pest Control,(802) 871-5766,http://millerspestvt.com,98 Colchester Rd,Essex Junction,VT,pest_control_service,0.92,0a8116db-ad38-469c-a4a8-34819d875289,OK,https://millerspestcontrol.com/
+Techtron Environmental Inc,18028789776,https://www.techtronenvironmental.com,57 River Rd,Essex Junction,VT,contractor,0.92,cd9d46e4-c0b2-458c-928a-3a1b02806ac2,OK,https://www.techtronenvironmental.com
+Champlain Door Systems,+18022103564,https://www.champlaindoor.com/,4182 Highbridge Rd,Fairfax,VT,garage_door_service,0.972,682fb2dd-8b54-46d4-86e0-c66c8e751fbf,OK,https://www.champlaindoor.com/
+Millers Pest Control,18028715766,http://millerspestvt.com,171 Pearl St,Essex Junction,VT,pest_control_service,0.92,29d89e82-dbc8-47d6-9348-0f420873fe89,OK,https://millerspestcontrol.com/
+Champlain Door Systems,18022103564,champlaindoor.com,4182 Highbridge Rd,Fairfax,VT,garage_door_service,0.998,e90a7de3-bb7e-47e4-9e8d-74787a9edb1b,OK,https://www.champlaindoor.com/
+Lewis Creek Builders,18026621630,https://www.lewiscreekcompany.com,14 Morse Dr,Essex Junction,VT,building_or_construction_service,0.92,6ff53269-2a7b-4f34-a3b9-7f188176f3ac,OK,https://www.lewiscreekbuilders.com/
+Ellis Concrete,8022657899,https://www.ellisbrothers.net/,612 West St,Fair Haven,VT,masonry_concrete,0.92,f54fdf02-0331-4c53-ae8a-b9ed776d245f,OK,https://www.ellisbrothers.net/
+Woodstock Kitchens & Baths,18024248412,https://woodstockkitchens.com,27 Park St,Essex Junction,VT,kitchen_remodeling,0.99,02b7781d-278c-4706-a9cd-309c9eb07e29,OK,https://www.woodstockkitchens.com/
+Stewart Construction,18028790500,https://www.stewart-construction.com,24 Pearl St,Essex Junction,VT,building_or_construction_service,0.95,b3f44543-9993-4b38-ae9e-51afa751c790,OK,https://www.scivt.com/
+Camara Slate Inc.,+18022653200,http://www.slatetilepictures.com/,963 S Main St,Fair Haven,VT,contractor,0.986,f59ab997-4feb-4493-acd7-4fc4f1420e43,OK,https://www.slatetilepictures.com/
+Key Krafter,+18024966088,http://www.keykrafter.com/,305 Carroll Rd,Fayston,VT,key_and_locksmith,0.92,3ed15815-585d-40ee-9049-28fef54e5f5f,OK,http://www.keykrafter.com/
+Guide Construction Solutions,+18029996942,https://www.guidecs.com/,909 Long Point Rd,Ferrisburgh,VT,building_or_construction_service,0.92,1f523f92-8f3e-4265-bdcb-f054bd04c9d3,OK,https://www.guidecs.com/
+Ormond Bushey & Sons Inc.,18028728110,https://obusheyandsons.com,2 Bushey Ln,Essex Junction,VT,contractor,0.92,c078adeb-6389-4c4b-be22-195b4a9b553c,OK,https://www.obusheyandsons.com/
+Pigeon Brothers Excavating,(802) 849-2736,https://www.pigeonbrothers.com,124 River Rd # 399,Fairfax,VT,contractor,0.92,fa99d940-6299-4923-9bce-029f1d84250a,OK,https://www.pigeonbrothers.com
+Bannister Custom Exteriors,8028627850,https://bannisterexteriors.com/,91 Morse Rd,Fairfax,VT,roofing,0.92,34e32f4f-0119-4939-85be-9113ea98e688,OK,https://bannisterexteriors.com/
+Finishing Touches,(802) 372-8500,http://www.finishingtouchesvt.com,417 US Route 2,Grand Isle,VT,painting,0.92,cf1ab0f9-9d24-4b7f-a1a0-2c46ce3d860a,OK,http://www.finishingtouchesvt.com
+New York Cleaners,+18028788555,http://newyorkcleaners.com/coupons.htm,101A Pearl St,Essex Junction,VT,dry_cleaning,0.92,37e287b6-2427-4765-a309-68a9d7346fb1,OK,http://ww547.newyorkcleaners.com/?tkn=19vnMT3S
+"Doran Brothers, Inc.",18022654724,https://doranbrothers.com,634 West St,Fair Haven,VT,septic_service,0.92,02b22e7a-5097-434e-9fb9-7ff02af02484,OK,https://www.doranbrothers.com/
+Rox Asphalt LLC,8028643921,http://www.roxasphaltllc.com/,2221 Ethan Allen Highway,Georgia,VT,paving_contractor,0.973,e7ac807d-fcfa-43b9-9799-e69e9c2c0b21,OK,https://www.roxasphaltllc.com/
+Abba Fuels,8028788095,https://robertsnrg.com/home-heat/,2136 Main St,Fairfax,VT,electric_utility_provider,0.92,08b9704d-875e-4745-b02e-e9faf0f7aa7d,OK,https://robertsnrg.com/home-heat/
+J. Cole Custom,+18023499622,http://www.jcolecustom.com/,1172 Walker Rd,Ferrisburgh,VT,building_or_construction_service,0.92,b9448e23-20a7-4242-8920-da5bb3a660d4,OK,http://www.jcolecustom.com/
+Fournier Landscaping,+18024255296,http://Liveoutdoorsvt.com/,6895 US-7,Ferrisburgh,VT,landscaping,0.92,c3408472-e5ff-4de4-aca0-4a1ba536b350,OK,https://www.liveoutdoorsvt.com/
+Venture Floor Covering Service,(802) 285-6508,http://franklinvt.net,889 Dewing Rd,Franklin,VT,flooring_contractor,0.92,102dc548-2a20-4f82-8e92-611b7ddd8868,OK,http://franklinvt.net
+Open Sash,+18022296880,http://opensash.com/,386 Johnson Rd,East Montpelier,VT,windows_installation,0.92,8009825a-0548-416a-a07f-ae1892e0f563,OK,https://www.opensash.com/
+Island Excavating Corporation,18023724473,https://islandexcavatingcorp.com,4 Island Cir,Grand Isle,VT,contractor,0.92,a62aa753-bccd-4a34-a2c6-39eadc66182e,OK,https://islandexcavatingcorp.com
+C Small Property Services,+18023564024,https://www.csmallservices.com/,36 Hartland Hill Rd,Hartland,VT,landscaping,0.92,0f5aee11-2f0b-4d86-a473-bc5019bb2ccb,OK,https://www.csmallservices.com/
+Mike Lamos Electric,(802) 782-4992,http://www.lamoselectric.com,538 Rice Hill Rd,Franklin,VT,electrician,0.92,19481c98-725c-49a6-8807-757a0e24ffe9,OK,https://www.lamoselectric.com/
+Taplin Septic Pumping Service and Repair,8026730213,http://taplinsepticservice.com/,398 Dry Pond Rd,Glover,VT,septic_service,0.92,e66e6b61-65a2-4ee9-ac3a-1e71f623df8f,OK,https://www.taplinsepticservice.com/
+Local Ridges Roof Coatings,+18024721224,http://localridges.com/,883 Main St,Greensboro,VT,roofing,0.92,5bc65b1b-6b25-4e96-80ec-97a4d577fded,OK,https://www.localridges.com/
+Woodbury Mountain Site Works,+18027934732,http://woodburymountainsiteworks.com/,307 Wolcott St,Hardwick,VT,building_or_construction_service,0.92,f719d2d5-547b-4195-a1cc-04c7f419c594,OK,https://woodburymountainsiteworks.com/
+Hardwick Electric Department,+18024725201,https://www.hardwickelectric.com/,123 N Main St,Hardwick,VT,electric_utility_provider,0.92,362e124e-7417-4e8c-938e-a86254da3847,OK,https://hardwickelectric.com/
+Premier Roof Solutions,+6285256287082,http://www.vtroofsolutions.com/,4 West St,Fair Haven,VT,roofing,0.92,11c26eca-fff6-498a-8b2b-bf9ff9128250,OK,https://www.vtroofsolutions.com/
+TNT Plumbing and Heating,+18023094135,http://tntvt.com/,1422 Sandy Birch Rd,Georgia,VT,plumbing,0.92,3d08bac1-749d-4bd5-8178-6009a3ba7a65,OK,http://tntvt.com/
+Champlain Valley Maintenance,(802) 922-9074,http://yourlocalbusinessreviews.com/Hinesburg-VT/Champlain-Valley-Maintenance-3071.html,372 Cvu Rd,Hinesburg,VT,contractor,0.92,b8a9dbe6-f6a9-4597-b133-f835bd41733e,OK,https://block.charter-prod.hosted.cujo.io/warn.html?url=http://yourlocalbusinessreviews.com/Hinesburg-VT/Champlain-Valley-Maintenance-3071.html&token=cca3701b
+JR's Carpentry,(802) 318-5720,http://www.jrscarpentry.com,1087 Scott Rd,Franklin,VT,bathroom_remodeling,0.92,fe744779-2a93-4401-b9f2-534ab4efe64e,OK,https://www.jrscarpentry.com/
+Texas Hill Lawn Care,+18027346982,http://www.TexasHillLawnCare.com/,680 Texas Hill Cir,Huntington,VT,landscaping,0.803,0e422d45-ca0f-4392-8426-ae0f18f7902c,OK,https://www.texashilllawncare.com/
+Old School Builders Ltd,+18026737873,http://www.oldschoolbuilders.com/,2387 Parker Rd,Glover,VT,contractor,0.92,a35f6159-2b45-471e-b105-63f6c18c16cb,OK,https://oldschoolbuilders.com/
+HP Roofing LLC,8022951548,https://www.hproofingllc.com/,1328 N Hartland Rd,Hartford,VT,roofing,0.92,14caa2b1-5985-44f9-a50f-ed76c6340437,OK,https://hproofingllc.com/
+Simpson Sales Unlimited,+18028883997,http://www.simpsonsalesvt.com/,250 Depot St,Hyde Park,VT,garage_door_service,0.92,cd68f531-c845-403f-bc43-2ea8f1e08dbc,OK,https://www.simpsonsalesvt.com/
+Clean Expectations,+16033982522,http://clean-expectations.com/,87 Shute Rd,Hartland,VT,home_cleaning,0.92,10a643cb-68c2-417d-a818-88f10e87a689,OK,https://www.clean-expectations.com/
+D & H Wood Products,(802) 436-3334,https://www.dandhwoodproductsandgrindingsupplies.com,156 Route 12,Hartland,VT,carpenter,0.92,4f1d9b93-bff9-4520-97d6-a26c6d9ae0a8,OK,https://dandhwoodproductsandgrindingsupplies.com/
+SavATree,8028568733,https://www.savatree.com/locations/jamaica-vermont/?utm_source=GMB&utm_medium=organic&utm_campaign=jamaica,828 Vermont 30,Jamaica,VT,tree_service,0.966,f49659d5-29bf-41c7-8da2-371ff8609799,OK,https://www.savatree.com/locations/jamaica-vermont/?utm_source=GMB&utm_medium=organic&utm_campaign=jamaica
+Cota & Cota,8022970000,http://www.cotaoil.com/,2097 Vermont 30,Jamaica,VT,hvac_service,0.85,8489f754-810f-41b1-b400-153edb372d48,OK,http://www.cotaoil.com/
+Elegant Wood Floors,8025223710,http://elegantwoodfloors.com/,61 Lazy Brook Ln,Jeffersonville,VT,flooring_contractor,0.92,f1e5500a-948f-4268-9f4f-221c03738455,OK,http://elegantwoodfloors.com/
+Carpenter's Cleaning Services,+18022213768,https://carpenterscleaning.com/,1270 Centerville Rd,Hyde Park,VT,home_cleaning,0.92,d733604a-4265-4854-b41a-b7977159b931,OK,https://carpenterscleaning.com/
+Vermont Natural Coatings,18024728700,https://www.vermontnaturalcoatings.com,190 Junction Rd,Hardwick,VT,paint_store,0.997,9600a5fd-3e13-41f8-bb13-afc584e48645,OK,https://vermontnaturalcoatings.com/
+Maheux Heating & Refrigeration Inc,8028993510,https://www.maheuxheating.com/,14 Sunny View Dr,Jericho,VT,hvac_service,0.92,440a9f37-2a80-44c1-b472-7336df7018bd,OK,https://www.maheuxheating.com/
+Total Security Inc. Locksmith,8027548417,http://www.totalsecurityvt.com/,4714 Vermont 14,Irasburg,VT,key_and_locksmith,0.92,eee0fe29-6c86-4469-bb4a-0b7748c34b58,OK,https://www.totalsecurityvt.com/
+Green Heat,8028589740,https://greenheatvt.com/,38 Pinehurst Dr,Jericho,VT,hvac_service,0.92,7d8f6017-bb78-452c-b04e-4e2ea46cf801,OK,https://greenheatvt.com/
+Premier Stone Landscape Supply,+18026358300,http://premierstonevt.com/,29 Deer Run Ln,Hyde Park,VT,landscaping,0.92,8fe2a222-da04-417b-8fd7-b7f2a88abdfd,OK,https://premierstonevt.com/
+Green Mountain Glassworks,+18027674547,http://www.eganglass.com/,5523 Vermont Rte 100,Granville,VT,glass_blowing_venue,0.991,d52bf0cf-745f-4531-b489-254bd6ed2e49,OK,https://michaeleganglass.com/
+Vermont Barns,+18022971600,http://www.vtbarns.com/,10086 VT-30,Jamaica,VT,building_or_construction_service,0.968,f2030544-be7b-458c-8ec1-63bf3e966d40,OK,https://vtbarns.com/
+Cota & Cota,8022288866,http://www.cotaoil.com/,7 Main St,Ludlow,VT,hvac_service,0.92,e9a6f43d-5362-4467-a6af-6ac17bd5b86c,OK,http://www.cotaoil.com/
+John Witherbee Paving,+18025587430,http://www.johnwitherbeepaving.com/,428 Shackett Rd,Leicester,VT,paving_contractor,0.92,14f601f9-4e22-46db-9e1b-58fbe4cb3ede,OK,https://www.johnwitherbeepaving.com/
+Northern Precision Foam,+18026736795,https://npfoam.com/,77 VT-58,Irasburg,VT,contractor,0.92,497cd8b6-d5cd-4d4b-8845-ae52cdec6f22,OK,https://npfoam.com/
+Dovetail Designs By Jenny Volk,18024822600,dovetaildesignskitchen.com,18 Mechanicsville Rd,Hinesburg,VT,kitchen_remodeling,0.92,0571dea1-5b87-4e57-af9b-eb6b89139b16,OK,https://www.dovetaildesignskitchen.com/
+Renaissance Landscaping,+18025780302,http://renaissancestonevt.com/,46 Barber Farm Rd,Jericho,VT,landscaping,0.92,f2eb6a2f-85da-4bdc-9b9f-d9b751765292,OK,https://renaissancestonevt.com/
+Champlain Valley Painting,+18028492225,http://www.champlainvalleyservices.com/,15 Beeman Rd,Fairfax,VT,painting,0.92,e951bc21-df74-4ab8-b153-251b8bedc509,OK,https://champlainvalleyservices.com/
+Forever Stone,(802) 366-0040,http://www.forever-stone.com,5892 VT Route 100,Londonderry,VT,contractor,0.92,b301f8b9-2e9a-4343-98bc-037834993a78,OK,https://www.forever-stone.com/
+Vermont Electric Co-Op,+18026352331,http://www.vermontelectric.coop/,42 Wescom Rd,Johnson,VT,electric_utility_provider,0.92,61d94594-5de3-45d2-a184-4a9c8fbc8936,OK,https://vermontelectric.coop/
+Heritage Slate,+18023232456,http://heritageslating.com/,95 Ridgeview Dr,Lowell,VT,roofing,0.92,77d79f5b-0f83-46be-80ad-11afb1d7287a,OK,https://heritageslating.com/
+Grenier's Pest Control,8028792602,http://www.grenierspestcontrol.com/,57 River Rd,Essex Junction,VT,pest_control_service,0.865,d4eab006-a4d9-42cb-b2c1-e9971cc32b03,OK,https://grenierspestcontrol.com/
+Burns & Associates,+18022287906,http://www.burnscustomhomes.com/,61 S Hill Rd,Ludlow,VT,contractor,0.92,633d346e-8154-4a57-8e99-c663bc1d2aa1,OK,https://burnscustomhomes.com/
+InStone Spas,+18024222600,http://www.instonespas.com/,405 Killington Rd,Killington,VT,pool_cleaning,0.92,5f6bd7c7-37b1-4846-8d20-96f96087e0b7,OK,https://www.instonespas.com/
+Howard's Painting,(802) 228-3033,http://howardpainting.com,12 Pond Street Ct,Ludlow,VT,contractor,0.92,b2d89160-05f3-4a68-8ecf-38c618da9e94,OK,http://howardpainting.com
+American Commercial Cleaning and Restoration Services,+18027488848,http://www.acesvt.com/,1713 Industrial Pkwy,Lyndon,VT,home_cleaning,0.92,a29253bf-3dfe-4745-8e78-4f5fa05d8c27,OK,http://www.acesvt.com/
+Colby Hill Landscape Co,+18024535371,http://colbyhilllandscape.com/,390 Colby Hill Rd,Lincoln,VT,landscaping,0.92,ae4dd7d8-4ecb-4cbd-971f-72c0eacffd85,OK,https://colbyhilllandscape.com/
+Regency Housing LLC,+18028686246,http://regencyhousingllc.com,2629 VT-78,Highgate Center,VT,building_or_construction_service,0.869,0540a79b-2fe8-4290-a5de-55d037aa448b,OK,https://regencyhousingllc.com/
+Creaser Outfitters,8022365614,https://creaseroutfitters.wixsite.com/creaseroutfitters,245 N Hill Cross Rd,Ludlow,VT,outdoor_store,0.85,bc2c37c1-227c-4617-a351-621fb5dfd342,OK,https://creaseroutfitters.wixsite.com/creaseroutfitters
+Cota & Cota,18023621941,https://www.cotaoil.com,2332 Depot St,Manchester Center,VT,hvac_service,0.92,2cdd91ab-70f2-4ddc-a43a-12f37f27e847,OK,https://www.cotaoil.com
+Painless Glass,18026269990,https://www.painlessglass.com,733 Broad St,Lyndonville,VT,auto_glass_service,0.92,a2769f7c-62b8-4f57-88e4-f4baeacc28dd,OK,https://www.painlessglass.com
+Knight Tubs Pools & Spas,+18022282260,http://www.knighttubs.com/,11 Main St,Ludlow,VT,pool_cleaning,0.92,118cbcb0-8f7c-4e5b-9b25-41dc8c99b7df,OK,https://knighttubs.com/
+Bartlett Tree Experts,8023622623,https://www.bartlett.com/locations/Manchester-VT.cfm,7051 Main St,Manchester Center,VT,christmas_tree_store,0.92,2585994f-c735-46da-96e5-e94159da863e,OK,https://www.bartlett.com/locations/Manchester-VT
+C&C Dry Cleaning,+18027681771,http://ccdrycleaning.com/,4975 Main St,Manchester,VT,dry_cleaning,0.92,87812886-f112-42a0-aa98-5c41da44e9e3,OK,https://ccdrycleaning.com/
+Cole Company Inc,+18023753528,http://www.colecompanyinc.com,119 Peace St,Manchester Center,VT,building_or_construction_service,0.941,cb356388-a14a-40e5-8fe1-cc9a691b76e2,OK,https://www.colecompanyinc.com/
+Vermont Native Sheds,+18022288979,http://vermontnativesheds.com/,1459 S Hill Rd,Ludlow,VT,carpenter,0.92,224dd4a7-d7a3-47a0-8846-048c4a224b26,OK,https://www.vermontnativesheds.com/
+KeyMe Locksmiths,8027367885,https://key.me/kiosks/vermont/montpelier/montpelier/locksmith-key-copy-montpelier-shaws-05602-vermont,2 MAIN St,MONTPELIER,VT,key_and_locksmith,0.92,40cb9a3d-dd82-4e96-8c81-27e15709cda5,OK,https://key.me/kiosks/vermont/montpelier/montpelier/locksmith-key-copy-montpelier-shaws-05602-vermont
+Vermont State Colleges,+18026266427,https://www.northernvermont.edu,1001 College Rd,Lyndonville,VT,contractor,0.854,ea8323e1-df71-4be6-87c2-ef9a0904bbba,OK,https://vermontstate.edu/
+Kevin Berry Construction,+18029895290,https://www.kevinberryconstruction.com/home,759 Delorm Rd,Leicester,VT,building_or_construction_service,0.92,07473355-8b8e-4201-a34b-5f7871bdd9c0,OK,https://www.kevinberryconstruction.com/home
+Londonderry Building Company,+18028244661,http://Www.Londonderrybuildingco.com/,2430 Middletown Rd apt 1,Londonderry,VT,building_or_construction_service,0.92,a7bd53d8-a1cf-48d6-8edd-f710373fa415,OK,https://londonderrybuildingco.com/
+Oak Hill Construction,+18023243159,http://www.oakhillvermont.com/,3490 Sand Rd,Ferrisburgh,VT,building_or_construction_service,0.92,131ade01-02a3-47b0-a742-dcde79a3982c,OK,https://www.oakhillvermont.com/
+Luxbrush Painting Co Inc,8023661119,http://www.luxbrush.com/,254 Taconic Business Park,Manchester Center,VT,painting,0.92,b3d22495-f67a-4fca-b7c3-a2e7535080b2,OK,https://www.luxbrush.com/
+Just Kitchen and Bath,+18022871187,https://www.justkitchenandbath.com/,308 Center Hl,Manchester Center,VT,contractor,0.92,9395830b-10e2-4713-aac4-51087a54c812,OK,https://www.justkitchenandbath.com/
+Manchester Carpet Care,+18023622091,http://www.manchestercarpetcare.com,152 Manchester Valley Rd,Manchester Center,VT,carpet_cleaning,0.92,35dec94f-f52d-4b74-9baf-d3bd87ca526c,OK,http://www.manchestercarpetcare.com
+Downtown Window and Design,+18023623445,http://www.downtownwindowanddesign.com/,4935 Main St,Manchester Center,VT,windows_installation,0.92,f6ec514c-9652-4c53-998e-28616856d848,OK,https://www.downtownwindowanddesign.com/
+Wayside Fences,8022545838,http://www.waysidefencesvt.com/,218 Marlboro Rd,Marlboro,VT,fence_and_gate_sales_service,0.92,dccf17e3-8ded-4e7b-9c8f-ec4ef97b90c8,OK,https://www.waysidefencesvt.com/
+Lyndon Electric Department,+18026269252,https://www.lyndonelectric.com/,119 Park Ave,Lyndonville,VT,electric_utility_provider,0.966,975beb2f-f41c-4801-8e65-460a6e3d51ee,OK,https://www.lyndonelectric.com/
+Manchester Hot Glass,+18023622227,http://manchesterhotglass.com/,79 Elm St #1,Manchester,VT,glass_blowing_venue,0.957,418578d6-a970-4d3d-b382-25529df5c41f,OK,https://www.manchesterhotglass.com/
+Roto-Rooter,8023622344,https://www.rotorooter.com/manchestercentervt/,209 Riverside Hts,Manchester Center,VT,plumbing,0.92,1215040a-0139-46ce-9e61-016af368722b,OK,https://www.rotorooter.com/manchestercentervt/
+Excel Plumbing and Heating,+18027757558,http://www.remorganandsons.com/,2080 US-4,Mendon,VT,plumbing,0.92,90eae312-431c-4c23-9805-694671629716,OK,http://www.remorganandsons.com/
+FH Pressure Washing,+18023914117,http://Fhpressurewashing.com/,42 Old Academy St,Fairfax,VT,home_cleaning,0.92,fefd2667-81e2-4d8a-87fd-63f50b3b56ce,OK,https://fhpressurewashing.com/
+All Seasons Urethane Foam,+18024263343,http://www.vtfoam.com/,58 O'rourke Ln,Marshfield,VT,contractor,0.92,94cc64d9-32f8-4a0c-afc1-7f40cc483991,OK,https://vtfoam.com/
+Allen Pools & Spas,8027755952,https://allenpools-spas.com/,1901 US Route 4 E,Mendon,VT,hot_tub_and_pool_store,0.92,16850042-af89-4d07-b247-43846b021937,OK,https://allenpools-spas.com/
+Master Plumbing and Heating,8029750369,https://www.masterplumbingandheating.com/?utm_source=GMB,126 Main St Unit D,Ludlow,VT,hvac_service,0.92,0640b535-7541-4df5-aa37-73233adcbd4f,OK,https://www.masterplumbingandheating.com/?utm_source=GMB
+Allen Pools & Spas,8027755952,http://allenpools-spas.com/,1901 US Route 4 E,Mendon,VT,hot_tub_and_pool_store,0.85,9df551b4-489d-44e5-9a08-50398eb7bfab,OK,https://allenpools-spas.com/
+Addison Residential,+18023887707,http://www.addisonresidential.com/,2160 Route 7 S,Middlebury,VT,building_or_construction_service,0.92,e5980b42-5905-4855-90d2-ca412b1210a1,OK,https://www.addisonresidential.com/
+"Bradford Kitchen & Bath, Llc",18024588999,https://www.bradfordkitchenandbath.com,18 Creek Rd,Middlebury,VT,kitchen_remodeling,0.92,cc43d9e6-8be8-42ab-9a79-8249f2aa8ad7,OK,https://www.bradfordkitchenandbath.com
+Harris Plumbing & Heating Inc,18026265841,http://www.harrishp.com,590 Main St,Lyndonville,VT,plumbing,0.95,d7b4789d-103d-478e-8a6e-ba72e6f56161,OK,http://www.harrishp.com
+Champlain Construction Inc,+18023882652,http://www.champlainconstruction.com/,1050 RT 7 S,Middlebury,VT,building_or_construction_service,0.92,507f0602-2dfb-478b-b792-9b68609109a8,OK,http://www.champlainconstruction.com/
+Friend Construction,18025212078,https://www.friendconstructionvt.com,1415 Case St,Middlebury,VT,roofing,0.92,7df2613e-5ce6-4145-a1ce-8b713a6f1950,OK,https://www.friendconstructionvt.com
+D & F Excavating & Paving Inc,18023882338,https://www.dfexcavatingandpaving.com,34 Main St,Middlebury,VT,paving_contractor,0.92,50bd1a24-5b33-478e-a82a-5237fd43d6cd,OK,https://www.dfexcavatingandpaving.com
+Tygart Mountain Sports,+18022285440,http://www.tygartmountainsports.com/,57 Pond St Ste 1,Ludlow,VT,outdoor_store,0.92,58dd41a4-d058-4e35-8771-e00753142cac,OK,https://www.tygartmountainsports.com/
+Plouffe's Boiler & Mechanical Service Inc.,8023882296,https://www.pbmsvt.net/,1786 U S 7,Middlebury,VT,hvac_service,0.92,d57b1a06-bfe3-4bb0-a26a-5ad3b67c6c14,OK,https://www.pbmsvt.net/
+"Maple Valley Design Build, Inc.",18023627343,https://www.maplevalleyvt.com,1996 Depot St,Manchester Center,VT,contractor,0.92,d5e76a0b-e726-47b1-83bd-beedc252fc7e,OK,https://www.maplevalleyvt.com
+Cambium Construction,(802) 388-9224,https://www.cambiumconstruction.com,12 Seminary St,Middlebury,VT,contractor,0.92,b5458e11-a96e-4029-b155-f682b823ce35,OK,https://www.cambiumconstruction.com
+R J Desabrais and Sons Glass Services,+18023889049,https://www.usahockey.com,198 Boardman St,Middlebury,VT,auto_glass_service,0.92,73bfe31f-d9f2-4ae3-9daf-a51ff6a2931a,OK,https://www.usahockey.com
+United Ag & Turf - Northeast,+18023884482,https://agandturf.unitedequip.com/locations/middlebury-vt/,1137 US-7 N,Middlebury,VT,outdoor_store,1.0,5dabb9b8-8d3f-4b7f-b1d7-bc38453eb4b7,OK,https://agandturf.unitedequip.com/locations/middlebury-vt/
+J D Fuller Plumbing Heating,(802) 388-2019,http://www.jdfullerplumbingandheating.com,5118 Case St,Middlebury,VT,plumbing,0.92,b16dd38f-19c6-44c9-b077-5c1028dd4902,OK,https://jdfullerplumbingandheating.com/
+Vermont Pest Control,+18028846126,https://www.vtpestcontrol.com/,76 Tournet Dr,Middletown Springs,VT,pest_control_service,1.0,bd4bfad0-5d22-47e5-a950-4b89f1e75c37,OK,https://www.vtpestcontrol.com/
+Kingsbury Companies,+18024962205,https://www.kingsburyco.com,58 Center Rd,Middlesex,VT,contractor,0.92,25e781a4-c935-41f2-953a-4895ee45c651,OK,https://www.kingsburyco.com
+EcoCuts,8008837005,http://ecocuts.co/,227 Pond Ln,Middlebury,VT,carpenter,0.85,bff72fda-e96b-41e7-b5a1-6d764d45cc98,OK,https://www.ecosupplycenter.com/products/ecocuts/
+Mr Mike's Cleaning Services,+18023886427,http://www.mrmikescleaningservicevt.com/,656 Exchange St #6,Middlebury,VT,home_cleaning,0.92,a127628e-da88-40f0-a661-1409f3258ecc,OK,https://www.mrmikescleaningservicevt.com/
+M Gale Builders and Custom Woodworking,+18029890548,http://mgalebuilders.com/,84 Ossie Rd,Middlebury,VT,carpenter,0.92,4eeb460f-4e21-4406-b236-955bed489a46,OK,http://mgalebuilders.com/
+Jim Billado Roofing LLC,8023163667,http://vermontroofs.com/,424 Westford Rd,Milton,VT,roofing,0.85,3b44bee1-c016-48b5-98de-ee22b11d47bc,OK,http://vermontroofs.com/
+Green Mountain Timber Frames,+18022359664,http://www.greenmountaintimberframes.com/,430 West St,Middletown Springs,VT,contractor,0.92,f911f948-cc76-4d8d-8d8c-821b75b9e7fe,OK,https://www.greenmountaintimberframes.com/
+Bo's Sewer & Drain Service,8028937781,https://www.bosseweranddrain.com/,164 Manor Dr,Milton,VT,plumbing,0.92,8d404431-996b-4afa-afa7-14d91695805c,OK,https://www.bosseweranddrain.com/
+Vermont Shade And Blind,18022473883,https://www.vtshadeandblind.com,298 Maple St,Middlebury,VT,window_treatment_store,0.92,cc0f455b-1aaa-4fc7-8aee-fc98c6d481db,OK,https://vtshadeandblind.com/
+Al's Electric Service,8024484809,http://www.alselectricservice.com/,28 Kim,Milton,VT,electrician,0.966,34df3f8a-3783-4e96-9b04-35f8bc2134db,OK,https://www.alselectricservice.com/
+Middlebury Municipal Pool,+18023884020,http://www.waterburyvt.com/,298 Buttolph Dr,Middlebury,VT,swimming_pool,0.92,15382456-d128-45bb-bbc9-2dbf6e9820a1,OK,https://www.waterburyvt.com/
+Hometown Closet Finishing,8023386970,https://www.hometownclosetfinishing.com/,17 Whisper Ln,Milton,VT,closet_remodeling,0.92,6b939cf9-d76b-4271-a88f-d29c4f75de7c,OK,https://www.hometownclosetfinishing.com/
+Nate and Sons Painting,+18029174793,http://www.nateandsonspainting.com/,33 School St,Milton,VT,painting,0.92,eac1a2e9-0ed3-44c9-86a1-25ceb3116bde,OK,https://www.nateandsonspainting.com/
+AATEK Roofing Inc,+18023162364,http://aatekinc.com/,359 US-7,Milton,VT,roofing,0.92,1f592a19-6c0a-4c51-a35e-75800cd13112,OK,https://aatekinc.com/
+Premier Paving Inc,8025240399,https://www.premierpavingvt.com/,330 Fontaine Dr,Milton,VT,paving_contractor,0.92,b0d079e5-2b75-4f06-9df4-1dcfae4f9fe4,OK,https://www.premierpavingvt.com/
+Modern Construction Inc.,+18027688403,http://modernconstructionvt.com/,4714 Main St,Manchester Center,VT,contractor,0.92,b495f7d7-b795-4e1a-8044-4671f2377613,OK,https://modernconstructionvt.com/
+Little A Wood Floors,8028936473,http://www.littleawoodfloors.com/,1 Clifford Dr,Milton,VT,flooring_store,0.92,b6a78b3a-f0ca-4c23-8d5d-5fde109a6aa0,OK,https://www.littleawoodfloors.com/
+Wooden Hammer,+18023101044,http://www.woodenhammer.net/,140 Monkton Rd,Monkton,VT,carpenter,0.92,943e59c9-7dd6-4a17-9af9-6becda46c822,OK,http://www.woodenhammer.net/
+Premier Power Washing,+18022498050,https://www.premierpowerwashingvt.com/,75 Maplewood Ave,Milton,VT,home_cleaning,0.92,33dc646c-cdad-4101-ba50-b3266c46b034,OK,https://www.premierpowerwashingvt.com/
+"Pellergy, Llc",18023710098,http://www.pellergy.com,2 Granite St,Montpelier,VT,hvac_service,0.92,ebde760d-c694-4d67-ae3e-c42a43cb7bc2,OK,http://www.pellergy.com
+First Trax,+18023263073,http://www.firsttraxvt.net/,40 N Main St,Montgomery Center,VT,outdoor_store,0.949,75ced420-972d-443d-a6a8-2f3e93534f3f,OK,https://www.firsttraxvt.net/
+United Ag & Turf - Northeast,+18022237845,https://agandturf.unitedequip.com/locations/montpelier-vt/,55 Country Club Rd,Montpelier,VT,outdoor_store,0.92,1db39813-31b8-4707-bfea-b96922316154,OK,https://agandturf.unitedequip.com/locations/montpelier-vt/
+Capital City Floors,18022720634,https://www.capitalcityfloors.com,407 Barre St,Montpelier,VT,flooring_store,0.92,b6403324-9b7e-42bf-b1c2-85af46eb5e69,OK,https://www.capitalcityfloors.com
+New England Auto Glass,18022256339,https://www.neautoglassvt.com,168 River St,Montpelier,VT,auto_glass_service,0.92,91c8d510-8917-463b-a196-c9db5d29f20b,OK,https://www.neautoglassvt.com
+"Treeworks, Ltd.",18022232617,https://www.treeworks.com,118 Granite Shed Ln,Montpelier,VT,tree_service,0.92,2849b5e4-f12b-43ee-a20a-90f73e16f78f,OK,https://www.treeworks.com
+Boot Hill Metal Benders,8029890396,http://boothillmetalbenders.com/,2448 Tyler Bridge Road,Monkton,VT,air_duct_cleaning_service,0.92,8c3f1b74-68bc-4c00-83c0-48a3e3266879,OK,https://www.boothillmetalbenders.com/
+FH Pressure Washing,8023914117,http://www.fhpressurewashing.com/,112 Middle Rd,Milton,VT,cleaning_service,0.92,3811f40c-f45f-4836-88f9-ca2217746541,OK,https://fhpressurewashing.com/
+"Leo's Small Engine Sales, Rentals & Repairs, LLC",+18028887247,http://www.leossmallengines.com/,541 VT-15 East,Morristown,VT,outdoor_store,0.92,eca221b2-e26c-41a0-8e6e-9496203db0e1,OK,https://www.leossmallengines.com/
+Blow & Cote,+18028882067,https://blowandcote.com/,815 VT-15,Morristown,VT,contractor,0.92,cffde45b-2fe8-4b94-8da7-2e1f0767ffaa,OK,https://blowandcote.com/
+EJR Landscape Management,+17816594440,http://www.ejrlandscape.com/,101 Fishkill Ln,Morristown,VT,landscaping,0.92,3fa95ea9-275c-4eae-a872-a83befb6c34d,OK,https://www.ejrlandscape.com/
+Sylvan Tree Care,+18022797818,http://sylvantreecare.com/,397 Elm St,Montpelier,VT,tree_service,0.92,26af098f-a24e-4632-a262-5e2d4a76e418,OK,https://www.sylvantreecare.com/
+Green Mountain Landscaping,+18028885008,http://www.greenmtnlandscaping.com/,2835 Laporte Rd,Morristown,VT,landscaping,0.92,b7ed61db-3a41-48c0-ad13-a8474d2e90f9,OK,http://www.greenmtnlandscaping.com/
+Donald P Blake Jr. Inc.,+18028883629,https://stowebuilder.com/,59 Old Creamery Rd,Morrisville,VT,building_or_construction_service,0.92,941c9d14-74af-4842-b1d9-a01e6ca84f62,OK,https://stowebuilder.com/
+True Colors Blinds and Design,8022009164,https://windowtreatmentmontpelier.com/,141 River St,Montpelier,VT,window_treatment_store,0.92,9c9721a3-0095-48c5-9706-9a5b1a224f91,OK,https://windowtreatmentmontpelier.com/
+Central Vermont Pest Control,+18024773899,https://centralvermontpestcontrol.com/,1900 US-2,Marshfield,VT,pest_control_service,0.92,ca90f38f-5d37-463b-9b36-7dd02e99bd0f,OK,https://centralvermontpestcontrol.com/
+Apex Pest Solutions,8022270232,https://www.apexpestsolutionsllc.com/,629 Ethan Allen Hwy,Milton,VT,pest_control_service,0.85,8c650018-89c6-4032-89d8-c44c3fe42e2f,OK,https://apexpestsolutionsllc.com/
+De Noia's Dry Cleaners,+18028884368,http://www.vermontdrycleaner.com/,140 Portland St,Morrisville,VT,dry_cleaning,0.92,76658afb-84ad-4059-81c5-f0c304f94ef2,OK,https://www.vermontdrycleaner.com/
+Apex Pest Solutions,8022270232,http://www.apexpestsolutionsllc.com/,629 Ethan Allen Hwy,Milton,VT,pest_control_service,0.92,86fdfe0b-41b4-48d0-97b2-1a71d6b151bf,OK,https://apexpestsolutionsllc.com/
+Paquette Plumbing,8023530125,http://paquetteplumbing.com/,125 Valley Vw,Mendon,VT,hvac_service,0.92,b2965e7f-7200-4c36-89e4-1b0262473d28,OK,https://paquetteplumbing.com/
+The Glass Connection Inc,+18028793600,http://www.glassconn.com/,793 Rte 7 S,Milton,VT,glass_and_mirror_sales_service,0.92,6539ea20-7108-4b4b-bec5-75d9314dbc9b,OK,https://glassconn.com/
+Bread Loaf Corporation,(802) 388-9871,http://www.breadloaf.com,1293 Route 7 S,Middlebury,VT,contractor,0.92,73b1a6ae-679f-4964-97f2-3fccb7863bf6,OK,https://www.breadloaf.com/
+Blue River LLC,8029898490,https://www.blue-river-vermont.com/,1195 Dog Team Rd,New Haven,VT,carpenter,0.98,e31d7b77-192c-4b78-bcd7-70974bbaaea2,OK,https://www.blue-river-vermont.com/
+Champion Auto Glass,8024536159,http://www.championautoglass.org/,3378 Ethan Allen State Route,New Haven,VT,auto_glass_service,0.977,164573bd-a1c2-4652-aacc-eb1ca074199a,OK,https://expireddomains.com/domain/championautoglass.org?utm_source=redi
+County Plumbing & Heating,+18028886688,https://www.countyph.com,51 Lepper Rd,Morrisville,VT,plumbing,0.92,4327b668-a43f-4b07-afc5-a64570cc1394,OK,https://www.countyph.com
+Paquette Excavating,(802) 453-3932,http://cccofvt.org,1367 South St # 2,New Haven,VT,contractor,0.92,34649c26-d93f-48be-8b6e-0532bbc32ee2,OK,https://cccofvt.org/
+Middlebury Fence Co Llc,18023882225,https://www.middleburyfence.com,1341 Ethan Allen Hwy,New Haven,VT,contractor,0.982,7e4685ce-7d2e-4dd4-bebd-26e973121c30,OK,https://www.middleburyfence.com
+Refresh Your Roof LLC,8029893352,http://www.refreshyourroof.net/,2180 Main St,New Haven,VT,roofing,0.92,6449265f-d99c-4417-8757-9f594e8e7608,OK,http://www.refreshyourroof.net/
+"Silver Maple Construction, Llc",18029897677,https://www.silvermapleconstruction.com,46 River Rd,New Haven,VT,building_or_construction_service,0.92,6ca1358f-ba9b-486f-9181-0d0e17687f80,OK,https://silvermaple.com/
+"Emerson And Sons Logging, Llc",18022744039,https://emersonandsonslogging.com,2601 Scott Hwy,Groton,VT,logging_contractor,0.92,558d192a-4744-4dec-8537-8fcc7b7d43ee,OK,https://emersonandsonslogging.com
+Stark Mountain Woodworking,+18024535549,http://www.starkmountain.com/,359 South St #1,New Haven,VT,carpenter,0.92,35f1a8e1-f6fc-43a0-a902-91a47b8d1a51,OK,https://www.starkmountain.com/
+Housewright Construction Inc.,18028665520,https://www.housewright.net,5365 Main St S,Newbury,VT,building_or_construction_service,0.92,a3f1da8c-6544-4a65-a97b-e19305386bf3,OK,https://housewright.net/
+Astley Plumbing & Heating LLC,+18023807295,http://www.astleyplumbing.com/,26 River Rd,Newfane,VT,plumbing,0.92,f155e92b-c3d2-41bb-a87a-e5a991aac997,OK,https://astleyplumbing.com/
+"Gene's Electric, Inc.",8023346634,http://www.geneselectricnewport.net/,159 Cross Rd,Newport,VT,electrician,0.92,92f9ae40-3864-43ef-895b-904290c5c91d,OK,https://www.geneselectricnewport.net/
+Better Wheel Workshops,+14135307964,http://www.betterwheelvt.com/,198 Timson Hill Rd,Newfane,VT,carpenter,0.92,f976b7d6-20a8-457d-bd19-db3256c8581c,OK,https://www.betterwheelvt.com/
+GetSno LLC,+18023347779,http://www.trackinc.com/,1778 VT-105,Newport,VT,outdoor_store,0.926,cfdb11a4-6c2c-4d84-9965-0414745cad42,OK,https://www.trackinc.com/
+Kingdom Construction,+18023343117,http://www.kingdomconstructionvt.com/,227 Citizens Rd,Newport,VT,building_or_construction_service,0.92,40ab2ce0-d7ce-4016-b807-70474e6d75fb,OK,https://www.kingdomconstructionvt.com/
+Walmart House Cleaning Services,18336000406,https://www.walmart.com,115 Seymour Dr,Newport,VT,cleaning_service,0.95,fc77ac89-0156-413b-8518-5266b89337dd,OK,https://www.walmart.com
+Continental Screen & Glass,+18023659100,http://www.continentalscreenandglass.com/,959 VT-30,Newfane,VT,glass_and_mirror_sales_service,0.999,5158cdab-2ce0-48f4-8593-357b31dc51db,OK,https://continentalscreenandglass.com/
+Ciliberto's Woodworking,+18023345101,http://www.cedarwindowbox.com/,28 Bergeron Hl,Newport Center,VT,carpenter,0.92,70fc2327-0c90-4459-88cb-04cd9107acaa,OK,http://www.cedarwindowbox.com/
+Weatherization & Renovation of Montpelier,+18022296973,http://www.warmvt.com/,4 Cummings St,Montpelier,VT,contractor,0.92,cede2d11-8b43-409b-ae91-31136d32e70c,OK,https://warmvt.com/
+SGB Builders,(802) 384-8307,http://yourlocalbusinessreviews.com/North-Springfield-VT/SGB-Builders-6793.html,26 VT Route 10,North Springfield,VT,contractor,0.92,be24935b-bc73-4543-9cd5-8438122b9b22,OK,https://block.charter-prod.hosted.cujo.io/warn.html?url=http://yourlocalbusinessreviews.com/North-Springfield-VT/SGB-Builders-6793.html&token=7a7dc681
+Clar Construction,18022233447,clarconstruction.com,3 Granite St  Ste 101,Montpelier,VT,contractor,0.92,c6e63af8-7624-4bd2-a6d2-110c57859ca1,OK,https://clarconstruction.com
+Safelite AutoGlass,8028515080,https://www.safelite.com/stores/Morrisville,97 Portland St,Morrisville,VT,auto_glass_service,0.92,4114f149-b1bb-4575-b726-bc2947d754a9,OK,https://www.safelite.com/store-locator
+Gurney Brothers Construction,18028862210,https://www.gurneybros.com,19 Gurney Rd,North Springfield,VT,building_or_construction_service,0.92,3516a513-7f49-43a3-9cb4-9b9958d94821,OK,https://www.gurneybros.com
+NaturaLawn Of America,8026524063,https://naturalawn.com/burlington-vt,"6895 US-7, Unit 2",North Ferrisburgh,VT,lawn_service,0.92,8b83997a-1070-4c10-bc35-9ca5a16d1934,OK,https://naturalawn.com/burlington-vt
+Knight Kitchens,+18027738777,http://www.knightkitchens.com/,20 Innovation Dr,North Clarendon,VT,contractor,0.92,2c412529-c849-4f25-a2f0-d3c4abb79dee,OK,https://knightkitchens.com/
+LeBlanc's Pest Control,8022383937,https://www.leblancspestcontrol.com/,3032 River Rd,North Troy,VT,pest_control_service,0.85,b522a45d-891c-499b-a5f5-c7ed21de9cca,OK,https://www.leblancspestcontrol.com/
+Timber Creek Post and Beam Homes,+18027756591,http://www.timbercreekinc.com,3684 Middle Rd,North Clarendon,VT,contractor,0.92,80f4094f-590e-464c-9108-ef5a5414c05a,OK,https://timbercreekinc.com/
+"Joseph P. Carrara & Sons, Inc.",18027752301,https://www.jpcarrara.com,167 N Shrewsbury Rd,North Clarendon,VT,contractor,0.92,f4bb5c1d-a12d-4d3a-93eb-9e82b6810a59,OK,https://www.jpcarrara.com
+Advanced Energy Solutions,+18028934444,http://advancedenergyvt.com/,321 Poor Farm Rd,Milton,VT,plumbing,0.92,2a0a8a38-c692-4f0d-aaea-d40b560239de,OK,https://www.advancedenergyvt.com/
+"Riverlight Builders, Inc.",18026491615,http://riverlightbuilders.net,8 Beaver Meadow Rd,Norwich,VT,contractor,0.804,251db614-dd5d-42a1-aac5-dacbbcd4bed6,OK,http://riverlightbuilders.net
+Lewallen Builders,+18022805848,http://lewallenbuilders.com/,74 N Maple St,Perkinsville,VT,contractor,0.92,9351083e-4e2c-4481-9740-6d42b361cb4c,OK,http://lewallenbuilders.com/
+Granite Design Usa,18667618700,http://www.granitedesignusa.com,124 Quarry Rd,Newport,VT,building_or_construction_service,0.92,b4a0e2cb-9b3d-4479-8a38-dde346a80b0f,OK,https://www.granitedesignusa.com/
+Precision Electrical & Contracting,+18022794731,http://precisionelectricalcontracting.com/,1411 Union Brook Rd,Northfield,VT,electrician,0.92,03e646b9-c39d-4e13-b225-e1f3c5df8ac1,OK,https://www.precisionelectricalcontracting.com/
+Orwell Glass,+18029482209,http://www.orwellglass.com/,690 VT-73,Orwell,VT,glass_blowing_venue,0.92,a09d7cef-a2af-437f-84a5-e75453e993ff,OK,https://www.orwellglass.com/
+Snapping Turtle Tree Works,8027930488,https://www.snappingturtletreeworks.com/,2912 Stony Brook Rd,Northfield,VT,tree_service,0.92,4989f321-de1f-44f6-8ddc-4636b528279e,OK,https://snappingturtletreeworks.com/
+Safelite AutoGlass,+18023231042,https://safl.it/2t2rVCP?y_source=1_MTc4NzEwNi01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,593 Union St,Newport,VT,auto_glass_service,0.92,a707fe06-7354-451d-ad85-199f1939425f,OK,https://www.safelite.com/stores/Newport?utm_source=yext&utm_medium=list&utm_campaign=facebook_local&gad_source=7&dclid=CNLOn9TutZcDFbLkhwkdb5kgLg
+Euber Construction,(802) 948-2291,http://www.trustthisbiz.com/euber_construction,205 Route 73,Orwell,VT,contractor,0.92,7c8108e1-aab8-4faa-8adc-1da692023206,OK,https://www.bbb.org/
+Brook Field Service Generators,8024856567,https://brookfieldservice.com/,829 VT-12,Northfield,VT,electrician,0.978,d637892c-5f19-495d-acdc-01d67834f5dd,OK,https://brookfieldservice.com/
+Round Hill Fence & Security,+18027546328,http://www.roundhillfence.com/,288 Telephone Ln,Orleans,VT,fence_and_gate_sales_service,0.899,7a0c844b-deae-4ccc-aec2-2ed8d93c2b13,OK,https://www.roundhillfence.com/
+Elwood Thurston Painting,(802) 333-9415,http://www.trustthisbiz.com,204 Barker Rd,Post Mills,VT,contractor,0.92,4817591a-df85-4920-b693-d0f3b6a4f0c8,OK,https://www.bbb.org/
+Handyman General Contractor,(802) 476-6829,http://www.vtroofing.com,496 Doyon Rd,Northfield,VT,contractor,0.92,32641c51-a166-443d-802e-5aeea6d3a5c0,OK,https://vtroofing.com/
+Vermont Biochar,+18022747826,http://www.vermontbiochar.com/,4287 Bayley-Hazen Rd,Peacham,VT,landscaping,0.92,51661be8-3cdb-4d67-9ddd-64c49f80365d,OK,http://www.vermontbiochar.com/
+Foxfire Tree Care,8023223769,http://foxfiretree.com/,550 Coburn Rd,Plainfield,VT,christmas_tree_store,0.92,750ff59e-b1f2-4f96-b4be-4649314c03fa,OK,https://foxfiretree.com/
+Green Mountain Well Co Inc,8023875529,https://www.greenmtwell.com/,114 Main St,Putney,VT,plumbing,0.92,32a43f62-35a4-4387-9934-6292a10a8461,OK,https://www.greenmtwell.com/
+Derrig Excavating,(802) 387-5479,http://www.afterhoursmusicinc.com,41 Houghton Brook Rd,Putney,VT,contractor,0.92,95a149aa-2f29-4c98-96b4-793271cb64a6,OK,https://www.afterhoursmusicinc.com/
+Creative Landscapes,+18023808782,http://creativelandscapesvt.com/,38 Signal Pine Rd,Putney,VT,landscaping,0.92,5b207040-707f-4315-87ab-1e495f08a452,OK,https://www.creativelandscapesvt.com/
+Vermont Slate Sales,(802) 287-9987,http://www.vermontslateco.com,19 Depot St,Poultney,VT,roofing,0.92,c03490af-d22a-4dd6-9779-ae15285258a8,OK,https://vermontslateco.com/
+Robert Burch Glass,+18023874032,http://robertburchglass.com/,3 Great Meadows Rdg,Putney,VT,glass_blowing_venue,0.928,05e93d27-ac11-467b-be54-b48f1878793e,OK,https://www.robertburchglass.com/
+Boones Locksmith Shop,+18023450492,http://www.vtlocksmith.com/,62 S Main St,Randolph,VT,key_and_locksmith,0.92,65087165-2618-435d-8d1d-36ad30a0a69f,OK,https://www.vtlocksmith.com/
+Tailblock Concrete LLC,+18022467325,http://tailblockconcrete.com/,18 Christian Square,Putney,VT,contractor,0.92,8d0ac132-3734-4570-8aba-fc3269502161,OK,https://www.tailblockconcrete.com/
+Catamount Solar,+18027283600,http://catamountsolar.com/,44 Hull St,Randolph,VT,solar_installation,0.92,faa74abb-8faa-4c7b-b640-b6526eb09410,OK,https://catamountsolar.com/
+Pembroke Landscaping,+18024422020,http://www.pembrokelandscaping.com/,132 Harrington Rd,North Bennington,VT,landscaping,0.92,a59997d9-4594-46a6-b427-9a6517df3aec,OK,https://pemscape.com/
+Woody's Vinyl Siding,(802) 249-8091,http://trustthisbiz.com,918 Hebard Hill Rd,Randolph,VT,contractor,0.92,062bd74a-49da-401c-beaa-5f45ee219e41,OK,https://www.bbb.org/
+Matt Waite Excavation,(802) 325-3668,http://www.dorsetvt.com,236 Milaura Rd,Pawlet,VT,contractor,0.92,a85872ac-d704-4256-9671-02c682eb333b,OK,https://www.dorsetvt.com/
+Stonescapes Inc,+18023246301,http://www.stonescapesvt.com/,11 Robbins Mountain Ext,Richmond,VT,landscaping,0.92,bb10f371-f7cb-4848-b897-a4ea46802bb7,OK,http://www.stonescapesvt.com/
+United Ag & Turf - Northeast,+18023347300,https://agandturf.unitedequip.com/locations/newport-vt/,29 Industrial Dr,Newport,VT,outdoor_store,0.92,a619c6fd-0c60-46d4-9522-2b2b376245a1,OK,https://agandturf.unitedequip.com/locations/newport-vt/
+Ultravation,18664688247,http://ultravation.com,212 Ideal Way,Poultney,VT,hvac_service,0.92,a3de7eb3-0848-48a7-a971-6a0f83a60902,OK,https://ultravation.com/
+Randolph Pool,+18027284647,http://randolphvt.org,25 School St,Randolph,VT,swimming_pool,0.949,58f0e2ae-80f9-4423-994d-d47e64a00a37,OK,https://legacy.randolphtownvt.org/
+Bronson Johnson Seamless Gutters,8028933070,https://bronsonjohnsongutters.com/,598 Westford Rd,Milton,VT,gutter_service,0.92,b6fec401-58d0-4f74-998d-6ad4b2b19ee0,OK,https://www.bronsonjohnsongutters.com/
+J Hutchins Inc,18024343500,https://www.jhutchinsinc.com,88 Rogers Ln,Richmond,VT,contractor,0.92,9cdf56d5-ae46-4344-8cfd-eabd13b64272,OK,https://www.jhutchinsinc.com
+Ryea and Sons Masonry,+13392731373,http://www.ryeaandsonsmasonry.com/,1645 St Albans Rd,Richford,VT,masonry_concrete,0.92,eaf51fcf-9fe3-48e6-9651-7fbb35fbaaba,OK,https://vtmasonry.com/
+G. L. Hall Masonry,(802) 848-3558,http://www.trustthisbiz.com/g_l_hall_masonry,53 Brook St,Richford,VT,contractor,0.92,cc379c6e-64b9-43aa-b3f0-db24311128a1,OK,https://www.bbb.org/
+Shamrock Painting Company,8024856110,http://www.shamrockpaintingcompany.com/,75 Water St,Northfield,VT,painting,0.92,79e39bd1-58b3-4470-beb2-89f013d45385,OK,https://shamrockpaintingcompany.com/
+Patterson Fuels,+18028623447,http://pattersonfuels.com/,166 River Rd,Richmond,VT,hvac_service,0.92,0c5d974b-4cbc-4637-a742-e193bd77cedb,OK,https://pattersonfuels.com/
+A-1 Sewer & Drain Service Inc,18024385722,http://www.septicservicerutlandvt.com,157 Quality Ln,Rutland,VT,septic_service,0.92,14c33786-54a3-4053-8ad2-1d903feb878d,OK,https://www.septicservicerutlandvt.com/
+Landshapes,+18024343500,http://www.landshapes.net/,88 Rogers Ln,Richmond,VT,landscaping,0.92,583a7878-19cb-41e2-ab11-2ce0bf3650c5,OK,https://www.landshapes.net/
+Christmas Decor by Professional Decorators of VT,8023454143,https://www.christmasdecor.net/locations/christmas-decor-by-professional-decorators-of-vermont/,960 E Pittsford Rd,Rutland,VT,landscaping,0.92,263fa012-6dbb-4f22-bfde-3b4e199b2cc5,OK,https://www.christmasdecor.net/locations/christmas-decor-by-professional-decorators-of-vermont/
+DICK'S Sporting Goods,8027732710,http://stores.dickssportinggoods.com/vt/rutland/253/,320 Us Route 7 S,Rutland,VT,outdoor_store,0.993,e3f14ac8-a4ec-4e8a-ab19-68ece51550a6,OK,https://stores.dickssportinggoods.com/vt/rutland/253/
+Haze Glass Creations,+18027736262,http://www.hazeglass.com/our-story.html,101 State St,Rutland,VT,glass_blowing_venue,0.92,7fdb1d2a-94c4-43bb-b95e-bd9791bdeeb8,OK,https://www.hugedomains.com/domain_profile.cfm?d=hazeglass.com
+Green Mountain Window Co,18027476915,https://www.greenmountainwindow.com,92 Park St,Rutland,VT,window_supplier,0.95,b9ab90b4-b4f6-4ad3-9dc7-409e138cbe44,OK,https://www.greenmountainwindow.com
+Chem-Dry of Rutland-Killington,+18027754195,https://chemdryrutlandkillington.com/,196 Stratton Rd,Rutland,VT,carpet_cleaning,0.92,b0a45ca0-3012-48a9-810e-dbac6462426b,OK,https://chemdryrutlandkillington.com/
+Jim Mailhiot Roofing,8023420616,https://jimmailhiotroofing.com/,162 Granger St,Rutland,VT,roofing,0.92,b1190f87-b445-4b0e-a7ba-3d0a50c88207,OK,https://jimmailhiotroofing.com/
+Gw Paving Inc,8025985025,http://www.gwpavinginc.com/,8 Ripley Rd,Rutland,VT,paving_contractor,0.92,d9f3d039-df4b-475b-9ee7-14e9702230e2,OK,https://www.gwpavinginc.com/
+Keyser Energy,+18663957220,https://www.hopenergy.com/location/keyser-energy/,77 Grove St Ste G102,Rutland,VT,hvac_service,0.92,7ed020ca-ed7e-4d7a-be3d-db61433e3065,OK,https://www.hopenergy.com/location/keyser-energy/
+Duke Energy,18007779898,https://www.duke-energy.com,71 Allen St  Ste 101,Rutland,VT,electric_utility_provider,0.92,f27f5304-8946-4eda-932f-c9539b1b2694,OK,https://www.duke-energy.com/home
+Portland Glass of Rutland,8023979131,https://www.portlandglass.com/rutland/?cid=LSTL_PLG000221,228 US-7 South,Rutland,VT,auto_glass_service,0.966,2c8d1d43-a3e0-47d1-a081-15f9318109bd,OK,https://www.portlandglass.com/rutland/?cid=LSTL_PLG000221
+Marshall Plumbing & Heating,(802) 855-8109,https://elementsmassage.com/white-plains,42 E Washington St # 1,Rutland,VT,plumbing,0.92,b04c413a-4edc-43cb-bfee-68934613e44b,OK,https://elementsmassage.com/white-plains
+Green Mountain Insulated Glass Inc.,18027724394,https://www.greenmtninsulatedglass.com,10 Ripley Rd  Ste 2,Rutland,VT,glass_manufacturer,0.92,094391fc-d9f0-4e71-857d-cba118cf2f50,OK,https://www.greenmtninsulatedglass.com
+Roofs R Us Roofing,+18024590085,http://roofsrusvt.com/,25 Bluff St,Proctor,VT,roofing,0.92,6a28821c-f863-47cd-92e6-79ba3d2c5e3d,OK,https://roofsrusvt.com/
+"Neil Hoag - Vermont Roofing Company, Inc",18026814513,https://vermontroofing.com,118 Spruce St,Rutland,VT,roofing,0.95,20a13ccc-6c43-4312-8bf9-c0b6c607f20f,OK,https://vermontroofing.com
+Blue Sky Roofing & Custom Exteriors,+18028621500,https://www.blueskyroofingvt.com/,41 Duxbury Rd,Richmond,VT,roofing,0.92,ad14a37b-af2a-4a06-b413-f0201ebd245f,OK,https://blueskyroofingvt.com/
+Inland Building Company,8022793171,http://inlandbuilding.com/,2109 Braintree Hill Rd,Randolph,VT,roofing,0.92,92c1e645-0626-4921-b15c-8b3fba8b536a,OK,https://inlandbuilding.com/
+Allied Building Contractors,+18024859563,http://www.alliedbuildingvt.com/,1234 W Hill Rd,Roxbury,VT,contractor,0.92,5659e302-f21c-43a1-b5e3-74b3f8466fb7,OK,https://alliedbuildingvt.com/
+Primo Corporation,+18023458415,https://www.primocorporation.com/,115 Park St,Rutland,VT,contractor,0.92,a2b8ace5-dc38-463d-917a-48987dc0633a,OK,https://www.primocorporation.com/
+Primo Corporation,18023458415,http://www.primocorporation.com,155 Porter Pl,Rutland,VT,roofing,0.92,7e79b955-e3a3-47e7-9f7e-5eb725183f0b,OK,https://www.primocorporation.com/
+Trees Incorporated,18027732300,https://www.totaltrees.com,53 Gleason Rd,Rutland,VT,tree_service,0.92,cc49b73c-640b-4d2f-844a-8d0256f7e555,OK,https://www.totaltrees.com
+Legacy Glass,8027751400,http://www.legacyglassvt.com/,56 Howe St,Rutland,VT,auto_glass_service,0.92,42079496-f358-4646-9dac-841c50876672,OK,http://www.legacyglassvt.com/
+Overhead Door Company Of Rutland,18027755711,https://rutlandohd.com,63 Plain St,Rutland,VT,garage_door_service,0.92,1d9577fe-faf6-4029-850c-27a0f5ed3dd6,OK,https://www.rutlandohd.com/
+The Granite Group,8026650060,https://www.thegranitegroup.com/,160 Seward Rd,Rutland,VT,plumbing,0.92,f7d34ba1-80a4-49ff-aa06-c475c0b0e268,OK,https://www.thegranitegroup.com/
+Suburban Propane,(802) 775-2357,http://www.suburbanpropane.com,55 West St,Rutland,VT,electric_utility_provider,0.92,c3a8d7dc-eabb-4946-8848-3b29c49f9713,OK,https://www.suburbanpropane.com/
+S/R Services,8022236577,http://www.montpeliercarpetcleaning.com/,407 Barre St,Montpelier,VT,carpet_cleaning,0.92,cf27b880-5487-4109-87ff-ebe7db36bfa0,OK,https://montpeliercarpetcleaning.com/
+Rob Stubbins Electrical,8027751484,https://www.robstubbinselectrical.com/,395 Route 4 E,Rutland,VT,electrician,0.85,23583ef4-35cc-426e-9a10-9d005e9f3f86,OK,https://www.robstubbinselectrical.com/
+Wilk Paving Asphalt Plant,+18024385454,http://www.wilkpaving.com/,8 Ripley Rd,Rutland,VT,paving_contractor,0.92,8401c2fb-65ac-4193-9b98-5868a24e8d3b,OK,http://www.wilkpaving.com/
+Vermont Electric Power Company,+18027739161,http://www.velco.com/,366 Pinnacle Ridge Rd,Rutland,VT,electric_utility_provider,0.92,75bd6d63-3ccf-4858-b5a8-e051cc290dd5,OK,https://www.velco.com/
+Pratico's Landscaping and Fence,+18027754330,http://praticos.com/estimate_request,349 US Route 7 N,Rutland,VT,landscaping,0.92,c920c398-00a9-446e-84a5-5460b55943b1,OK,https://www.praticos.com/
+Champlain Seamless Gutters LLC,8025249779,https://www.seamlessguttersvt.com/,2493 Highgate Rd,Saint Albans,VT,roofing,0.92,726a3892-1ab4-4a37-8766-f81e0aa3e8b0,OK,https://www.seamlessguttersvt.com/
+Portland Glass of St. Albans,8023920107,https://www.portlandglass.com/st-albans/,36 Sheldon Rd,Saint Albans,VT,auto_glass_service,0.92,86292bfb-e6da-47e7-8187-a7f9294be044,OK,https://www.portlandglass.com/st-albans/
+Rob Stubbins Electrical,+18027751484,https://www.robstubbinselectrical.com/,395 US-4,Rutland,VT,electrician,0.92,1679b013-252c-4004-a31c-048b4eea5ed7,OK,https://www.robstubbinselectrical.com/
+Modern Cleaners & Tailors,+18027736988,http://moderncleanersvt.com/,5 Strongs Ave,Rutland,VT,dry_cleaning,0.92,6e6eb66e-785c-461f-80de-991510c3bd20,OK,https://moderncleanersvt.com/
+Eastern Mountain Sports,8028640473,http://www.ems.com/,100 Dorset St,SOUTH BURLINGTON,VT,outdoor_store,0.92,716869cd-6814-4cf9-b763-2c065b779f20,OK,https://www.ems.com/
+"All Season’s Carpet & Upholstery Cleaning, Inc. of Vermont",8026552033,https://vtcarpetcleaning.com/,55 Upper Welden St,Saint Albans,VT,carpet_cleaning,0.92,db5d88c4-2a4e-444c-8344-31115febf2b3,OK,https://vtcarpetcleaning.com/
+Safelite AutoGlass,+18027790478,https://safl.it/2t0jZlH?y_source=1_MTc4NzMzOS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,134 Strongs Ave,Rutland,VT,auto_glass_service,0.92,107ad0f2-b1b1-43c4-b717-ee9a9bee35db,OK,https://www.safelite.com/stores/Rutland?utm_source=yext&utm_medium=list&utm_campaign=facebook_local&gad_source=7&dclid=CNq219butZcDFZ4XsgMdtrw4Qg
+Casella Construction Inc.,+18027730052,https://www.CasellaInc.com/,1385 US-7,Pittsford,VT,building_or_construction_service,0.92,e7993f88-b7a5-4809-a64a-c06195f301ba,OK,https://casellainc.com/
+VT Terrain,8023705935,https://www.vtterrain.com/,249 N Main St,Saint Albans,VT,landscaping,0.966,56cecb44-8c2c-4c61-863f-1fca0b773c6d,OK,https://www.vtterrain.com/
+Frank Stratton Masonry,(802) 733-8097,http://www.trustthisbiz.com,754 Glastenbury Rd,Shaftsbury,VT,contractor,0.92,93ccdb78-7930-4c17-a21a-1835d24c735f,OK,https://www.bbb.org/
+Alpine Roofing LLC,8028814069,https://www.alpineroofingvt.com/,145 Pine Haven Shores Ste 2220,Shelburne,VT,roofing,0.895,dcbb2904-2355-464d-93ee-a5da1ecef242,OK,https://www.alpineroofingvt.com/
+Maple Leaf Carpet & Tile Cleaning,8029851178,http://www.mapleleafcarpetcleaning.com/,232 Mount Philo Rd,Shelburne,VT,carpet_cleaning,0.92,ebe8c6e3-c86c-4667-8256-08ff34bf154d,OK,http://www.mapleleafcarpetcleaning.com/
+Maple Leaf Carpet & Tile Cleaning,+18029851178,http://mapleleafcarpetcleaning.com/,2916 Shelburne Rd,Shelburne,VT,carpet_cleaning,0.92,ccf71f95-b3f0-46ba-a4ff-c00573743a67,OK,http://mapleleafcarpetcleaning.com/
+Exteriors & Renovation,+18023387058,https://exteriorsandrenovation.com/,145 Pine Haven Shores,Shelburne,VT,contractor,0.92,359e0302-7f59-4cab-a8b3-ff2ab503dd8b,OK,https://exteriorsandrenovation.com/
+Vermont Rug Cleaning,+18029851178,http://vermontorientalrugcleaning.com/,2916 Shelburne Rd,Shelburne,VT,carpet_cleaning,0.92,6d258008-06d1-4a32-b458-516f89a99ef4,OK,http://vermontorientalrugcleaning.com/
+Barrett's Tree Service Inc.,8028620302,http://www.barrettstree.com/,376 Patchen Rd,South Burlington,VT,tree_service,0.92,3813d8df-62fa-4a66-9225-be0ae7f3ea32,OK,http://www.barrettstree.com/
+The Janitors,+18025781507,https://www.eliteturnovercleaning.com/,145 Pine Haven Shores,Shelburne,VT,home_cleaning,0.92,43ce3f22-96f2-473c-b602-0c5fa199927b,OK,https://www.eliteturnovercleaning.com/
+RC General Construction,+18023732256,http://www.tiktok.com/@rc.roofing.siding,5138 Shelburne Rd,Shelburne,VT,contractor,0.92,4c0c1144-17ff-4bb8-b32a-5d9430739317,OK,https://www.tiktok.com/@rc.roofing.siding
+All Terrain Excavating,18024896939,https://www.allterrainexcavatingvt.com,63 Ethan Allen Dr,South Burlington,VT,contractor,0.92,45e53733-9fd6-4b2b-8933-caa2ae98ec69,OK,https://www.allterrainexcavatingvt.com
+Northeast Pools & Spas,+18027633900,http://www.northeastpools.net/,202 Commerce Park,Sharon,VT,pool_cleaning,0.92,3b089d5d-50e5-4f75-99ce-f954a4db6b7f,OK,https://northeastpools.net/
+Trane Commercial Sales Office,8028643816,https://www.trane.com/commercial/north-america/us/en/contact-us/locate-sales-offices/burlington.html?y_source=1_ODk4MzA4OC00ODMtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,177 Leroy Road,Saint George,VT,hvac_service,0.92,98bb1eb4-fa85-4c2d-ae84-0d37795bf88c,OK,https://www.trane.com/commercial/north-america/us/en/contact-us/locate-sales-offices/burlington.html?y_source=1_ODk4MzA4OC00ODMtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D
+Snyder Homes,+18029855722,https://www.snyderhomesvt.com/,4076 Shelburne Rd #6,Shelburne,VT,building_or_construction_service,0.92,cabc6056-f7a9-4b30-93ec-e0d68ebb6841,OK,https://snyderhomesvt.com/
+Cleantech Building Maintenance,8028621230,http://cleantechvt.com/,49B Commerce Ave,South Burlington,VT,office_cleaning,0.974,4a7e2c6b-be82-4eda-ad43-b83dbc71a15b,OK,http://cleantechvt.com/
+Bartlett Tree Experts,8024896305,https://www.bartlett.com/locations/burlington-vt.cfm,81 Ethan Allen Dr Unit L1/L2,South Burlington,VT,tree_service,0.85,215acf30-cc5a-464d-95ea-2888840553d6,OK,https://www.bartlett.com/locations/burlington-vt
+Cummings Electric,18026581292,https://www.cummingselectric.com,80 Ethan Allen Dr,South Burlington,VT,electrician,0.92,c45777a3-328f-473c-8816-4e1e83e2e1b7,OK,https://www.cummingselectric.com
+Brackenfern Woodworking & Carpentry,+18023732717,http://www.brackenfernwoodworking.com/,88 Oakwood Dr,South Burlington,VT,carpenter,0.92,efeae8d0-0cad-4999-aa9f-5bce1a2dfeee,OK,https://www.brackenfernwoodworking.com/
+Alexander Tree,+18029171503,http://alexandertreevt.com/,66 Airport Rd,South Burlington,VT,tree_service,0.92,2aa00601-765e-4136-9ed0-546ac3765b46,OK,https://www.alexandertreevt.com/
+Burlington Glass Center,18028625458,https://burlingtonglass.com,1860 Williston Rd  # 1,South Burlington,VT,auto_glass_service,0.99,1278be00-4285-4528-ae3c-cac5cbc143ea,OK,https://burlingtonglass.com
+Bath Fitter,18024484447,https://www.bathfitter.com,472 Meadowland Dr  Ste 3,South Burlington,VT,bathroom_remodeling,0.99,1ab620c4-eba9-4b4e-85d5-2ef8544675d2,OK,https://www.bathfitter.com/us-en/
+Dr Power Equipment,18006876575,https://www.drpower.com,800 Hinesburg Rd,South Burlington,VT,lawn_mower_store,0.92,6ed8d1d5-a0a2-40a7-8477-4830d0cbc1a2,OK,https://www.drpower.com
+Alpine Shop VT,+18028622714,http://www.alpineshopvt.com/,935 Shelburne Rd,South Burlington,VT,outdoor_store,0.99,54cc5395-590f-4de0-bdd3-504c63bffbf8,OK,https://alpineshopvt.com/
+Expert Painters,18024955570,https://www.expert-painting.com,11 Gregory Dr,South Burlington,VT,painting,0.92,87cae406-2cce-4e62-8a65-ab1e4ec71df3,OK,https://www.expert-painting.com
+Minute Key,8025561104,https://www.minutekey.com/key-services/vermont/south-burlington/locksmith-key-copy-duplication-189-hannafords-drive/1148/,189 Hannaford Dr,South Burlington,VT,key_and_locksmith,0.966,310c2472-9c18-4b26-874a-06b0589c861a,OK,https://www.minutekey.com/key-services/vermont/south-burlington/locksmith-key-copy-duplication-189-hannafords-drive/1148/
+CRASH AUTO GLASS,8882920972,http://crashautoglass.com/,9 Ethan Allen Dr,South Burlington,VT,auto_glass_service,0.92,01a73eae-16f4-4fba-84c4-0c6c4aefdc77,OK,https://crashautoglass.com/
+Gadue's Dry Cleaning,8028627205,http://www.gadues.com/,1164 Williston Rd,South Burlington,VT,dry_cleaning,0.92,5378ab41-adf1-4c00-b902-31d999955d47,OK,https://www.gadues.com/
+Heritage Environmental Projects Inc.,18028602900,https://www.hepvt.com,1972 Williston Rd,South Burlington,VT,painting,0.92,2c53ff5d-dc3e-405e-b954-3a12e3f693bb,OK,https://www.hepvt.com
+Lakeside Electric Inc.,18028626508,https://www.lakesideelectricvt.com,2041 Williston Rd,South Burlington,VT,electrician,0.92,3cae36bc-3bb3-434f-bc93-4fbea70aa03e,OK,https://www.lakesideelectricvt.com
+Leisure World Pools,+18028621552,https://leisureworldpoolandspa.myshopify.com/,1245 Airport Pkwy,South Burlington,VT,pool_cleaning,0.92,26a8f030-b99b-492c-80ed-e9295309972f,OK,https://leisureworldpoolandspa.myshopify.com/
+Greer's Dry Cleaning & Laundry,8028623707,http://www.greersdrycleaning.com/,10 Dorset St,South Burlington,VT,dry_cleaning,0.92,dbe9043e-7588-42b5-a370-5f6993434e57,OK,https://expireddomains.com/domain/greersdrycleaning.com?utm_source=redi
+DaBella,8022301067,https://dabella.us/location/burlington/,30 Kimball Ave Ste 301,South Burlington,VT,roofing,0.92,6dcdf2be-3f89-4b36-9d4c-d4ae575b1948,OK,https://dabella.us/location/burlington/
+J.white Contracting,18023734470,http://jwhitecontracting.org,150 Dorset St  Apt 142,South Burlington,VT,contractor,0.92,3c600acb-3866-4d68-ad58-c509292b3fdc,OK,https://www.jwhitecontracting.org/
+Portland Glass,+18024490106,http://www.portlandglass.com/,45 Green Mountain Dr,South Burlington,VT,auto_glass_service,0.997,fb684e60-b08b-453e-8866-979a6c1f6bcf,OK,https://www.portlandglass.com/
+Clark's Glass,18027724552,http://clarksglassvt.com,131 Woodstock Ave  Ste 2,Rutland,VT,auto_glass_service,0.92,7f5a8f93-9f34-4015-8965-1da5d693d382,OK,https://www.clarksglassvt.com/
+GT Outdoor Power Equipment,+18027732709,http://www.gtoutdoorpower.com/,70 Park St,Rutland,VT,outdoor_store,0.999,14ec856f-033f-4707-9416-6810c69d6a66,OK,https://gtoutdoorpower.com/
+Rutland Fuel Co.,+18027737400,http://rutlandfuel.deliverypay.com/,156 Granger St,Rutland,VT,hvac_service,0.92,267d9c5e-1857-4915-a7cc-40178e480c35,OK,https://rutlandfuel.deliverypay.com/
+Lacey's Inc,18028620111,https://www.laceyscarpet.com,2000 Williston Rd,South Burlington,VT,flooring_store,0.92,4429ef02-e4df-4752-bce5-ef66a6b1abb4,OK,https://www.laceyscarpet.com
+A-Team Auto Glass,+18027755500,http://www.ateamautoglassvt.com/,1 Scale Ave Bldg 15,Rutland,VT,auto_glass_service,0.995,a2eacc83-9632-4aef-9dcb-a1b2c240963c,OK,https://www.ateamautoglassvt.com/
+North Country Mechanical Insulators,8028630027,http://www.ncmiinc.com/,45 Commerce Ave,South Burlington,VT,hvac_service,0.92,13a67339-1921-4dde-9097-dca541de7604,OK,https://www.ncmiinc.com/
+Novus Glass,+18025828213,https://www.novusglassvt.com/,2073 Williston Rd,South Burlington,VT,auto_glass_service,0.92,ad3c2a54-d34f-4e3e-ba2d-f4dc3bc19bf9,OK,https://www.novusglassvt.com/
+PC Construction,+18026584100,http://www.pcconstruction.com/,193 Tilley Dr,South Burlington,VT,building_or_construction_service,0.99,e00e690d-6164-44a2-8291-fe8db48c4bcc,OK,https://pcconstruction.com/
+BlackRock Construction,+18028611120,http://www.blackrockus.com/,68 Randall Street,South Burlington,VT,building_or_construction_service,0.92,bb1e87de-fcb5-4ebe-9e8d-4667654fd99f,OK,https://www.blackrockus.com/
+"Black Diamond Tree Service, Inc",8024643603,http://www.blackdiamondtree.com/,1596 Route 9,Searsburg,VT,tree_service,0.873,977fbb10-e24b-464c-b567-4a529d8f3e4e,OK,https://blackdiamondtree.com/
+Neagley & Chase Construction Company,+18026586320,http://www.neagleychase.com/,66 Bowdoin St,South Burlington,VT,building_or_construction_service,0.92,0f6ab3d3-27f6-44bd-9822-34f5c685f47e,OK,https://www.neagleychase.com/
+Pinnacle Properties,18026580809,https://www.pinnaclepropertiesvt.com,4 Harbor View Rd,South Burlington,VT,landscape_architect,0.95,4bf68821-06a3-43a7-b682-aa0d98e4bf87,OK,https://www.pinnaclepropertiesvt.com
+TruGreen Lawn Care,8024484900,https://www.trugreen.com/?y_source=1_MzI0NTI3NDQtNDgzLWxvY2F0aW9uLndlYnNpdGU%3D,49 B Commerce Ave.,South Burlington,VT,lawn_service,0.918,3341e57f-245b-4ae7-8c59-bbb71cc6b1c2,OK,https://www.trugreen.com/?y_source=1_MzI0NTI3NDQtNDgzLWxvY2F0aW9uLndlYnNpdGU%3D
+Vermont Pool and Bar,+18026510111,http://vtpoolandbar.com,35 San Remo Dr,South Burlington,VT,pool_billiards,0.99,8fd2cc42-b23d-4d0e-b1bf-58d27520fbf3,OK,http://vtpoolandbar.com
+Peregrine Design Build,+18023831808,http://www.peregrinedesignbuild.com/,49 Commerce Ave,South Burlington,VT,building_or_construction_service,0.92,01918022-9fd2-415d-9e72-a549d14ad964,OK,https://peregrinedesignbuild.com/
+Pella Windows & Doors,+18028645435,https://www.pella.com/locations/vt/south-burlington/,340 Dorset St Ste 3,South Burlington,VT,windows_installation,0.995,9f0cfa41-15cd-429f-ae87-994a1b61dcc9,OK,https://www.pella.com/locations/vt/south-burlington/
+JT's Contracting,+18029994433,http://www.jtscontractingvt.com/,2383 Shelburne Rd,Shelburne,VT,contractor,0.92,185c7399-0f8c-4957-998f-255299d63890,OK,https://www.jtscontractingvt.com/
+ReArch Company,+18028638727,http://www.rearchconstruction.com/,88 Technology Pk Wy Suite 2,South Burlington,VT,building_or_construction_service,0.92,40ad0653-a63c-4d85-945d-90499c6940df,OK,https://rearchconstruction.com/
+Bear Paw Landscaping,(802) 824-5439,http://www.zipweb.com/?businessname=bearpawlandscapinginc,1548 Spring Hill Rd,South Londonderry,VT,contractor,0.92,f5205989-1468-477d-a480-ad0db5318745,OK,http://www.zipweb.com/?businessname=bearpawlandscapinginc
+Wise Oak,(802) 824-5540,http://www.wiseoak.biz,1886 Winhall Hollow Rd Ste A,South Londonderry,VT,contractor,0.92,0cd6461e-a464-44df-810d-19ab73ef30a3,OK,https://www.wiseoak.biz/
+All Seasons Construction Corporation,18028855722,http://www.allseasonsconst.com,76 Hartness Ave  Ste 2,Springfield,VT,contractor,0.92,eba1b781-78f5-4703-869b-251017e8680c,OK,http://www.allseasonsconst.com
+Window World,+18028467622,https://www.windowworldvermont.com/,77 Ethan Allen Dr,South Burlington,VT,windows_installation,0.92,bc0ed677-31f9-43c7-b51c-1ee45dc7657d,OK,https://www.windowworldvermont.com/
+Cedar Ledge Builders,+18023722527,http://www.cedarledgebuilders.com/,328 US-2,South Hero,VT,contractor,0.92,f3aa679c-dfd6-4fc8-af84-820927be85c6,OK,https://www.cedarledgebuilders.com/
+Springfield Fence Co Inc,+18028862221,http://www.springfieldfencevt.com,50 VT-106,Springfield,VT,fence_and_gate_sales_service,0.92,0667516d-7011-4493-b1b7-a098b7bf26d0,OK,http://www.springfieldfencevt.com
+Neil H Daniels Inc,8029520590,http://www.neilhdaniels.com/,4409 US Hwy 5 S,Springfield,VT,construction_management,0.85,e1f5afa1-5a67-41f4-b72e-3f8d9d7b3fd7,OK,https://www.neilhdaniels.com/
+Handyman by Polli,+18024955171,https://handymanbypolli.com/,11 Gregory Dr,South Burlington,VT,handyman,0.92,0fe79130-3ecb-4756-8da9-6383462b89f8,OK,https://handymanbypolli.com/
+Claire's Home Comfort Cleaning,+18023344565,http://www.claireshomecomfortcleaning.com,326 Bluff Rd,Newport,VT,home_cleaning,0.92,e3842a41-da43-4128-99bd-0a15af0486b6,OK,https://www.claireshomecomfortcleaning.com/
+Pest Pro Inc,8023724900,http://pestpro.net/,238 US-2,South Hero,VT,pest_control_service,0.92,75928ad1-4999-4ed3-ac71-21a4cb9b0fc3,OK,https://www.pestpro.net/
+Boston Tailoring and Cleaners,+18025245686,http://bostonqualitycleaningservices.com,46 Federal St,St Albans,VT,home_cleaning,0.92,1cb34789-9fad-4eff-afab-978174b701c4,OK,https://bostonqualitycleaningservices.com//
+Paradise Pool & Spa,+18025242511,http://www.paradisepoolandspa.net,468 Sheldon Rd,St Albans,VT,pool_cleaning,0.92,fccbefdd-829c-4605-b30f-b9723408e940,OK,http://www.paradisepoolandspa.net
+Darlton W Cenate & Sons,+18027773466,http://www.cenatebuild.com/,69 Walnut Hill Rd,Springfield,VT,contractor,0.92,f5ca9ee5-d207-412f-9376-764f1fd27d5e,OK,https://www.cenatebuild.com/
+Hard'ack Pool,+18027522163,https://stalbansvt.myrec.com/info/activities/program_details.aspx?ProgramID=30179&AdminPreview=1,214 Hard'ack,St Albans City,VT,swimming_pool,0.943,8aea352e-88af-4c85-8844-f8109cbf3124,OK,https://stalbansvt.myrec.com/info/activities/program_details.aspx?ProgramID=30179&AdminPreview=1
+ArborScape Inc.,8024575797,https://arborscapevt.com/,387 Barber Hill Rd,South Pomfret,VT,tree_service,0.909,b199a944-3f79-41c1-b0bb-c328774f7839,OK,https://arborscapevt.com/
+Windshield World,+18028645962,https://windshieldworld.in,1944 Williston Rd,South Burlington,VT,auto_glass_service,0.92,5c919a17-dad5-4ef8-b8e0-60ae30c0408f,OK,https://windshieldworld.in
+Appalachian Supply Inc.,18027484513,http://www.appalachiansupplyinc.com,4581 Memorial Dr,St Johnsbury,VT,electrical_supply_store,0.92,22b34b35-4ea5-4876-8e2f-b51c1050b116,OK,https://www.appalachiansupplyinc.com/
+Advantage Tennis,+18005502226,http://www.advantagetennis.net,759 W Hill Rd,St Johnsbury,VT,contractor,0.92,e741e2ca-aab8-43d1-9765-47f184ad39ef,OK,https://www.advantagetennis.net/
+Brandon Wells Firewood Company,+18025354489,http://firewoodforsalevermont.com/,129 Johnson Rd,St Johnsbury,VT,logging_contractor,0.92,1f1c261a-9232-4cb3-925b-750f771251c8,OK,http://firewoodforsalevermont.com/
+St Albans City Pool,+18025246796,http://www.stalbansrec.com/info/facilities/details.aspx?FacilityID=13904,99 Aldis St,St Albans,VT,swimming_pool,0.92,ef4ff34e-54cc-44a0-8092-fabac8bd844e,OK,https://stalbansvt.myrec.com/info/facilities/default.aspx
+Hungerford Paving,8028287283,https://hungerfordpaving.com/,105 Rewes Dr Unit B,Saint Albans,VT,paving_contractor,0.983,efc91142-f30a-4860-82a1-929fdeedefcf,OK,https://www.hungerfordpaving.com/
+Sherwin-williams Paint Store,18027482371,https://www.sherwin-williams.com,422 Portland St,St Johnsbury,VT,paint_store,0.92,f8ed5b88-1408-4d31-8489-b494801232df,OK,https://www.sherwin-williams.com
+JL Masonry and Hardscaping,+18027526182,http://www.jlmasonryvt.com/,1984 Sheldon Rd,St Albans,VT,masonry_concrete,0.92,04206e4a-4bbd-445d-8054-e61290f88f44,OK,https://www.jlmasonryvt.com/
+"Radiantec Company, Inc.",8004517593,http://www.radiantec.com/,1547 Industrial Pkwy,St Johnsbury,VT,hvac_supplier,0.92,2ec787b5-3736-4eff-83ae-201485de5b15,OK,https://www.radiantec.com/
+NOVUS Glass of Saint Albans,8025828213,https://www.novusglassvt.com/,23 Stebbins St,St. Albans,VT,auto_glass_service,0.85,c8cbf398-5291-4a49-8284-388f720e3a7c,OK,https://www.novusglassvt.com/
+NOVUS Glass of Saint Albans,8025828213,https://www.novusglassvt.com/,23 Stebbins St,St. Albans,VT,auto_glass_service,0.92,ff93a0b8-d349-413b-9f56-65f102dce741,OK,https://www.novusglassvt.com/
+Carroll Concrete Co,+18027489101,http://carrollconcrete.com,809 Portland St,St Johnsbury,VT,contractor,0.92,55800e42-f165-4963-83c7-86f6935f12eb,OK,https://www.carrollconcrete.com/
+Bushey Seal Coating,+18025240139,http://www.busheysealcoating.com/,315 Patten Crosby Rd,St Albans,VT,paving_contractor,0.92,ee3ef031-b41f-460c-a10e-f9c4b5f15678,OK,https://www.busheysealcoating.com/
+"Brock's Heating, Air Conditioning & Gas Services",+18028492466,http://www.brocksheating.com/,268 N Main St Suite#2,St Albans,VT,hvac_service,0.92,b91dbf75-3bd7-40f6-a762-9a4b6be4d93f,OK,https://www.brocksheating.com/
+Rodd Roofing,8003317663,http://www.roddroofing.com/,49 Perkins St,St Johnsbury,VT,roofing,0.92,8dd12e59-b5de-4a7c-ab74-2eb319b0dffc,OK,https://www.roddroofing.com/
+Gould Corporation,8022534190,https://www.gouldcorpvt.com/,174 Thomas Ln,Stowe,VT,electrician,0.92,04e0c83c-5bd7-4077-b187-309a10f0594c,OK,https://www.gouldcorpvt.com/
+Juggernaut Construction,18024738099,https://juggernautvt.com/contact-us,347 Portland St,St Johnsbury,VT,contractor,0.92,3e10b47a-2a56-456a-af4c-a988ff04be45,OK,https://www.juggernautvt.com/contact-us
+Tones and Hues,8028858633,http://www.tonesandhues.com/,6 Autumn St,Springfield,VT,painting,0.92,0758a858-6b0d-423e-87a5-0ab9f58e8b39,OK,https://www.tonesandhues.com/
+"Polli Construction, Inc.",18024825777,https://www.polliconstruction.com,11 Gregory Dr,South Burlington,VT,building_or_construction_service,0.92,0699a868-d99a-4f25-9ac2-371cd43c903c,OK,https://polliconstruction.com/
+United Construction & Forestry,+18028856840,https://construction.unitedequip.com/locations/springfield-vt/,300 Clinton St,Springfield,VT,building_or_construction_service,0.92,38f65d44-3e03-464c-9744-c56821612583,OK,https://construction.unitedequip.com/locations/springfield-vt/
+SkiEssentials.com,8778126710,http://www.skiessentials.com/,192 Thomas Ln,Stowe,VT,outdoor_store,0.92,5c847c02-8f0c-4cba-b205-89f73b6438f2,OK,https://www.skiessentials.com/
+Evergreen Septic Services,+18002460244,https://www.evergreenserviceinc.com/,44 Park Pl,Stowe,VT,septic_service,0.92,af82b7f0-adb0-410b-a2eb-3866113d4ce3,OK,https://evergreenserviceinc.com/
+Vermont Frames,+18024533727,http://www.vermontframes.com,22 Varney Hill Rd,Starksboro,VT,carpenter,1.0,0386ba4b-fdf6-48a6-85dd-8238344b1a9d,OK,https://vermontframes.com/
+Invisible Fence of Northern VT/Champlain Valley,8022537100,https://northvermont.invisiblefence.com/,4915 Mountain Rd,Stowe,VT,fence_and_gate_sales_service,0.92,e7dd9b76-3bad-4976-bf71-e1ab09d78804,OK,https://www.invisiblefence.com/dealer/northvermont
+Mountain Road Outfitters,+18027606605,http://www.mountainroadoutfitters.com/,409 Mountain Rd,Stowe,VT,outdoor_store,0.92,6ab97b44-9a48-45fb-ab51-fd1a65c06d33,OK,https://www.mountainroadoutfitters.com/
+Bourbeau Custom Homes,+18027821019,http://www.bhomes.org/,4657 Lower Newton Rd,Swanton,VT,building_or_construction_service,0.92,16406ae0-2263-4a60-956c-3c6c1de21ac8,OK,http://www.bhomes.org/
+Goldleaf Landscaping,(802) 524-5806,http://www.goldleaflandscape.com,20 Country Club Est,Swanton,VT,contractor,0.92,8daf6c99-f9d2-485c-8034-11a5d8353b7f,OK,https://www.goldleaflandscape.com/
+Black Ox Roofing Inc,+18028895647,http://www.blackoxroofing.com/,67 Brocklebank Rd,Tunbridge,VT,roofing,0.92,27501109-b81c-4769-b649-694df1c00609,OK,http://www.blackoxroofing.com/
+Sisler Builders,+18022535672,http://www.sislerbuilders.com/,56 Park St,Stowe,VT,contractor,0.92,d61145a1-f06e-4730-a6e0-9b0de3ffcbbe,OK,https://sislerbuilders.com/
+Patterson & Smith Construction,18022533757,pattersonandsmith.com,515 Moscow Rd,Stowe,VT,contractor,0.92,08138eba-e6a6-425e-a45e-ad6160bc687c,OK,https://pattersonandsmith.com
+"Benoure Plumbing, Heating & Air Conditioning",18028647156,https://benoure.com,34 Commerce Ave,South Burlington,VT,hvac_service,0.92,17b1fd64-d87e-4ead-98e4-76d8b4b794ef,OK,https://www.benoure.com/
+Tao Woodworking,+18029993075,http://taowoodworking.com/,269 Weeks Hill Rd,Stowe,VT,carpenter,0.92,9712b0fb-348e-45da-bc32-01f2ad9f9df8,OK,https://www.taowoodworking.com/
+Tunbridge Glassworks,+18028893430,http://www.robinmix.com/,4 Cushman Rd,Tunbridge,VT,glass_blowing_venue,0.92,df2d6503-1361-48bd-bbba-7a453876bda6,OK,http://www.robinmix.com/
+Sparkles,+18024973961,http://captainsparkles.com/,11 Gregory Dr,South Burlington,VT,home_cleaning,0.92,0e21c9ba-4e2c-4f68-80b2-f6ba89434d05,OK,https://captainsparkles.com/
+Top Dog Landscaping,+18022382305,https://topdoglandscaping.com/,65 Martel Ext,St George,VT,landscaping,0.92,fba99f58-0b87-4a7d-b233-48ad58f9cde5,OK,https://topdoglandscaping.com/
+Reliant Electric Works,18028635513,https://www.reliantelectric.com,89 Ethan Allen Dr  Unit C,South Burlington,VT,electrician,0.92,a6b1f747-3b7e-41c3-8553-ace63856b3aa,OK,https://reliantelectric.com/
+Al Jeffers & Sons Inc.,+18023654447,http://www.facebook.com/AlJeffersSonsInc,41 Oakwood Cemetery Rd,Townshend,VT,contractor,0.92,f5c33b75-7433-4a7f-b973-7f03afb3c532,OK,https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FAlJeffersSonsInc
+"Forbes Construction, Inc.",18028244333,http://forbesconstruction.com,11 W River St,South Londonderry,VT,contractor,0.95,fe43dfe1-cb75-4773-8ea0-3ee25c14a288,OK,http://forbesconstruction.com
+Pinnacle Ski And Sports,18022537222,https://www.pinnacleskisports.com,1652 Mountain Rd,Stowe,VT,outdoor_store,0.95,b150ae95-7926-4944-9112-1e20ec29ad0d,OK,https://stowe.skiessentials.com/
+Safelite AutoGlass,+18027524408,https://safl.it/2t2ed2H?y_source=1_MTc4NzIzNy01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,284 N Main St,St Albans,VT,auto_glass_service,0.999,b5b98119-afec-446a-a02d-b03e3af4c8ee,OK,https://www.safelite.com/stores/St-Albans?utm_source=yext&utm_medium=list&utm_campaign=facebook_local&gad_source=7&dclid=CILg9NjutZcDFb-HNgcd-V0igQ
+Wagner Tree Care,+18022999934,http://www.wagnertreecare.com/,92 Cider Mill Rd,Thetford,VT,tree_service,0.92,d7fca0ee-d828-456c-8e27-97f8a5b6fb1e,OK,https://www.wagnertreecare.com/
+George White & Co LLC,+18028895637,http://www.georgewhiteandco.com/,77 Kibling Hill Rd,Tunbridge,VT,building_or_construction_service,0.92,28608444-ef04-4fc1-b8ef-ba9315a08900,OK,https://www.georgewhiteandco.com/
+"Northstar Electric, LLC",8025032715,https://www.northstarelectrician.com/,26 N Underhill Station Rd,Underhill,VT,electrician,0.85,ae3315ba-9bc0-4127-954f-31cc0331caf7,OK,https://www.northstarelectrician.com/
+Ginkgo Design,+18023325577,http://www.ginkgodesignvt.com/contact-us.html,152 River Rd,Underhill,VT,landscaping,0.92,a844dabc-ee18-455d-a1c9-eb53e23b9d02,OK,https://www.ginkgodesignvt.com/contact-us.html
+Fresh Water Haulers & Owen Pools LLC,8026582223,http://www.freshwaterhaulersvt.com/,180 River Rd,Underhill,VT,b2b_cleaning_and_waste_management,0.92,2114122a-1260-478a-8935-7b444fb11c36,OK,https://www.freshwaterhaulersvt.com/
+Sam Fishman Pool,+18028707942,https://vergennesvt.myrec.com/info/facilities/details.aspx?FacilityID=14706,47 East St,Vergennes,VT,swimming_pool,0.92,26fe4a20-3c30-492d-bf07-67204b81521b,OK,https://vergennesvt.myrec.com/info/facilities/details.aspx?FacilityID=14706
+Carroll Concrete Co,+18022545213,http://www.carrollconcrete.com,122 Fort Bridgman Rd,Vernon,VT,contractor,0.92,12a3005b-f8b7-401a-8b79-e019c2f59789,OK,https://www.carrollconcrete.com/
+"Northstar Electric, LLC",8025032715,https://northstarelectrician.com/,26 N Underhill Station Rd,Underhill,VT,electrician,0.871,e2039461-b896-4216-9548-82fcc183b3a1,OK,https://www.northstarelectrician.com/
+Mansfield Services,8027773210,https://mansfieldservicesvt.com/,14 Metcalf View,Underhill,VT,gutter_service,0.85,7013c672-e9ca-43fa-b2cc-e2915e03d634,OK,https://mansfieldservicesvt.com/
+"Northstar Electric, LLC",8025032715,https://northstarelectrician.com/,26 N Underhill Station Rd,Underhill,VT,electrician,0.85,95f13f5a-fa02-4380-8548-2a8a8008ff48,OK,https://www.northstarelectrician.com/
+KeyMe Locksmiths,8023168293,https://key.me/kiosks/vermont/williston/williston/copy-keys-williston-vt,115 Trader Lane,WILLISTON,VT,key_and_locksmith,0.92,2fb135de-7506-4bf3-a6f7-a4ab24611670,OK,https://key.me/kiosks
+Sugar Glen Properties,+18022246446,http://www.SugarGlenProperties.com/,274 Sugar Glen Dr,Waitsfield,VT,landscaping,0.92,654edcc1-3750-4540-9f87-7f82cf79e098,OK,https://www.sugarglenproperties.com/
+NorthEast Electrical,8026581625,https://www.needco.com/,"340 Av D, Ste 10",WILLISTON,VT,electrical_supply_store,0.92,d11bfc05-b87f-490d-8a6f-24a56d6cf845,OK,https://www.needco.com/
+Beede Roofing Contractor LLC,+18022492368,https://m.facebook.com/beede-roofing-contractor-446515022044565/?_rdr,410 Creamery Rd,Washington,VT,roofing,0.92,7da97d13-1292-4c86-b44d-2245f40a738a,OK,https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fbeede-roofing-contractor-446515022044565%2F&refsrc=deprecated&_rdr
+Northland Design & Construction,+18024962108,http://russbennettdesign.com/,4752 Main St,Waitsfield,VT,building_or_construction_service,0.92,571ba688-a92a-4186-ab97-29484ec671df,OK,http://russbennettdesign.com/cgi-sys/suspendedpage.cgi
+Mansfield Services,8027773210,https://mansfieldservicesvt.com/,14 Metcalf View,Underhill,VT,gutter_service,0.92,a42bf499-9aff-4ae3-91a2-50750d55ec5e,OK,https://mansfieldservicesvt.com/
+Brown's Driveway Paving and Sealing,+18027449984,http://www.brownsdrivewaypaving.com/,Woodland Dr,Troy,VT,paving_contractor,0.92,6e15e5fe-7c49-457b-939a-eb3f77fe836a,OK,https://www.brownsdrivewaypaving.com/
+Rounds Construction,+18024962109,http://www.roundsvt.com/,433 N Fayston Rd,Waitsfield,VT,building_or_construction_service,0.92,832d03a9-b9cb-4ef9-891a-f67b59632f6d,OK,https://www.roundsvt.com/
+Bourne's Energy,8022448667,https://bournesenergy.com/,17 N Main St,Waterbury,VT,hvac_service,0.92,d6720b52-adb4-4e08-b485-bf3cfc5532f2,OK,https://bournesenergy.com/
+Anson Baldwin Tree Care,+18025791484,http://Ansonbaldwintree.com/,649 Franklin Rd,Vernon,VT,landscaping,0.92,bd885f70-d8a3-4e37-a416-08c3d94c99df,OK,https://www.ansonbaldwintree.com/
+Corrigan & Klein Artisan Builders,+18027934611,http://www.corrigankleinartisanbuilders.com/,296 Old Orchard Way,Warren,VT,building_or_construction_service,0.92,f6a211f1-acfc-4c19-bc36-eb8c2b972dfc,OK,https://www.corrigankleinartisanbuilders.com/
+The Madmen Llc,18025956663,http://vtmadmen.com,127 La Flame Rd,Warren,VT,cleaning_service,0.92,7ab1d44b-4d50-485f-917a-cf17d5f16469,OK,http://www.vtmadmen.com/
+Stowebury Construction Services LLC,+18022227541,http://stoweburyconstruction.com/,194 Stowebury Rd,Waterbury,VT,contractor,0.92,6a609740-9f8b-4d94-b711-8d0ec76f66ef,OK,https://www.stoweburyconstruction.com/
+Ron's Husqvarna Sales and Services,+18023659778,http://husqvarna.com,104 Riverdale Rd,Townshend,VT,outdoor_store,0.92,9d545912-ec42-458b-8015-272fcd502b51,OK,https://www.husqvarna.com/
+Martineau Electric & Home Repair,(802) 883-2020,https://www.gearfire.com,272 Firehouse Ln,Washington,VT,electrician,0.92,7ed049b9-61ea-4b24-8cee-088c16b38f3f,OK,https://www.gearfire.com
+Vermont Arborists,8022445100,http://vermontarborists.com/,15 Tayer Ln,Waterbury Center,VT,tree_service,0.85,26d26b11-16c8-4311-abc8-b453a5dbbef2,OK,https://vermontarborists.com/
+Safelite AutoGlass,+18024733131,https://safl.it/2t25lKJ?y_source=1_MTc4NzI0NC01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,371 Memorial Dr,St Johnsbury,VT,auto_glass_service,0.92,abf6b018-48f1-4503-afb4-7013bd72c6ac,OK,https://www.safelite.com/stores/St-Johnsbury?utm_source=yext&utm_medium=list&utm_campaign=facebook_local&gad_source=7&dclid=CKjJodnutZcDFSJsPAod2yg6Hw
+Electrician For Wire,+18029893770,http://electricianforwire.com/,61 Burt Farm Ln A,Waterbury,VT,electrician,0.92,05d3bb7a-beab-4053-a09a-9fa9e0547dc2,OK,http://electricianforwire.com/
+"Gristmill Builders, Ltd",18028828410,https://www.gristmillbuilders.com,5430 Waterbury-Stowe Rd,Waterbury Center,VT,building_or_construction_service,0.92,a20fad84-5b51-44fa-8520-f78926b9ff21,OK,https://www.gristmillbuilders.com
+Clement Irrigation,8022639622,https://www.clementirrigation.com/,21 Maple St,Weathersfield,VT,irrigation_service,0.92,5253ce75-b068-496d-beeb-a105c2cc5c56,OK,https://www.clementirrigation.com/
+Calco,18027482319,http://www.calcoprecast.com,2878 Vt 18,Waterford,VT,masonry_concrete,0.957,5cf470d8-7678-41d1-a0cf-dda530029da8,OK,https://www.calcoprecast.com/
+Energy Mill,+18028828410,http://www.gristmillbuilders.com/Energy-Mill/1/thumbs,5430 Waterbury-Stowe Rd,Waterbury Center,VT,contractor,0.972,2200cadc-4bcf-4a3a-9d98-a6bfb6920a35,OK,https://www.gristmillbuilders.com/Energy-Mill/1/thumbs
+Vermont Arborists - SavATree,8022445100,https://www.savatree.com/stowe-vermont-tree-service?utm_source=GMB&utm_medium=organic&utm_campaign=stowe,15 Tayer Ln,Waterbury Center,VT,tree_service,0.92,c0b34255-ad86-4b89-bdb0-780305d4163f,OK,https://www.savatree.com/locations/near-me/stowe-vermont/?utm_campaign=stowe&utm_medium=organic&utm_source=GMB
+Roto-Rooter Plumbing & Drain Services,8024385669,http://www.rotorooter.com/,335 Gravel Pit Rd,West Rutland,VT,plumbing,0.92,a64216f7-63bc-4f74-97bf-74852ecf150e,OK,https://www.rotorooter.com/
+"Green and Son Concrete, Inc",8028954843,https://www.greenandsonconcreteinc.com/,104 Green Ln,West Charleston,VT,masonry_concrete,0.92,427135f7-64ec-4d23-be0d-78de20eaac0e,OK,https://www.greenandsonconcreteinc.com/
+Waterbury Swimming Pool,+18022446340,https://www.waterburyvt.com/departments/recreation,27 Butler St,Waterbury,VT,swimming_pool,0.99,9f41defd-2f65-46ff-b871-ffcc684795a4,OK,https://waterburyvt.myrec.com/info/default.aspx
+The Luminous Moose,+18024965107,http://www.LuminousMoose.glass/,4366 Main St #3,Waitsfield,VT,glass_and_mirror_sales_service,0.801,72d72824-f02b-4c47-8166-e174deae737d,OK,https://luminousmoose.glass/
+Green Mountain Trucking & Excavating Inc,8028783027,http://www.greenmountaintruckingandexcavating.com/,1040 Osgood Hill Rd,Westford,VT,roofing,0.92,28049075-4f87-4450-91df-2ecd5702f23d,OK,https://www.greenmountaintruckingandexcavating.com/
+"Walker Construction, Inc.",18022447400,walkerconst.net,5950 Waterbury-Stowe Rd,Waterbury Center,VT,building_or_construction_service,0.92,df550d5b-740a-4484-a928-6115acf8731b,OK,https://walkerconst.net
+Equipe Sport/ Mtn Riders,8024642222,http://www.equipesport.com/,21 S Access Rd,West Dover,VT,outdoor_store,0.96,7d7b45ea-c46d-4eb8-8dd4-a93bce2d7e72,OK,https://www.equipesport.com/
+MEI Electrical Contractors and Systems Integrators,+18029889678,http://www.mei-vt.com/,1571 Vermont Rte 100,Westfield,VT,contractor,0.92,5d5e5299-66df-47a9-b06f-bdc3ba945b31,OK,https://www.mei-vt.com/
+Bartlett Tree Experts,8026988552,https://www.bartlett.com/locations/White-River-Junction-VT.cfm,52 Lower Hyde Park Ste 2,White Riv Jct,VT,christmas_tree_store,0.983,e97c334d-480b-493a-b7ab-a8c209671517,OK,https://www.bartlett.com/locations/White-River-Junction-VT
+Teak's Lock Service,+18025358916,http://www.teakslockservice.com/,457 Leroux Rd,Wheelock,VT,key_and_locksmith,0.92,4192923d-5ac9-4cc3-bc6f-5eaf5a163005,OK,https://www.teakslockservice.com/
+Cota & Cota,8022950000,http://www.cotaoil.com/,8 Barnes Ave,White River Junction,VT,hvac_service,0.92,7e02cc53-b967-4358-b30b-d1f5e27b2e84,OK,http://www.cotaoil.com/
+Wilk Paving,(802) 438-5454,http://www.wilkpaving.com,738 Rutland Rd,West Rutland,VT,contractor,0.92,ac86cdc6-7b10-484c-8aa6-b65aabef37ed,OK,http://www.wilkpaving.com
+C-Clear Auto Glass,+18022815882,http://www.cclearautoglass.com/,1567 Route 14,White River Junction,VT,auto_glass_service,0.998,a2678c23-3a2d-4c13-8737-4a0895672a2b,OK,https://www.cclearautoglass.com/
+Olde World Masonry,+18027775778,http://www.oldeworldmasonry.com/,1397 Newark St,West Burke,VT,masonry_concrete,0.92,da8ef285-47ce-44e5-8b49-5ee47ad71629,OK,https://oldeworldmasonry.com/
+Ward's Mechanical,18024966022,www.wardsvt.com,438 Mad River Park  # 1,Waitsfield,VT,plumbing,0.826,4845504d-bde9-4c7c-9394-e6fdc884719d,OK,https://www.wardsvt.com
+SERVPRO of Windham & Windsor Counties,+18024979761,https://www.servprowindhamwindsorcounties.com/,20 Harvest Park Rd #2,Weathersfield,VT,home_cleaning,0.941,beb234aa-3177-4619-a18d-f7e19fcb0cf8,OK,https://www.servpro.com/locations/vt/servpro-of-windham-windsor-counties
+Rexel,8022802265,https://www.rexelusa.com/locations/VT/White-River-Junction/4055?utm_source=local-listings&utm_medium=organic&utm_content=bing,80 Sykes Mountain Avenue,White River Junction,VT,electrical_supply_store,0.985,7a6b1c95-e61d-4c93-b97a-0ae9a205f8d7,OK,https://www.rexelusa.com/locations/VT/White-River-Junction/4055?utm_source=local-listings&utm_medium=organic&utm_content=bing
+Prouty Builders,+18023795733,http://proutybuilders.com/,146 Holden Hill Rd,Weston,VT,contractor,0.92,d738aa77-ff69-4162-8d25-0d03900795ba,OK,https://www.proutybuilders.com/
+Purcell Landscape Services,6032769282,https://purcelllandscape.com/,260 S Main St,White River Junction,VT,landscaping,0.92,e2fa1821-2429-450d-9fc1-4cd3b0505359,OK,https://purcelllandscape.com/
+Poultney Pools & Spas,+18024382500,http://www.poultneypools.com/,551 Rutland Rd,West Rutland,VT,pool_cleaning,0.92,79706f93-1739-4f2a-9292-e7d35baae3c0,OK,https://www.poultneypools.com/
+R G Paving,8024331665,https://www.rgpavingvt.com/,166 Meadow St,Williamstown,VT,masonry_contractor,0.92,7d433455-8f63-4305-a007-de1f620eeeaf,OK,https://www.rgpavingvt.com/
+Gear Again,+18022995679,http://VTGearAgain.com/,93 S Main St,White River Junction,VT,outdoor_store,0.92,890e3f01-f8f3-450b-b12c-0fdaae755ea8,OK,https://www.vtgearagain.com/
+Zug Glass Studio,+18027389602,http://www.zugglass.com/,168 Dickerman Hill Rd,Tunbridge,VT,glass_blowing_venue,0.92,7eb1b68d-9609-4e2f-a97e-8405899b4f6a,OK,https://www.zugglass.com/cms/
+Auto Glass Fitters,8022644822,http://www.autoglassfitters.com/,1544 S Brownell Rd,Williston,VT,auto_glass_service,0.92,5cbb8ecf-18d4-41c5-b99c-120173440c51,OK,http://www.autoglassfitters.com/
+Garrison Creative Glassworks,+18022654131,http://www.gcgw.com/,15 Adams Rd #9883,West Haven,VT,glass_blowing_venue,0.92,3b70a7c6-263e-4c5f-837e-bb96feeaf01f,OK,https://gcgw.com/
+Sherman Manning Aquatic Facility,+18022955036,https://hartfordvt.myrec.com/,291 Highland Ave,White River Junction,VT,swimming_pool,0.92,6676148c-e1f0-4ec5-89d4-7f93ea159985,OK,https://hartfordvt.myrec.com/info/default.aspx
+CED Twin State Electric Supply,8022953193,http://cedwilder.portalced.com/,606 Hartford Ave,WhiteRiver Junction,VT,electrical_supply_store,0.85,23fbdff4-bf0f-4217-8d63-994ea9b75046,OK,https://cedwilder.portalced.com/
+Thomas F. Terry,8022953450,http://www.visionsource-drtterryeyecare.com/,128 N Main St,White Riv Jct,VT,sunglasses_store,0.92,257b8973-f90c-478c-bf4e-354818348041,OK,https://visionsource.com/
+Cintas Facility Services,8023918199,https://www.cintas.com/local/usa/vt/burlington/facility-services,156 Avenue B,Williston,VT,cleaning_products_supplier,0.966,db54b055-b203-4f83-b0d0-0dd27cd4a097,OK,https://www.cintas.com/local/usa/vt/burlington/facility-services
+Vermont Clean and Green LLC,+18022791000,http://www.cleanandgreenvt.com/,746 Young Rd,Williamstown,VT,home_cleaning,0.92,061e65a6-2998-44ca-af50-4a8556e4ca13,OK,https://cleanandgreenvt.com/
+Control Technologies Inc.,8027642200,https://www.controltechinc.com/,121 Park Ave Ste 20,Williston,VT,hvac_service,0.92,29e5cc5d-55a9-4032-bf13-3116d5cbae08,OK,https://www.controltechinc.com/
+Building Energy,8028593384,https://www.buildingenergyvt.com/,1570 S Brownell Rd,Williston,VT,solar_installation,0.92,3d0ac4b1-9517-4540-b9b2-da488ec31cde,OK,https://www.buildingenergyvt.com/
+CED Twin State Electric Supply,8028640186,https://cedburlington.portalced.com/,399 Shunpike Rd,Williston,VT,electrical_supply_store,0.85,789c1468-7af7-41aa-8bf4-f17c369cbdf1,OK,https://cedburlington.portalced.com/
+E&s Electric Company,18024483485,https://eselectriccompany.com,412 Stone Rd,Williamstown,VT,electrician,0.995,9468a7cc-8f6c-49a6-8114-088910be6f73,OK,https://www.eselectriccompany.com/
+Piper Hill Plumbing & Heating,+18028246102,http://capitalpropertyinspection.com,714 Main St,Weston,VT,plumbing,0.92,f8687177-f1a1-4e5a-ac12-eb9a859e45c8,OK,https://capitalpropertyinspection.com/
+Dew Construction Corporation,18028720505,https://www.dewconstruction.com,277 Blair Park Rd  Ste 130,Williston,VT,building_or_construction_service,0.99,a5db724d-8e86-44bb-91de-ae311c025e12,OK,https://dewconstruction.com/
+Allen Pools & Spas,18022889028,https://www.allenpools-spas.com,32 Cottonwood Dr  Ste 107,Williston,VT,hot_tub_and_pool_store,0.998,630401f3-6183-4c37-aaca-f474c8b50aba,OK,https://allenpools-spas.com/
+F.W. Webb Company,+18028795155,http://www.fwwebb.com/,80 Park Ave,Williston,VT,plumbing,0.92,20ecbeda-2e85-4bf1-9784-b06dc195672f,OK,https://www.fwwebb.com:443/
+Beacon Roofing Supply,+18024973289,https://www.becn.com/?utm_source=fb&utm_medium=yext&y_source=1_MjY2ODQzMjAtNTU5LWxvY2F0aW9uLndlYnNpdGU%3D,391 Boyer Cir,Williston,VT,roofing,0.982,f5afd89e-1ba2-4626-b54d-e6c752398a69,OK,https://www.qxo.com/?utm_source=fb&utm_medium=yext&y_source=1_MjY2ODQzMjAtNTU5LWxvY2F0aW9uLndlYnNpdGU%3D
+Demag Riggers & Crane Service,+18028633642,https://www.demagcranes.com/en-us,100 Demag Dr,Williston,VT,contractor,0.917,2453a840-9419-4284-82c4-230fa39cce5c,OK,https://www.demagcranes.com/en-us
+Green Mountain Earthworks,+18025782886,http://www.greenmountainearthworks.com,8861 Williston Rd,Williston,VT,landscaping,0.92,3fcec48e-9604-4e5e-bed1-2a142576425a,OK,https://www.greenmountainearthworks.com/
+Elevate Tint and ppf,+18025980038,https://mail.google.com/mail/u/4?ui=2&ik=b8505d342d&attid=0.1&permmsgid=msg-f%3A1855133276009468543&th=19bec1e2b78d127f&view=att&zw&disp=inline,151 Avenue C,Williston,VT,car_window_tinting,0.867,a5dc3e4c-e71e-4708-90b0-85f169d904c2,OK,https://accounts.google.com/v3/signin/identifier?continue=https://mail.google.com/mail/?ui%3D2%26ik%3Db8505d342d%26attid%3D0.1%26permmsgid%3Dmsg-f:1855133276009468543%26th%3D19bec1e2b78d127f%26view%3Datt%26zw%26disp%3Dinline&emr=1&ltmpl=default&ltmplcache=2&osid=1&passive=true&scc=1&service=mail&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1612501940:1791855715124984
+United Ag & Turf - Northeast,+18028684184,https://agandturf.unitedequip.com/locations/swanton-vt/,482 VT-78,Swanton,VT,outdoor_store,0.999,eb0f4bfd-517b-4c0a-8105-a6db50c89ac6,OK,https://agandturf.unitedequip.com/locations/swanton-vt/
+Limb Corporation,8028626159,https://www.limbcorp.com,460 Shunpike Rd,Williston,VT,window_treatment_store,0.95,38255adb-5e26-4fa9-823c-0489c02d4515,OK,https://www.limbcorp.com
+Green Mountain Hot Tubs,+18024483405,https://greenmountainhottubs.com,4989 Williston Rd,Williston,VT,pool_cleaning,0.92,8079a54b-1f93-4907-95a8-bc3425c257e0,OK,https://greenmountainhottubs.com
+Lumber Liquidators,8023164113,https://lumberliquidators.com/?y_source=1_MTEzNzU0MDQtNDgzLWxvY2F0aW9uLndlYnNpdGU%3D,329 Harvest Lane,Williston,VT,flooring_store,0.966,8303915f-d4be-4fa4-be7f-c325aa4545ac,OK,https://lumberliquidators.com/?y_source=1_MTEzNzU0MDQtNDgzLWxvY2F0aW9uLndlYnNpdGU%3D
+Infrared Analyzers,+18008791964,http://www.iranalyzers.com/,65 Lyman Dr,Williston,VT,roofing,0.92,1ada0b3a-f3c5-4009-a6b7-c5be9f367021,OK,https://iranalyzers.com/
+Orkin,18023184609,https://www.orkin.com/about,446 Avenue D  Ste 20,Williston,VT,pest_control_service,1.0,7f7d77f0-23a0-4852-9dc5-a1491c7ee677,OK,https://www.orkin.com/about
+KeyMe Locksmiths,8024490172,https://key.me/kiosks/vermont/williston/williston/locksmith-key-copy-williston-shaws-05495-vermont,71 Boxwood St,Williston,VT,key_and_locksmith,0.963,e756c1d2-167d-41bf-96c0-c6abd3983593,OK,https://key.me/kiosks
+Mack Painting,+18022675292,http://mackpainting.com,4626 Williston Rd,Williston,VT,painting,0.92,1fa30994-1e8c-432c-9193-8bc0296d43a4,OK,https://mackpainting.com/
+Roto-rooter Plumbing & Water Cleanup,18028810577,https://www.rotorooter.com,998 S Brownell Rd,Williston,VT,plumbing,0.99,eac9c4cb-40fa-438b-9f25-2db41d4ac5ec,OK,https://www.rotorooter.com
+Marvin Design Gallery By Windows & Doors By Brownell,18028624800,https://www.wdbrownell.com,800 Marshall Ave  Ste 50,Williston,VT,window_supplier,0.92,cbf26b3d-94a3-466d-a68d-540d60ac93b7,OK,https://www.wdbrownell.com
+Mountain Air Systems Inc,18028626199,www.masvt.com,430 Commerce St  # 220,Williston,VT,contractor,0.92,7ef0a24e-8931-40a8-92fe-ce8f0641658d,OK,https://www.masvt.com
+Greentech Renewables Vermont,8026524123,https://cedgreentechburlington.portalced.com/,322 Leroy Rd,Williston,VT,electrical_supply_store,0.92,c2dfaad8-5920-42a6-bbe4-990c20ef1e0c,OK,https://GreentechBurlington.portalced.com/
+Melody Electic,8028647989,http://www.melodyelectric.com/,338 Commerce St,Williston,VT,electrician,0.978,70b37f77-8890-4034-b38a-b74aa904d8b0,OK,http://www.melodyelectric.com/
+Bazin Brothers Trucking,18024632077,https://bazinbrothers.com,2425 Back Westminster Rd,Westminster,VT,paving_contractor,0.988,b8b24ee5-f068-446a-ae84-617422023491,OK,https://bazinbrothers.com
+New England Electric,18029222961,https://newenglandelectric.com,277 Blair Park Rd  Ste 210,Williston,VT,electrician,0.92,04f085dc-e578-465b-b7c7-a786fded59a3,OK,https://newenglandelectric.com
+Limoge & Sons Garage Doors,18028784338,https://limogegaragedoors.com,136 James Brown Dr,Williston,VT,garage_door_service,0.999,5ac297cc-cde1-4cc4-9a32-bf993184dda5,OK,https://www.limogegaragedoors.com/
+Rainbow Playsystems of Vermont,+18026520100,http://www.rainbowplay.com/,95 N Brownell Rd,Williston,VT,outdoor_store,0.92,623f0822-6c8e-4978-aa15-6e2925046c54,OK,https://www.rainbowplay.com/
+Mike's Electric,(802) 399-2119,http://mei-vt.com,338 Boyer Cir,Williston,VT,electrician,0.92,08028a06-34a5-43c8-b09d-df275b6a10d8,OK,https://www.mei-vt.com/
+Overhead Door Co. Of Burlington,18028649895,https://www.overheaddoorvt.com,5375 Williston Rd,Williston,VT,garage_door_service,1.0,62823548-6e5f-446c-8584-35b484579fef,OK,https://www.overheaddoorvt.com
+Lacillade's Home Design Center,18028794344,https://lacillades.com,4735 Williston Rd  Ste 50,Williston,VT,kitchen_remodeling,0.95,774362dc-22cb-43b4-9e4d-f66eb4446894,OK,https://www.lacillades.com/
+Floor Trader of Williston,8024614536,http://www.floortraderwilliston.com/,96 Commerce St,Williston,VT,flooring_store,0.92,5b307353-468f-4ac1-bce7-1924aad186ae,OK,https://www.floortraderwilliston.com/
+"A Cooper Mechanical, Inc.",18026559191,https://coopervt.com,171 Leroy Rd,Williston,VT,plumbing,0.92,7a350f52-fb7f-4525-9905-c9d6f707a887,OK,https://coopervt.com
+Vermont Paint Co,18028631098,www.vtpaint.com,17 Adams Dr,Williston,VT,paint_store,0.92,0b091193-7b61-472c-ab0b-31935b647e15,OK,https://www.vtpaint.com
+P & P Septic Service Inc,18026586243,https://pandpseptic.com,543 Shunpike Rd,Williston,VT,septic_service,1.0,3e5587d8-e240-4f94-835a-b32fbf8e2cf8,OK,https://www.pandpseptic.com/
+Safelite AutoGlass,+18022814365,https://safl.it/2t2ImPq?y_source=1_MTc4NzI5NS01NTktbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,669 N Main St,White River Junction,VT,auto_glass_service,0.988,9029c049-26a0-4bc7-9860-f657206a3ae3,OK,https://www.safelite.com/stores/White-River-Junction?utm_source=yext&utm_medium=list&utm_campaign=facebook_local&gad_source=7&dclid=CJCM4drutZcDFR6iNgcdzVgEYw
+"Woodline Floor Sales & Sanding, Inc.",18028624802,http://www.woodlinefloors.net,1298 S Brownell Rd,Williston,VT,flooring_store,0.92,edebed9d-9c2c-4be2-8a4b-199b05f8216b,OK,https://www.woodlinefloors.net/
+Sunrun,8027783264,https://www.sunrun.com/solar-by-state/vt?utm_source=Bing_Local&utm_medium=Organic-Local&utm_campaign=Williston-VT,1354 Marshall Ave,Williston,VT,solar_installation,0.92,f6a415ec-0007-4719-8b11-a83479c71233,OK,https://www.sunrun.com/
+Windshield Works,18028645277,https://www.windshieldworksvt.com,384 Boyer Cir,Williston,VT,auto_glass_service,0.92,5ec31b65-d5a2-4cd6-9ae7-280ad7e449e4,OK,https://www.windshieldworksvt.com
+Sheerness Wood Works,+18024648200,http://www.sheernesswoodworks.com/,24 Conifer Ln,Wilmington,VT,carpenter,0.92,c5e2f0e1-6193-46d1-856a-938e02197c6b,OK,http://www.sheernesswoodworks.com/
+F.e. Hart Fence Company Inc,18028626691,https://fehart.com,394 Shunpike Rd,Williston,VT,contractor,0.999,829c4328-1824-47fd-a2ec-1a7f9636987f,OK,https://fehart.com
+Lane Plumbing & Heating Inc,18024640105,https://laneph.com,10 Adams Dr,Wilmington,VT,plumbing,0.95,67a31425-f6dd-4f00-b544-2d15e77d1bb7,OK,https://laneph.com
+Scotts LawnService,8023632605,http://www.scottslawnservice.com/,364 Essex Rd,Williston,VT,landscaping,0.92,4698ab04-0bf1-4bff-9f48-4c7bf8db2ff0,OK,https://www.trugreen.com/
+SD Ireland Companies,+18028636222,http://www.sdireland.com/,20 Redimix Dr,Williston,VT,building_or_construction_service,0.934,6ad01f2e-d827-42c4-b041-260fcaa04388,OK,https://www.sdireland.com/
+New England Air Systems Llc,18028643800,http://www.neas-hvac.com,43 Krupp Dr,Williston,VT,hvac_service,0.92,a2aedeae-2d24-48cb-a2ac-b481b4c662f1,OK,https://neas-hvac.com/
+Broadleaf Landscape Architecture,18024965331,http://broadleafvt.net,40 Bridge St  Ste A,Waitsfield,VT,landscape_architect,0.92,d357d1c6-1a66-4217-bb7d-6136090d5bf0,OK,https://www.broadleafvt.net/
+Bickford Construction Corp.,+18028727600,d2bhomes.com,600 Blair Park Rd Ste 235,Williston,VT,building_or_construction_service,0.95,bc9f202a-1582-4f91-abd2-a8ee4d07a498,OK,http://design2buildloghomes.com/
+Safelite AutoGlass,8023184560,https://www.safelite.com/stores/Williston2,21 Adams Dr,Williston,VT,auto_glass_service,0.995,9477d9b9-4dfc-45ee-b23e-32571b70729a,OK,https://www.safelite.com/stores/Williston2
+Powerglide Floor Sanding & Refinishing,+18022541493,http://www.powerglideflooring.com,681 Burbee Pond Rd,Windham,VT,contractor,0.92,d658774d-d7fd-412e-b0c3-47632d334160,OK,http://www.powerglideflooring.com
+Vhv Company - Full Service Hvac/r & Plumbing Construction And Service Repair,18026558805,https://www.vhv.com,16 Tigan St,Winooski,VT,hvac_service,0.92,35328c54-a044-405c-8f93-a342b94c9103,OK,https://www.vhv.com
+Vermont Mulch Co,+18022571300,http://www.thevermontmulch.com/,1367 Fort Bridgman Rd,Vernon,VT,landscaping,0.907,e222b942-ac2b-4bb7-b680-923b283f8b42,OK,https://thevermontmulch.com/
+Crash Auto Glass,18882920972,https://crashautoglass.com,376 Main St,Winooski,VT,auto_glass_service,0.95,f10f16b4-b3bc-42b8-9aca-a80fa4c16283,OK,https://crashautoglass.com
+Homestead Landscaping,+18022971107,https://www.homesteadlandscaping.com/,5 Lower Taylor Hill Rd,Winhall,VT,landscaping,0.92,25200e2e-f3e7-419f-b9e2-2a74a5957c8e,OK,https://www.homesteadlandscaping.com/
+Supreme Tree Service,8024425978,https://www.supremetreeservice.com/,58 Pace Rd,Woodford,VT,tree_service,0.92,dec72bec-c789-4a64-a0fe-7cfb3fc0a217,OK,https://www.supremetreeservice.com/
+Colonial Mobile Home Supply Inc.,8026556162,http://colonialmobilehomesupply.com/,329 Main St,Winooski,VT,altering_and_remodeling_contractor,0.92,8b32758d-175b-4873-bf90-03e27d1f2eae,OK,https://www.colonialmobilehomesupply.com/
+Rox Asphalt,8023918177,https://www.roxasphaltllc.com/,4626 Williston Rd,Williston,VT,masonry_concrete,0.92,229de82b-099e-4a67-93c0-7385840122b0,OK,https://www.roxasphaltllc.com/
+TruBlue of Northern Vermont,8028222583,https://www.trublueally.com/northern-vermont,56 Barrett Ln,Williston,VT,handyman,0.92,6f473300-1399-425d-915b-9d0c6a1d4c9d,OK,https://www.trublueally.com/northern-vermont
+Stonewall Hardscapes LLC,+18028390086,http://www.stonewallhardscapes.com/,1676 Elmore Pond Rd,Wolcott,VT,masonry_concrete,0.92,2b4da935-dba4-41b2-be47-0b1a0738ef63,OK,http://www.stonewallhardscapes.com/
+Prudent Living,+18026749155,http://www.prudentlivingmarket.com/,3189 US-5,Windsor,VT,solar_installation,0.825,4af612c6-34ea-44a2-9f49-d945e8ed3bdc,OK,http://www.prudentliving.com/
+US Sherpa,+18028575059,http://www.ussherpa.com/,235 Main St,Winooski,VT,outdoor_store,0.955,11b3cc87-0ba4-40fc-80ee-789c27b94947,OK,https://www.ussherpa.com/
+Dead River Company,8024571610,https://www.deadriver.com/,43 Lincoln Corners Way,Woodstock,VT,hvac_service,0.966,c2a1a970-491b-4d58-b6f2-c876dacf3ebb,OK,https://www.deadriver.com/
+Gardens and Grounds Property Care,+18024574131,http://GarGro.com/,4707 Riverside Park Rd,Woodstock,VT,landscaping,0.92,286ea9cc-f8bd-4580-8fcd-59a1de2cd051,OK,http://GarGro.com/
+Simon Pearce,+18022302402,https://www.simonpearce.com/,109 Park Rd,Windsor,VT,glass_blowing_venue,0.943,aecd47e1-8d01-4f02-b798-8f9e884cc3c7,OK,https://simonpearce.com/
+White Magic Carpet Cleaning,8774908594,http://www.carpetcleaningvermont.net/,3012 Elmore Pond Rd,Wolcott,VT,carpet_cleaning,0.92,62da64cf-3d82-45a9-bc2a-2dfb6a5992a8,OK,https://www.carpetcleaningvermont.net/
+Jack Rossi Landscape Architecture,+18023560729,http://www.jackrossi.com/,3 Bond St,Woodstock,VT,landscaping,0.92,6962e867-5d6a-479d-af9c-a552a0d6949a,OK,https://www.jackrossi.com/
+Dead River Company,8024571610,http://www.deadriver.com/,43 Lincoln Corners Way,Woodstock,VT,hvac_service,0.85,2fce0a73-d055-433d-8a95-6c9dd1502de8,OK,https://www.deadriver.com:443/
+W2D Heating & Plumbing,(802) 368-7684,https://townofwhitingham-vt.org/business/w2d-heating-plumbing-llc,853 Wilmington Cross Rd,Whitingham,VT,hvac_service,0.92,40a99740-1558-47fa-a949-0cdf79061241,OK,https://www.silvanadevinta.com/
+Best Septic Service LLC,+18024639444,http://www.bestsepticvt.net/,5983 US-5 Suite A,Westminster,VT,septic_service,0.92,db93f29b-f527-44a5-9abb-e6fc37f83b4b,OK,https://bestsepticvt.net/
+RPC Builders,+18024988971,http://g.page/rpc-builders,101 W Hill Rd,Wolcott,VT,contractor,0.92,d6637a79-7a7f-49b2-8678-cda7f274d479,OK,https://www.google.com/maps/place//data=!4m2!3m1!1s0x4cb5c1c395a1b6ed:0x9a6485ebbcddf156?source=g.page.default
+Construction Management Direct Cmd,18027606057,https://www.cmdvt.com,237 Commerce St,Williston,VT,contractor,0.92,2da5288e-9b6a-4f36-a985-ac4f4df02474,OK,https://cmdvt.com/
+Prevost Home Improvement,+18023431674,http://prevosthomeimprovement.com,33 Shepard St,Winooski,VT,roofing,0.92,17e220cc-4d4d-4b25-93f1-c721b1dd2c37,OK,https://prevosthomeimprovement.com/
+Vermont Land Group,+18023323812,http://vermontlandgroup.com/,39 Central St,Woodstock,VT,contractor,0.92,5676eae1-1c06-4a4f-b967-d3b0dc94448c,OK,https://www.vermontlandgroup.com/
+Catamount Carpet Cleaning,+18024648385,http://rsiclean.com/,19 Haystack Rd,Wilmington,VT,carpet_cleaning,0.92,2a7609a4-fecf-4776-9682-593c2769112c,OK,https://rsiclean.com/
+Trane - Heating & Cooling Services,8448002641,https://www.trane.com/residential/en/buying-a-trane/find-a-dealer/vermont/williston/?y_source=1_NjA0NTg3OS00ODMtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D,177 Leroy Road,Williston,VT,hvac_service,0.85,61a9a0f1-8333-4d58-967d-e06b65cbabcb,OK,https://www.trane.com/residential/en/find-a-dealer/vermont/williston/
+Vermont Energy Contracting,18026586055,http://www.vtenergy.com,188 Krupp Dr,Williston,VT,hvac_service,0.998,5f2eb70a-ef52-43c8-9ef3-729629fd730e,OK,https://www.vtenergy.com/
+A+ Roofing & Lawn Service,8023168042,https://www.aplusroofingvt.com/,16 Whitney Hill Rd,Williston,VT,roofing,0.92,edf78a0b-5efe-4677-a9cf-cb0c3b55444f,OK,https://www.aplusroofingvt.com/
+Vermont Paint Craftsmen,18026587944,https://www.vermontpaintcraftsmen.com,1193 S Brownell Rd,Williston,VT,painting,0.92,09525418-44bf-4fe1-ab8e-75a4f39a87b6,OK,https://vermontpaintcraftsmen.com/
+Peachtree Builders,+18026746005,https://burlingtonvtareabuilders.com/,66 State St,Windsor,VT,building_or_construction_service,0.92,020375c4-6718-4313-9dca-cddf8d8dba89,OK,https://www.nhvtbuilders.com/
+Peak Mechanical,8887718881,https://www.peakmechanicalvt.com/?utm_medium=organic&utm_campaign=local+listings,80 Commercial Dr,Waterbury,VT,hvac_service,0.92,7f5e5ccd-2fd6-48a7-a565-4df5bd53f9dd,OK,https://peakmechanicalvt.com/?utm_medium=organic&utm_campaign=local%20listings

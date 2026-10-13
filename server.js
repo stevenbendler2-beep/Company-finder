@@ -473,7 +473,7 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
     if (url.pathname === "/api/status") {
-      const configured = { Overture: !!loadLocal("TX"), Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Foursquare: !!KEYS.foursquare, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
+      const configured = { Overture: fs.readdirSync(path.join(__dirname, "data")).some(f => /^trades_[A-Z]{2}\.csv$/.test(f)), Google: !!KEYS.google, HERE: !!KEYS.here, TomTom: !!KEYS.tomtom, Foursquare: !!KEYS.foursquare, Geoapify: !!KEYS.geoapify, OpenStreetMap: true };
       return send(res, 200, { ok: true, crmAccounts: CRM_KEYS.size, configured, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify") }, caps: CAPS,
         googleKeyLooksValid: /^AIza[0-9A-Za-z_-]{35}$/.test(KEYS.google), needsCode: !!ACCESS_CODE, codeOk: authed(req) });
     }
