@@ -70,7 +70,7 @@ const OSM_TAGS = {
   solar: ['craft="solar_installer"'], pool: ['shop="swimming_pool"'], clean: ['office="cleaning"'], construction: ['office="construction_company"', 'craft="builder"'],
   contractor: ['office="construction_company"', 'craft="builder"'], fenc: ['craft="fence_maker"'], glass: ['craft="glaziery"'],
 };
-const LEADGEN_HOSTS = /(ueniweb\.com|square\.site|wixsite\.com|business\.site|godaddysites\.com|weebly\.com|\.homes$|yelp\.com|facebook\.com|homeadvisor\.com|angi\.com|thumbtack\.com|nextdoor\.com|linktr\.ee|sites\.google\.com|instagram\.com|bbb\.org|houzz\.com|yellowpages\.com|mapquest\.com|porch\.com)/i;
+const LEADGEN_HOSTS = /(ueniweb\.com|square\.site|wixsite\.com|business\.site|godaddysites\.com|weebly\.com|\.homes$|yelp\.com|facebook\.com|homeadvisor\.com|angi\.com|thumbtack\.com|nextdoor\.com|linktr\.ee|sites\.google\.com|instagram\.com|bbb\.org|houzz\.com|yellowpages\.com|mapquest\.com|porch\.com|^(www\.)?google\.com$|^g\.co$)/i;
 
 // ---------- helpers ----------
 function cleanUrl(u) {
@@ -191,7 +191,7 @@ function srcLocal({ type, city, st }) {
   const c = (city || "").toLowerCase();
   const out = rows.filter(r => r.state === st && (r.city || "").toLowerCase() === c && [...terms].some(x => (r.category || "").toLowerCase().includes(x)))
     .map(r => ({ name: r.name, website: cleanUrl(r.website), phone: fmtPhone(r.phone), address: r.address || "", rating: null, reviews: 0,
-      category: r.category || "", status: "OPERATIONAL", source: "Overture" }));
+      category: r.category || "", confidence: parseFloat(r.confidence) || 0, status: "OPERATIONAL", source: "Overture" }));
   return { ok: true, rows: out, requests: 0, note: `${out.length} found in ${city} (city-level data)` };
 }
 
@@ -386,9 +386,26 @@ async function search({ type, city, st, target, requireWebsite }) {
   }
   let rows = out;
   if (requireWebsite) { const before = rows.length; rows = rows.filter(r => r.website); excluded += before - rows.length; }
-  rows.forEach(r => { r.tier = tierFor(r.reviews); r.confirmedBy = r.sources.length; r.inCrm = CRM_KEYS.size > 0 && CRM_KEYS.has(crmKey(r.name, st)); });
-  // rank: review volume, then how many sources agree, then has phone
-  rows.sort((a, b) => (b.reviews - a.reviews) || (b.confirmedBy - a.confirmedBy) || ((b.phone ? 1 : 0) - (a.phone ? 1 : 0)) || a.name.localeCompare(b.name));
+  // quality score: confirmed by 2+ sources, a category that matches the search, phone, real website, high Overture confidence
+  const GENERIC = new Set(["contractor", "contractors", "construction", "building", "company", "companies", "service", "services", "business"]);
+  const words = type.toLowerCase().replace(/[^a-z ]/g, " ").split(/\s+/).filter(w => w.length > 3 && !GENERIC.has(w)).map(w => w.replace(/(ing|ers|er|s)$/, "")).filter(w => w.length >= 3);
+  rows.forEach(r => {
+    r.confirmedBy = r.sources.length;
+    r.tier = tierFor(r.reviews);
+    const cat = (r.category || "").toLowerCase(), nm = (r.name || "").toLowerCase();
+    const specific = words.some(w => cat.includes(w) || nm.includes(w));
+    let score = 0;
+    if (r.confirmedBy >= 2) score += 2;
+    if (specific) score += 2;
+    if (r.phone) score += 1;
+    if (r.website) score += 1;
+    if ((r.confidence || 0) >= 0.9) score += 1;
+    r.qualityScore = score;
+    if (!r.reviews) r.tier = score >= 5 ? "Strong" : score >= 3 ? "Likely" : "Verify";
+    r.inCrm = CRM_KEYS.size > 0 && CRM_KEYS.has(crmKey(r.name, st));
+  });
+  // rank: quality score, then review volume, then how many sources agree, then has phone
+  rows.sort((a, b) => (b.qualityScore - a.qualityScore) || (b.reviews - a.reviews) || (b.confirmedBy - a.confirmedBy) || ((b.phone ? 1 : 0) - (a.phone ? 1 : 0)) || a.name.localeCompare(b.name));
   rows = rows.slice(0, target);
 
   const status = Object.fromEntries(Object.entries(sources).map(([k, v]) => [k, { ok: v.ok, note: v.note, requests: v.requests }]));
