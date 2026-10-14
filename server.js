@@ -70,7 +70,7 @@ const OSM_TAGS = {
   solar: ['craft="solar_installer"'], pool: ['shop="swimming_pool"'], clean: ['office="cleaning"'], construction: ['office="construction_company"', 'craft="builder"'],
   contractor: ['office="construction_company"', 'craft="builder"'], fenc: ['craft="fence_maker"'], glass: ['craft="glaziery"'],
 };
-const LEADGEN_HOSTS = /(ueniweb\.com|square\.site|wixsite\.com|business\.site|godaddysites\.com|weebly\.com|\.homes$|yelp\.com|facebook\.com|homeadvisor\.com|angi\.com|thumbtack\.com|nextdoor\.com|linktr\.ee|sites\.google\.com|instagram\.com|bbb\.org|houzz\.com|yellowpages\.com|mapquest\.com|porch\.com|^(www\.)?google\.com$|^g\.co$)/i;
+const LEADGEN_HOSTS = /(ueniweb\.com|square\.site|wixsite\.com|business\.site|godaddysites\.com|weebly\.com|\.homes$|yelp\.com|facebook\.com|homeadvisor\.com|angi\.com|thumbtack\.com|nextdoor\.com|linktr\.ee|sites\.google\.com|instagram\.com|bbb\.org|houzz\.com|yellowpages\.com|mapquest\.com|porch\.com|^(www\.)?google\.com$|^g\.co$|idfpr\.com|canva\.site|\.gov$)/i;
 
 // ---------- helpers ----------
 function cleanUrl(u) {
@@ -428,7 +428,7 @@ async function search({ type, city, st, target, requireWebsite }) {
     if (r.website) score += 1;
     if ((r.confidence || 0) >= 0.9) score += 1;
     r.qualityScore = score;
-    if (!r.reviews) r.tier = score >= 5 ? "Strong" : score >= 3 ? "Likely" : "Verify";
+    if (!r.reviews) r.tier = (score >= 6 && r.confirmedBy >= 2) ? "Strong" : score >= 4 ? "Likely" : "Verify";
     r.inCrm = CRM_KEYS.size > 0 && CRM_KEYS.has(crmKey(r.name, st));
   });
   // rank: quality score, then review volume, then how many sources agree, then has phone
