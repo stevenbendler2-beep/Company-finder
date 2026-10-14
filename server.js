@@ -354,6 +354,31 @@ async function srcOSM({ type, center }) {
 }
 
 // ---------- search ----------
+// ---------- website check: drop sites that are dead or parked (unknown/timeouts are kept) ----------
+const siteCache = new Map();
+const PARKED_RE = /domain (is )?(for sale|parked|expired)|buy this domain|this domain may be for sale|parked free|coming soon|website coming|under construction/i;
+async function siteStatus(url) {
+  if (!url) return "unknown";
+  const full = /^https?:\/\//.test(url) ? url : "https://" + url;
+  const h = host(full); if (!h) return "unknown";
+  const hit = siteCache.get(h);
+  if (hit && Date.now() - hit.at < 7 * 86400000) return hit.status;
+  const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 6000);
+  let status = "unknown";
+  try {
+    const r = await fetch(full, { signal: ctl.signal, redirect: "follow", headers: { "User-Agent": "Mozilla/5.0 (compatible; CompanyFinder/1.0)" } });
+    if (r.status >= 400) status = "bad";
+    else {
+      const body = (await r.text()).slice(0, 20000);
+      status = PARKED_RE.test(body) ? "bad" : "ok";
+    }
+  } catch (e) {
+    status = e && e.name !== "AbortError" && /ENOTFOUND|ECONNREFUSED/.test(String(e.cause && e.cause.code || e.message)) ? "bad" : "unknown";
+  } finally { clearTimeout(t); }
+  siteCache.set(h, { status, at: Date.now() });
+  return status;
+}
+
 async function search({ type, city, st, target, requireWebsite }) {
   const key = [type, city, st, target, requireWebsite].join("|").toLowerCase();
   const hit = cache.get(key);
@@ -408,7 +433,15 @@ async function search({ type, city, st, target, requireWebsite }) {
   });
   // rank: quality score, then review volume, then how many sources agree, then has phone
   rows.sort((a, b) => (b.qualityScore - a.qualityScore) || (b.reviews - a.reviews) || (b.confirmedBy - a.confirmedBy) || ((b.phone ? 1 : 0) - (a.phone ? 1 : 0)) || a.name.localeCompare(b.name));
-  rows = rows.slice(0, target);
+  // check websites in order until we have enough live ones (checks up to 80 candidates, 10 at a time)
+  const kept = []; let siteDropped = 0;
+  for (let i = 0; i < rows.length && kept.length < target && i < 80; i += 10) {
+    const batch = rows.slice(i, i + 10);
+    const res = await Promise.all(batch.map(r => siteStatus(r.website)));
+    batch.forEach((r, j) => { if (res[j] === "bad") siteDropped++; else kept.push(r); });
+  }
+  excluded += siteDropped;
+  rows = kept.slice(0, target);
 
   const status = Object.fromEntries(Object.entries(sources).map(([k, v]) => [k, { ok: v.ok, note: v.note, requests: v.requests }]));
   const result = { rows, sources: status, located: !!center, excluded, left: { google: left("google"), here: left("here"), tomtom: left("tomtom"), geoapify: left("geoapify"), foursquare: left("foursquare") }, generatedAt: new Date().toISOString() };
