@@ -187,6 +187,8 @@ function srcLocal({ type, city, st }) {
   for (const k of Object.keys(TRADE_ALIASES)) if (t.includes(k)) TRADE_ALIASES[k].forEach(x => terms.add(x));
   const stem = (t.replace(/[^a-z ]/g, "").split(/\s+/).filter(w => w.length > 3)[0] || t).replace(/(ing|ers|er|s)$/, "");
   if (stem.length >= 3) terms.add(stem);
+  const GENERIC_TERMS = ["contractor", "construction", "building"];
+  if ([...terms].some(x => !GENERIC_TERMS.includes(x))) GENERIC_TERMS.forEach(g => terms.delete(g));
   if (!terms.size) return { ok: true, rows: [], requests: 0, note: "no matching trade category" };
   const c = (city || "").toLowerCase();
   const out = rows.filter(r => r.state === st && (r.city || "").toLowerCase() === c && [...terms].some(x => (r.category || "").toLowerCase().includes(x)))

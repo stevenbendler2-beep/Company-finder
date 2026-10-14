@@ -290,7 +290,7 @@ function render(){
   const fb=$("filterBox");fb.oninput=()=>{textFilter=fb.value;const pos=fb.selectionStart;render();const f=$("filterBox");f.focus();try{f.setSelectionRange(pos,pos)}catch{}};
   $("dlc").onclick=()=>download("csv");$("dlx").onclick=()=>download("xlsx");
 }
-function tableData(){return visible().map(r=>({"#":r.rank,Company:r.name,Website:r.website,Phone:r.phone,Address:r.address,"Google reviews":r.reviews||"",Rating:r.rating||"","Size rating":r.tier,Category:r.category,"Found in":(r.sources||[]).join(", "),"Already in Salesforce":r.inCrm?"Yes":""}))}
+function tableData(){return visible().map(r=>({"#":r.rank,Company:r.name,Website:r.website,Phone:r.phone,Address:r.address,"Google reviews":r.reviews||"",Rating:r.rating||"","Size rating":r.tier,"Quality score":r.qualityScore??"",Category:r.category,"Found in":(r.sources||[]).join(", "),"Already in Salesforce":r.inCrm?"Yes":""}))}
 function fname(ext){const q=meta.query;return `${q.type}-${q.city}-${q.state}`.toLowerCase().replace(/[^a-z0-9]+/g,"-")+"."+ext}
 function save(blob,name){const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},800)}
 function download(kind){
