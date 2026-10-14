@@ -425,13 +425,13 @@ async function selftest() {
     run("Foursquare", async () => {
       if (!KEYS.foursquare) return { ok: null, note: "not set up (add FOURSQUARE_API_KEY)" };
       try {
-        await fetchJSON(`${URLS.foursquare}?${new URLSearchParams({ query: "roofing", ll: "32.78,-96.8", limit: "1", fields: "fsq_place_id,name" })}`, { headers: { Accept: "application/json", Authorization: `Bearer ${KEYS.foursquare}`, "X-Places-Api-Version": "2025-06-17" } }, 12000);
+        await fetchJSON(`${URLS.foursquare}?${new URLSearchParams({ query: "roofing", ll: "32.78,-96.8", limit: "1", fields: "fsq_place_id,name,tel,website" })}`, { headers: { Accept: "application/json", Authorization: `Bearer ${KEYS.foursquare}`, "X-Places-Api-Version": "2025-06-17" } }, 12000);
         return { ok: true, note: `working · ${left("foursquare")} of ${CAPS.foursquare} left today` };
       } catch (e) { return { ok: false, note: explain("foursquare", e) }; }
     }),
     run("Geoapify", async () => {
       if (!KEYS.geoapify) return { ok: null, note: "not set up (add GEOAPIFY_API_KEY — free, 3,000/day, no card)" };
-      try { await fetchJSON(`${URLS.geoapify}?${new URLSearchParams({ categories: "office", filter: "circle:-96.8,32.78,5000", limit: "1", apiKey: KEYS.geoapify })}`, {}, 12000); return { ok: true, note: `working · ${left("geoapify")} of ${CAPS.geoapify} left today` }; }
+      try { await fetchJSON(`${URLS.geoapify}?${new URLSearchParams({ categories: "office,service,commercial,building", filter: `circle:-87.63,41.88,${RADIUS_M}`, bias: "proximity:-87.63,41.88", limit: "50", lang: "en", apiKey: KEYS.geoapify })}`, {}, 12000); return { ok: true, note: `working · ${left("geoapify")} of ${CAPS.geoapify} left today` }; }
       catch (e) { return { ok: false, note: explain("geoapify", e) }; }
     }),
     run("OpenStreetMap", async () => {
